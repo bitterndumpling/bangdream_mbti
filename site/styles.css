@@ -1003,26 +1003,30 @@ button {
   }
 
   .answer-list.is-bipolar {
-    grid-template-columns: repeat(5, minmax(66px, 1fr));
+    grid-template-columns: repeat(5, minmax(62px, 1fr));
     overflow-x: auto;
     padding-bottom: 4px;
-    gap: 6px;
+    gap: 5px;
   }
 
   .answer-btn.is-bipolar {
-    min-height: 82px;
-    padding: 10px 6px;
+    min-height: 78px;
+    padding: 8px 4px;
   }
 
   .answer-btn.is-bipolar strong {
     margin-bottom: 2px;
-    font-size: 0.8rem;
-    line-height: 1.2;
+    font-size: 0.72rem;
+    line-height: 1.08;
+    white-space: normal;
+    word-break: break-word;
   }
 
   .answer-btn.is-bipolar span {
-    font-size: 0.66rem;
-    line-height: 1.2;
+    font-size: 0.56rem;
+    line-height: 1.08;
+    white-space: normal;
+    word-break: break-word;
   }
 
   .match-visual {
