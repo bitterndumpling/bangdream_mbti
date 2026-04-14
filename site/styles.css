@@ -992,14 +992,37 @@ button {
     padding: 18px;
   }
 
+  .question-text {
+    min-height: calc(1.45em * 2);
+  }
+
+  .bipolar-scale {
+    gap: 10px;
+    padding: 12px 14px;
+    font-size: 0.82rem;
+  }
+
   .answer-list.is-bipolar {
-    grid-template-columns: repeat(5, minmax(88px, 1fr));
+    grid-template-columns: repeat(5, minmax(66px, 1fr));
     overflow-x: auto;
     padding-bottom: 4px;
+    gap: 6px;
   }
 
   .answer-btn.is-bipolar {
-    min-height: 68px;
+    min-height: 82px;
+    padding: 10px 6px;
+  }
+
+  .answer-btn.is-bipolar strong {
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .answer-btn.is-bipolar span {
+    font-size: 0.66rem;
+    line-height: 1.2;
   }
 
   .match-visual {
