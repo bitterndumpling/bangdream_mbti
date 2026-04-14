@@ -6,13 +6,6 @@ const STORAGE_KEYS = {
   currentIndex: "bangdream_mbti_current_index",
 };
 
-function resetPersistedQuizProgress() {
-  localStorage.removeItem(STORAGE_KEYS.answers);
-  localStorage.removeItem(STORAGE_KEYS.currentIndex);
-}
-
-resetPersistedQuizProgress();
-
 const AXES = [
   ["EI", "E", "I"],
   ["SN", "S", "N"],
