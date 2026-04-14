@@ -1016,17 +1016,14 @@ button {
 
   .answer-btn.is-bipolar strong {
     margin-bottom: 2px;
-    font-size: 0.72rem;
+    font-size: 0.66rem;
     line-height: 1.08;
     white-space: normal;
     word-break: break-word;
   }
 
   .answer-btn.is-bipolar span {
-    font-size: 0.56rem;
-    line-height: 1.08;
-    white-space: normal;
-    word-break: break-word;
+    display: none;
   }
 
   .match-visual {
