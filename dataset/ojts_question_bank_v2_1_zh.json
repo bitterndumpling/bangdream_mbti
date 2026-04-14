@@ -1,0 +1,739 @@
+{
+  "name": "Open Jungian Type Scales (OJTS v2.1)",
+  "version": "2.1",
+  "source": "https://openpsychometrics.org/tests/OJTS/",
+  "license": "CC BY-NC-SA 4.0",
+  "question_count": 48,
+  "language": "zh",
+  "translation_of": "ojts_question_bank_v2_1.json",
+  "questions": [
+    {
+      "id": 1,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I"
+      ],
+      "text": "我不喜欢让自己成为众人关注的焦点。",
+      "hints": [
+        "低调",
+        "不想引人注目",
+        "不抢风头"
+      ]
+    },
+    {
+      "id": 2,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I"
+      ],
+      "text": "我讨厌别人期待我来活跃气氛或逗大家笑的场合。",
+      "hints": [
+        "不擅活跃气氛",
+        "不想逗别人笑",
+        "怕被要求搞笑"
+      ]
+    },
+    {
+      "id": 3,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I"
+      ],
+      "text": "我会把自己的意见收着，不轻易说出来。",
+      "hints": [
+        "保留意见",
+        "不轻易表态",
+        "不急着表达"
+      ]
+    },
+    {
+      "id": 4,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E"
+      ],
+      "text": "我希望拥有非常广泛的社交圈。",
+      "hints": [
+        "社交圈大",
+        "认识很多人",
+        "广结交友"
+      ]
+    },
+    {
+      "id": 5,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E"
+      ],
+      "text": "在聚会里我通常是带动气氛的人。",
+      "hints": [
+        "气氛中心",
+        "带动现场",
+        "活跃气氛"
+      ]
+    },
+    {
+      "id": 6,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E"
+      ],
+      "text": "我动静很大。",
+      "hints": [
+        "声音大",
+        "吵闹",
+        "动静大"
+      ]
+    },
+    {
+      "id": 7,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S"
+      ],
+      "text": "我会回避哲学性的讨论。",
+      "hints": [
+        "不爱抽象讨论",
+        "回避哲学",
+        "不爱空谈"
+      ]
+    },
+    {
+      "id": 8,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S"
+      ],
+      "text": "我不喜欢分析文学作品。",
+      "hints": [
+        "不爱文本分析",
+        "不爱文学解读",
+        "不爱深究象征"
+      ]
+    },
+    {
+      "id": 9,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S"
+      ],
+      "text": "我倾向于坚持传统、常规的做法。",
+      "hints": [
+        "传统方式",
+        "常规路线",
+        "老办法"
+      ]
+    },
+    {
+      "id": 10,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N"
+      ],
+      "text": "我喜欢阅读有挑战性的内容。",
+      "hints": [
+        "喜欢硬核内容",
+        "爱思考复杂问题",
+        "爱啃难材料"
+      ]
+    },
+    {
+      "id": 11,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N"
+      ],
+      "text": "我会在事物中寻找隐藏的含义。",
+      "hints": [
+        "隐藏含义",
+        "深层意思",
+        "言外之意"
+      ]
+    },
+    {
+      "id": 12,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N"
+      ],
+      "text": "我几乎对一切都感到好奇。",
+      "hints": [
+        "什么都好奇",
+        "求知欲强",
+        "探究"
+      ]
+    },
+    {
+      "id": 13,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "F"
+      ],
+      "text": "我想体验炽烈的热情与浪漫。",
+      "hints": [
+        "浪漫",
+        "激情",
+        "感情体验"
+      ]
+    },
+    {
+      "id": 14,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "F"
+      ],
+      "text": "他人的不幸会让我深受触动。",
+      "hints": [
+        "很共情",
+        "心疼别人",
+        "他人受苦会难过"
+      ]
+    },
+    {
+      "id": 15,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "F"
+      ],
+      "text": "在做重要决定时，我会倾听自己的感受。",
+      "hints": [
+        "感受优先",
+        "跟随心意",
+        "看内心"
+      ]
+    },
+    {
+      "id": 16,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "T"
+      ],
+      "text": "我把逻辑看得高于一切。",
+      "hints": [
+        "逻辑最重要",
+        "理性优先",
+        "重分析"
+      ]
+    },
+    {
+      "id": 17,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "T"
+      ],
+      "text": "我不理解那些很容易情绪化的人。",
+      "hints": [
+        "不理解情绪化",
+        "看不懂感情用事",
+        "讨厌失控"
+      ]
+    },
+    {
+      "id": 18,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "T"
+      ],
+      "text": "与其被喜爱，我宁愿被敬畏。",
+      "hints": [
+        "不求讨喜",
+        "威慑",
+        "尊重胜过喜欢"
+      ]
+    },
+    {
+      "id": 19,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "J"
+      ],
+      "text": "我喜欢秩序。",
+      "hints": [
+        "喜欢秩序",
+        "有条理",
+        "规整"
+      ]
+    },
+    {
+      "id": 20,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "J"
+      ],
+      "text": "我做事会按照计划来。",
+      "hints": [
+        "按计划做事",
+        "照步骤来",
+        "计划性"
+      ]
+    },
+    {
+      "id": 21,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "J"
+      ],
+      "text": "我总是事先做好准备。",
+      "hints": [
+        "提前准备",
+        "有准备",
+        "未雨绸缪"
+      ]
+    },
+    {
+      "id": 22,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "P"
+      ],
+      "text": "我经常到最后一刻才做计划。",
+      "hints": [
+        "临时起意",
+        "最后才计划",
+        "即兴安排"
+      ]
+    },
+    {
+      "id": 23,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "P"
+      ],
+      "text": "我有时会在没有明显理由的情况下做事。",
+      "hints": [
+        "随性而为",
+        "凭一时兴致",
+        "说做就做"
+      ]
+    },
+    {
+      "id": 24,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "P"
+      ],
+      "text": "本该几小时做完的事，我常常因为不断分心而拖上好几天。",
+      "hints": [
+        "容易分心",
+        "拖拖拉拉",
+        "被别的事吸走"
+      ]
+    },
+    {
+      "id": 25,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "J"
+      ],
+      "text": "我一直在努力提升自己。",
+      "hints": [
+        "自我提升",
+        "持续改进",
+        "精进"
+      ]
+    },
+    {
+      "id": 26,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "J"
+      ],
+      "text": "我总觉得自己必须去做某件重要的事。",
+      "hints": [
+        "想做重要的事",
+        "要有意义",
+        "要做大事"
+      ]
+    },
+    {
+      "id": 27,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "P"
+      ],
+      "text": "我对这个世界抱有一些与众不同的看法。",
+      "hints": [
+        "世界观特别",
+        "想法奇特",
+        "特异观点"
+      ]
+    },
+    {
+      "id": 28,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "P"
+      ],
+      "text": "我不喜欢一成不变的日常和重复。",
+      "hints": [
+        "讨厌例行公事",
+        "不喜欢重复",
+        "要变化"
+      ]
+    },
+    {
+      "id": 29,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "J"
+      ],
+      "text": "我会尽力遵守规则。",
+      "hints": [
+        "遵守规则",
+        "守规矩",
+        "按规范来"
+      ]
+    },
+    {
+      "id": 30,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "J"
+      ],
+      "text": "我尊重权威。",
+      "hints": [
+        "尊重权威",
+        "服从正规体系",
+        "看重正式秩序"
+      ]
+    },
+    {
+      "id": 31,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "P"
+      ],
+      "text": "我喜欢轻松一点，不把自己逼得太紧。",
+      "hints": [
+        "喜欢轻松",
+        "不想太累",
+        "想悠着来"
+      ]
+    },
+    {
+      "id": 32,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "P"
+      ],
+      "text": "我会选择更轻松、更省力的做法。",
+      "hints": [
+        "走轻松路线",
+        "图省力",
+        "选容易的"
+      ]
+    },
+    {
+      "id": 33,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "F"
+      ],
+      "text": "我会把自己的秘密告诉别人。",
+      "hints": [
+        "会说秘密",
+        "对人敞开",
+        "分享私事"
+      ]
+    },
+    {
+      "id": 34,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "F"
+      ],
+      "text": "我会对别人做出很明显、很热情的友好表示。",
+      "hints": [
+        "大方示好",
+        "热情表达友谊",
+        "会做大动作"
+      ]
+    },
+    {
+      "id": 35,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "T"
+      ],
+      "text": "我享受挑战与竞争。",
+      "hints": [
+        "喜欢挑战",
+        "爱竞争",
+        "好胜"
+      ]
+    },
+    {
+      "id": 36,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "T"
+      ],
+      "text": "我的自尊心很强，也很看得起自己。",
+      "hints": [
+        "自尊高",
+        "自信强",
+        "自我评价高"
+      ]
+    },
+    {
+      "id": 37,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "F"
+      ],
+      "text": "我很容易觉得难为情或尴尬。",
+      "hints": [
+        "容易害羞",
+        "容易尴尬",
+        "脸皮薄"
+      ]
+    },
+    {
+      "id": 38,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "F"
+      ],
+      "text": "一旦事情接连发生，我很容易被压得喘不过气。",
+      "hints": [
+        "容易被压垮",
+        "容易不堪重负",
+        "事件多就吃不消"
+      ]
+    },
+    {
+      "id": 39,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "T"
+      ],
+      "text": "我不太擅长表达自己的感受。",
+      "hints": [
+        "不擅表达感受",
+        "感情表达困难",
+        "说不出口"
+      ]
+    },
+    {
+      "id": 40,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "T"
+      ],
+      "text": "我不会轻易相信别人。",
+      "hints": [
+        "不轻信",
+        "戒备",
+        "难以信任他人"
+      ]
+    },
+    {
+      "id": 41,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "T",
+      "right_pole": "F",
+      "left_text": "怀疑谨慎",
+      "right_text": "愿意相信",
+      "left_hints": [
+        "怀疑",
+        "存疑",
+        "审慎"
+      ],
+      "right_hints": [
+        "愿意相信",
+        "信任",
+        "相信人"
+      ]
+    },
+    {
+      "id": 42,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "P",
+      "right_pole": "J",
+      "left_text": "混乱随性",
+      "right_text": "有条理",
+      "left_hints": [
+        "混乱",
+        "随性",
+        "散漫"
+      ],
+      "right_hints": [
+        "有条理",
+        "组织",
+        "整理"
+      ]
+    },
+    {
+      "id": 43,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "N",
+      "right_pole": "S",
+      "left_text": "想看整体全貌",
+      "right_text": "想看具体细节",
+      "left_hints": [
+        "大局",
+        "整体",
+        "方向"
+      ],
+      "right_hints": [
+        "细节",
+        "具体",
+        "步骤"
+      ]
+    },
+    {
+      "id": 44,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "E",
+      "right_pole": "I",
+      "left_text": "精力充沛",
+      "right_text": "平和温和",
+      "left_hints": [
+        "精力充沛",
+        "元气",
+        "活力"
+      ],
+      "right_hints": [
+        "平静",
+        "温和",
+        "安静"
+      ]
+    },
+    {
+      "id": 45,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "F",
+      "right_pole": "T",
+      "left_text": "跟随内心",
+      "right_text": "跟随理性",
+      "left_hints": [
+        "跟随内心",
+        "凭心意",
+        "感受优先"
+      ],
+      "right_hints": [
+        "跟随理性",
+        "逻辑优先",
+        "讲道理"
+      ]
+    },
+    {
+      "id": 46,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "J",
+      "right_pole": "P",
+      "left_text": "事先准备",
+      "right_text": "临场发挥",
+      "left_hints": [
+        "提前准备",
+        "预先",
+        "先安排"
+      ],
+      "right_hints": [
+        "即兴",
+        "临场",
+        "随机应变"
+      ]
+    },
+    {
+      "id": 47,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "S",
+      "right_pole": "N",
+      "left_text": "专注当下",
+      "right_text": "专注未来",
+      "left_hints": [
+        "关注当下",
+        "眼前",
+        "现在"
+      ],
+      "right_hints": [
+        "关注未来",
+        "以后",
+        "长远"
+      ]
+    },
+    {
+      "id": 48,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "I",
+      "right_pole": "E",
+      "left_text": "独自工作时状态最好",
+      "right_text": "在团队中工作时状态最好",
+      "left_hints": [
+        "独自工作",
+        "一个人更好",
+        "单独发挥"
+      ],
+      "right_hints": [
+        "团队中表现更好",
+        "一起做更强",
+        "协作发挥"
+      ]
+    }
+  ]
+}

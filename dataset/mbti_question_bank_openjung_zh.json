@@ -1,0 +1,203 @@
+{
+  "source": "https://openjung.org/api/questions?locale=zh",
+  "source_docs": "https://openjung.org/api-docs",
+  "methodology": "https://openjung.org/methodology",
+  "license_note": "Open Extended Jungian Type Scales (OEJTS), referenced by OpenJung as open-source / CC BY-NC-SA 4.0.",
+  "data": {
+    "totalQuestions": 32,
+    "questions": [
+      {
+        "id": 1,
+        "dimension": "JP",
+        "leftTrait": "制定清单",
+        "rightTrait": "依靠记忆"
+      },
+      {
+        "id": 2,
+        "dimension": "TF",
+        "leftTrait": "愿意相信",
+        "rightTrait": "持怀疑态度"
+      },
+      {
+        "id": 3,
+        "dimension": "EI",
+        "leftTrait": "独处时感到无聊",
+        "rightTrait": "需要独处时间"
+      },
+      {
+        "id": 4,
+        "dimension": "SN",
+        "leftTrait": "接受事物的本来面目",
+        "rightTrait": "对现状不满足"
+      },
+      {
+        "id": 5,
+        "dimension": "JP",
+        "leftTrait": "保持房间整洁",
+        "rightTrait": "随手放置东西"
+      },
+      {
+        "id": 6,
+        "dimension": "TF",
+        "leftTrait": "认为\"像机器人\"是侮辱",
+        "rightTrait": "追求机械般的思维"
+      },
+      {
+        "id": 7,
+        "dimension": "EI",
+        "leftTrait": "精力充沛",
+        "rightTrait": "平静温和"
+      },
+      {
+        "id": 8,
+        "dimension": "SN",
+        "leftTrait": "喜欢选择题",
+        "rightTrait": "喜欢论述题"
+      },
+      {
+        "id": 9,
+        "dimension": "JP",
+        "leftTrait": "有条理",
+        "rightTrait": "随性混乱"
+      },
+      {
+        "id": 10,
+        "dimension": "TF",
+        "leftTrait": "容易受伤",
+        "rightTrait": "脸皮厚"
+      },
+      {
+        "id": 11,
+        "dimension": "EI",
+        "leftTrait": "在团队中表现最佳",
+        "rightTrait": "独自工作表现最佳"
+      },
+      {
+        "id": 12,
+        "dimension": "SN",
+        "leftTrait": "关注过去",
+        "rightTrait": "关注未来"
+      },
+      {
+        "id": 13,
+        "dimension": "JP",
+        "leftTrait": "提前规划",
+        "rightTrait": "最后一刻才计划"
+      },
+      {
+        "id": 14,
+        "dimension": "TF",
+        "leftTrait": "渴望他人的爱",
+        "rightTrait": "渴望他人的尊重"
+      },
+      {
+        "id": 15,
+        "dimension": "EI",
+        "leftTrait": "因聚会而兴奋",
+        "rightTrait": "因聚会而疲惫"
+      },
+      {
+        "id": 16,
+        "dimension": "SN",
+        "leftTrait": "融入群体",
+        "rightTrait": "与众不同"
+      },
+      {
+        "id": 17,
+        "dimension": "JP",
+        "leftTrait": "做出承诺",
+        "rightTrait": "保留选择"
+      },
+      {
+        "id": 18,
+        "dimension": "TF",
+        "leftTrait": "想擅长帮助他人",
+        "rightTrait": "想擅长修理事物"
+      },
+      {
+        "id": 19,
+        "dimension": "EI",
+        "leftTrait": "话比较多",
+        "rightTrait": "更善于倾听"
+      },
+      {
+        "id": 20,
+        "dimension": "SN",
+        "leftTrait": "描述发生了什么",
+        "rightTrait": "描述这意味着什么"
+      },
+      {
+        "id": 21,
+        "dimension": "JP",
+        "leftTrait": "立即完成工作",
+        "rightTrait": "拖延"
+      },
+      {
+        "id": 22,
+        "dimension": "TF",
+        "leftTrait": "跟随内心",
+        "rightTrait": "跟随理性"
+      },
+      {
+        "id": 23,
+        "dimension": "EI",
+        "leftTrait": "喜欢外出活动",
+        "rightTrait": "喜欢待在家里"
+      },
+      {
+        "id": 24,
+        "dimension": "SN",
+        "leftTrait": "想要细节",
+        "rightTrait": "想要大局观"
+      },
+      {
+        "id": 25,
+        "dimension": "JP",
+        "leftTrait": "提前准备",
+        "rightTrait": "即兴发挥"
+      },
+      {
+        "id": 26,
+        "dimension": "TF",
+        "leftTrait": "道德基于同情",
+        "rightTrait": "道德基于正义"
+      },
+      {
+        "id": 27,
+        "dimension": "EI",
+        "leftTrait": "自然而然大声说话",
+        "rightTrait": "很难大声喊叫"
+      },
+      {
+        "id": 28,
+        "dimension": "SN",
+        "leftTrait": "经验主义",
+        "rightTrait": "理论主义"
+      },
+      {
+        "id": 29,
+        "dimension": "JP",
+        "leftTrait": "努力工作",
+        "rightTrait": "尽情玩乐"
+      },
+      {
+        "id": 30,
+        "dimension": "TF",
+        "leftTrait": "重视情感",
+        "rightTrait": "对情感感到不自在"
+      },
+      {
+        "id": 31,
+        "dimension": "EI",
+        "leftTrait": "喜欢表演",
+        "rightTrait": "避免公开演讲"
+      },
+      {
+        "id": 32,
+        "dimension": "SN",
+        "leftTrait": "想知道\"谁/什么/何时\"",
+        "rightTrait": "想知道\"为什么\""
+      }
+    ]
+  }
+}

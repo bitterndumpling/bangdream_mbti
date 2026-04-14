@@ -1,0 +1,739 @@
+{
+  "name": "Open Jungian Type Scales (OJTS v2.1)",
+  "version": "2.1",
+  "source": "https://openpsychometrics.org/tests/OJTS/",
+  "license": "CC BY-NC-SA 4.0",
+  "question_count": 48,
+  "language": "ja",
+  "translation_of": "ojts_question_bank_v2_1.json",
+  "questions": [
+    {
+      "id": 1,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I"
+      ],
+      "text": "自分が注目の的になるのは好きではない。",
+      "hints": [
+        "目立ちたくない",
+        "注目を避ける",
+        "前に出たがらない"
+      ]
+    },
+    {
+      "id": 2,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I"
+      ],
+      "text": "人から面白いことを求められる状況が嫌いだ。",
+      "hints": [
+        "笑いを求められるのが苦手",
+        "場を盛り上げ役にされたくない",
+        "無理に面白さを求められるのが嫌"
+      ]
+    },
+    {
+      "id": 3,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I"
+      ],
+      "text": "自分の意見をあえて控えることが多い。",
+      "hints": [
+        "意見を控える",
+        "簡単に表明しない",
+        "すぐには口にしない"
+      ]
+    },
+    {
+      "id": 4,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E"
+      ],
+      "text": "とても広い交友関係を持ちたい。",
+      "hints": [
+        "広い交友関係を望む",
+        "多くの人とつながりたい",
+        "顔が広い"
+      ]
+    },
+    {
+      "id": 5,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E"
+      ],
+      "text": "パーティーでは自分が場を盛り上げる中心になりやすい。",
+      "hints": [
+        "場の中心になりやすい",
+        "その場を盛り上げる",
+        "ムードメーカー"
+      ]
+    },
+    {
+      "id": 6,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E"
+      ],
+      "text": "私はかなり騒がしいほうだ。",
+      "hints": [
+        "声が大きい",
+        "にぎやか",
+        "存在感が大きい"
+      ]
+    },
+    {
+      "id": 7,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S"
+      ],
+      "text": "哲学的な議論は避ける。",
+      "hints": [
+        "抽象的な議論を避ける",
+        "哲学話が苦手",
+        "観念的な話が好きではない"
+      ]
+    },
+    {
+      "id": 8,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S"
+      ],
+      "text": "文学作品を分析するのは好きではない。",
+      "hints": [
+        "文学分析が苦手",
+        "作品解釈が好きではない",
+        "象徴を深読みしない"
+      ]
+    },
+    {
+      "id": 9,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S"
+      ],
+      "text": "従来のやり方や慣習に愛着がある。",
+      "hints": [
+        "従来のやり方",
+        "定番の手順",
+        "昔ながらの方法"
+      ]
+    },
+    {
+      "id": 10,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N"
+      ],
+      "text": "歯ごたえのある難しい文章を読むのが好きだ。",
+      "hints": [
+        "難しい内容が好き",
+        "歯ごたえのある文章を好む",
+        "知的な挑戦を楽しむ"
+      ]
+    },
+    {
+      "id": 11,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N"
+      ],
+      "text": "物事の中に隠れた意味を探そうとする。",
+      "hints": [
+        "隠れた意味を探す",
+        "表面の下を読む",
+        "行間を読む"
+      ]
+    },
+    {
+      "id": 12,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N"
+      ],
+      "text": "ほとんどあらゆることに好奇心を持つ。",
+      "hints": [
+        "何にでも好奇心を持つ",
+        "知りたがり",
+        "探究心が強い"
+      ]
+    },
+    {
+      "id": 13,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "F"
+      ],
+      "text": "情熱的でロマンチックな体験をしてみたい。",
+      "hints": [
+        "ロマンチック",
+        "情熱的",
+        "強い感情体験を求める"
+      ]
+    },
+    {
+      "id": 14,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "F"
+      ],
+      "text": "他人の不幸に深く心を動かされる。",
+      "hints": [
+        "強く共感する",
+        "他人の不幸に心を痛める",
+        "人の苦しみに動かされる"
+      ]
+    },
+    {
+      "id": 15,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "F"
+      ],
+      "text": "重要な決断をするとき、自分の気持ちを重視する。",
+      "hints": [
+        "気持ちを優先する",
+        "感情に従って決める",
+        "心の声を聞く"
+      ]
+    },
+    {
+      "id": 16,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "T"
+      ],
+      "text": "何よりも論理を重んじる。",
+      "hints": [
+        "論理最優先",
+        "理性を重視する",
+        "分析寄り"
+      ]
+    },
+    {
+      "id": 17,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "T"
+      ],
+      "text": "感情的になる人のことが理解しにくい。",
+      "hints": [
+        "感情的な反応が理解しにくい",
+        "感情任せがわからない",
+        "感情の暴走が苦手"
+      ]
+    },
+    {
+      "id": 18,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "T"
+      ],
+      "text": "愛されるより、恐れられるほうがましだ。",
+      "hints": [
+        "好かれるより恐れられたい",
+        "好意より敬意を求める",
+        "好かれなくても構わない"
+      ]
+    },
+    {
+      "id": 19,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "J"
+      ],
+      "text": "秩序が好きだ。",
+      "hints": [
+        "秩序が好き",
+        "整っていたい",
+        "きちんとしている"
+      ]
+    },
+    {
+      "id": 20,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "J"
+      ],
+      "text": "計画に沿って物事を進める。",
+      "hints": [
+        "計画通りに進める",
+        "手順を守る",
+        "計画性がある"
+      ]
+    },
+    {
+      "id": 21,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "J"
+      ],
+      "text": "いつも準備を整えている。",
+      "hints": [
+        "事前に備える",
+        "前もって準備する",
+        "抜かりなく整える"
+      ]
+    },
+    {
+      "id": 22,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "P"
+      ],
+      "text": "ぎりぎりになってから予定を立てることが多い。",
+      "hints": [
+        "直前に計画する",
+        "最後に決める",
+        "予定を後回しにする"
+      ]
+    },
+    {
+      "id": 23,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "P"
+      ],
+      "text": "はっきりした理由もなく行動することがある。",
+      "hints": [
+        "気の向くままに動く",
+        "特に理由なく行動する",
+        "思いつきで動く"
+      ]
+    },
+    {
+      "id": 24,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "P"
+      ],
+      "text": "数時間で終わるはずのことでも、気が散って何日もかかることがある。",
+      "hints": [
+        "気が散りやすい",
+        "先延ばししやすい",
+        "注意がそれて時間がかかる"
+      ]
+    },
+    {
+      "id": 25,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "J"
+      ],
+      "text": "自分をより良くするために努力している。",
+      "hints": [
+        "自己改善",
+        "成長を続ける",
+        "自分を磨く"
+      ]
+    },
+    {
+      "id": 26,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "J"
+      ],
+      "text": "いつも何か重要なことをしていなければならない気がする。",
+      "hints": [
+        "重要なことをしたい",
+        "意義を求める",
+        "大事な役割を果たしたい"
+      ]
+    },
+    {
+      "id": 27,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "P"
+      ],
+      "text": "世界について少し変わった考えを持っている。",
+      "hints": [
+        "独特な世界観",
+        "少し変わった考え",
+        "普通と違う信念"
+      ]
+    },
+    {
+      "id": 28,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "P"
+      ],
+      "text": "ルーティンや単調な繰り返しが嫌いだ。",
+      "hints": [
+        "ルーティンが嫌い",
+        "繰り返しが苦手",
+        "変化を求める"
+      ]
+    },
+    {
+      "id": 29,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "J"
+      ],
+      "text": "できるだけルールに従おうとする。",
+      "hints": [
+        "ルールを守る",
+        "規範に従う",
+        "決まりを重んじる"
+      ]
+    },
+    {
+      "id": 30,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "J"
+      ],
+      "text": "権威を尊重する。",
+      "hints": [
+        "権威を尊重する",
+        "上下関係を受け入れる",
+        "公式な秩序を重んじる"
+      ]
+    },
+    {
+      "id": 31,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "P"
+      ],
+      "text": "気楽にやるのが好きだ。",
+      "hints": [
+        "気楽にやりたい",
+        "無理したくない",
+        "ゆったり進めたい"
+      ]
+    },
+    {
+      "id": 32,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "P"
+      ],
+      "text": "楽なやり方を選ぶ。",
+      "hints": [
+        "楽な道を選ぶ",
+        "省エネ志向",
+        "簡単なやり方を選ぶ"
+      ]
+    },
+    {
+      "id": 33,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "F"
+      ],
+      "text": "自分の秘密を他人に話すことがある。",
+      "hints": [
+        "秘密を話す",
+        "人に心を開く",
+        "私事を共有する"
+      ]
+    },
+    {
+      "id": 34,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "F"
+      ],
+      "text": "人に対して大きく分かりやすい友情表現をする。",
+      "hints": [
+        "友情を大きく示す",
+        "好意を分かりやすく表す",
+        "身振り大きく親しさを見せる"
+      ]
+    },
+    {
+      "id": 35,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "T"
+      ],
+      "text": "挑戦や競争を楽しむ。",
+      "hints": [
+        "挑戦が好き",
+        "競争を楽しむ",
+        "負けず嫌い"
+      ]
+    },
+    {
+      "id": 36,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "T"
+      ],
+      "text": "自尊心がかなり高い。",
+      "hints": [
+        "自尊心が高い",
+        "自信が強い",
+        "自己評価が高い"
+      ]
+    },
+    {
+      "id": 37,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "F"
+      ],
+      "text": "恥ずかしくなりやすい。",
+      "hints": [
+        "恥ずかしがりや",
+        "すぐ照れる",
+        "気まずさを感じやすい"
+      ]
+    },
+    {
+      "id": 38,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "F"
+      ],
+      "text": "出来事が重なると圧倒されやすい。",
+      "hints": [
+        "圧倒されやすい",
+        "出来事が重なるときつい",
+        "抱え込みやすい"
+      ]
+    },
+    {
+      "id": 39,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "T"
+      ],
+      "text": "自分の気持ちを表現するのが苦手だ。",
+      "hints": [
+        "感情表現が苦手",
+        "気持ちを言葉にしにくい",
+        "思いを口にしづらい"
+      ]
+    },
+    {
+      "id": 40,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "T"
+      ],
+      "text": "他人を簡単には信用しない。",
+      "hints": [
+        "簡単には信じない",
+        "警戒心が強い",
+        "人を信用しにくい"
+      ]
+    },
+    {
+      "id": 41,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "T",
+      "right_pole": "F",
+      "left_text": "懐疑的",
+      "right_text": "信じたい",
+      "left_hints": [
+        "懐疑的",
+        "疑い深い",
+        "慎重"
+      ],
+      "right_hints": [
+        "信じたい",
+        "信頼しやすい",
+        "信じる側に寄る"
+      ]
+    },
+    {
+      "id": 42,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "P",
+      "right_pole": "J",
+      "left_text": "混沌としている",
+      "right_text": "整っている",
+      "left_hints": [
+        "混乱気味",
+        "行き当たりばったり",
+        "散らかりやすい"
+      ],
+      "right_hints": [
+        "整理されている",
+        "筋道立っている",
+        "きちんとしている"
+      ]
+    },
+    {
+      "id": 43,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "N",
+      "right_pole": "S",
+      "left_text": "全体像をつかみたい",
+      "right_text": "細部を知りたい",
+      "left_hints": [
+        "全体像",
+        "大きな流れ",
+        "方向性"
+      ],
+      "right_hints": [
+        "細部",
+        "具体性",
+        "手順"
+      ]
+    },
+    {
+      "id": 44,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "E",
+      "right_pole": "I",
+      "left_text": "エネルギッシュ",
+      "right_text": "穏やか",
+      "left_hints": [
+        "活力がある",
+        "元気が強い",
+        "勢いがある"
+      ],
+      "right_hints": [
+        "穏やか",
+        "落ち着いている",
+        "静かめ"
+      ]
+    },
+    {
+      "id": 45,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "F",
+      "right_pole": "T",
+      "left_text": "心に従う",
+      "right_text": "頭で判断する",
+      "left_hints": [
+        "心に従う",
+        "感情を優先する",
+        "気持ち重視"
+      ],
+      "right_hints": [
+        "頭で考える",
+        "論理を優先する",
+        "理屈で判断する"
+      ]
+    },
+    {
+      "id": 46,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "J",
+      "right_pole": "P",
+      "left_text": "準備する",
+      "right_text": "即興でやる",
+      "left_hints": [
+        "事前に備える",
+        "前もって整える",
+        "先に段取りする"
+      ],
+      "right_hints": [
+        "即興で動く",
+        "その場で合わせる",
+        "アドリブ対応"
+      ]
+    },
+    {
+      "id": 47,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "S",
+      "right_pole": "N",
+      "left_text": "現在に焦点を当てる",
+      "right_text": "未来に焦点を当てる",
+      "left_hints": [
+        "今に集中する",
+        "目の前を見る",
+        "現在志向"
+      ],
+      "right_hints": [
+        "未来を見る",
+        "先を考える",
+        "長期志向"
+      ]
+    },
+    {
+      "id": 48,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "I",
+      "right_pole": "E",
+      "left_text": "一人で作業すると最もうまくいく",
+      "right_text": "集団で作業すると最もうまくいく",
+      "left_hints": [
+        "一人のほうが力を出せる",
+        "単独作業向き",
+        "自分だけで集中できる"
+      ],
+      "right_hints": [
+        "チームで力を出せる",
+        "協力すると強い",
+        "集団作業向き"
+      ]
+    }
+  ]
+}

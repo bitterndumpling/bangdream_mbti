@@ -1,0 +1,739 @@
+{
+  "name": "Open Jungian Type Scales (OJTS v2.1)",
+  "version": "2.1",
+  "source": "https://openpsychometrics.org/tests/OJTS/",
+  "license": "CC BY-NC-SA 4.0",
+  "question_count": 48,
+  "language": "en",
+  "translation_of": "ojts_question_bank_v2_1.json",
+  "questions": [
+    {
+      "id": 1,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I"
+      ],
+      "text": "I don't like to draw attention to myself.",
+      "hints": [
+        "low-key",
+        "avoids the spotlight",
+        "does not seek attention"
+      ]
+    },
+    {
+      "id": 2,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I"
+      ],
+      "text": "I hate situations where people expect me to be funny.",
+      "hints": [
+        "dislikes being expected to be funny",
+        "avoids entertainer role",
+        "hates forced humor"
+      ]
+    },
+    {
+      "id": 3,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I"
+      ],
+      "text": "I hold back my opinions.",
+      "hints": [
+        "holds back opinions",
+        "reserved in speaking up",
+        "not quick to voice views"
+      ]
+    },
+    {
+      "id": 4,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E"
+      ],
+      "text": "I want a huge social circle.",
+      "hints": [
+        "wants a large social circle",
+        "likes knowing many people",
+        "broadly social"
+      ]
+    },
+    {
+      "id": 5,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E"
+      ],
+      "text": "I am the life of the party.",
+      "hints": [
+        "life of the party",
+        "energizes the room",
+        "center of the atmosphere"
+      ]
+    },
+    {
+      "id": 6,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E"
+      ],
+      "text": "I make lots of noise.",
+      "hints": [
+        "loud",
+        "noisy",
+        "high-energy presence"
+      ]
+    },
+    {
+      "id": 7,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S"
+      ],
+      "text": "I avoid philosophical discussions.",
+      "hints": [
+        "avoids abstract discussion",
+        "not into philosophy",
+        "dislikes lofty talk"
+      ]
+    },
+    {
+      "id": 8,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S"
+      ],
+      "text": "I don't like to analyze literature.",
+      "hints": [
+        "dislikes literary analysis",
+        "not into text interpretation",
+        "avoids symbolism reading"
+      ]
+    },
+    {
+      "id": 9,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S"
+      ],
+      "text": "I am attached to conventional ways.",
+      "hints": [
+        "conventional methods",
+        "traditional approach",
+        "sticks to standard ways"
+      ]
+    },
+    {
+      "id": 10,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N"
+      ],
+      "text": "I love to read challenging material.",
+      "hints": [
+        "likes challenging material",
+        "enjoys difficult reading",
+        "wants intellectual challenge"
+      ]
+    },
+    {
+      "id": 11,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N"
+      ],
+      "text": "I look for hidden meanings in things.",
+      "hints": [
+        "looks for hidden meaning",
+        "reads beneath the surface",
+        "searches for subtext"
+      ]
+    },
+    {
+      "id": 12,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N"
+      ],
+      "text": "I am curious about everything.",
+      "hints": [
+        "curious about everything",
+        "strong curiosity",
+        "exploratory"
+      ]
+    },
+    {
+      "id": 13,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "F"
+      ],
+      "text": "I want to experience passion and romance.",
+      "hints": [
+        "romantic",
+        "passionate",
+        "seeks emotional intensity"
+      ]
+    },
+    {
+      "id": 14,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "F"
+      ],
+      "text": "I am deeply moved by others' misfortunes.",
+      "hints": [
+        "deeply empathetic",
+        "moved by others suffering",
+        "feels others pain"
+      ]
+    },
+    {
+      "id": 15,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "F"
+      ],
+      "text": "I listen to my feelings when making important decisions.",
+      "hints": [
+        "follows feelings",
+        "feeling-led decisions",
+        "listens to the heart"
+      ]
+    },
+    {
+      "id": 16,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "T"
+      ],
+      "text": "I prize logic above all else.",
+      "hints": [
+        "logic above all",
+        "reason first",
+        "analysis-oriented"
+      ]
+    },
+    {
+      "id": 17,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "T"
+      ],
+      "text": "I don't understand people who get emotional.",
+      "hints": [
+        "does not understand emotional reactions",
+        "confused by emotionality",
+        "dislikes emotional loss of control"
+      ]
+    },
+    {
+      "id": 18,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "T"
+      ],
+      "text": "I'd rather be feared than loved.",
+      "hints": [
+        "would rather be feared",
+        "values respect over affection",
+        "does not need to be liked"
+      ]
+    },
+    {
+      "id": 19,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "J"
+      ],
+      "text": "I like order.",
+      "hints": [
+        "likes order",
+        "prefers structure",
+        "orderly"
+      ]
+    },
+    {
+      "id": 20,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "J"
+      ],
+      "text": "I do things according to a plan.",
+      "hints": [
+        "acts according to plan",
+        "step-by-step",
+        "planned approach"
+      ]
+    },
+    {
+      "id": 21,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "J"
+      ],
+      "text": "I am always prepared.",
+      "hints": [
+        "always prepared",
+        "plans ahead",
+        "ready in advance"
+      ]
+    },
+    {
+      "id": 22,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "P"
+      ],
+      "text": "I often make last-minute plans.",
+      "hints": [
+        "last-minute planning",
+        "plans late",
+        "spontaneous scheduling"
+      ]
+    },
+    {
+      "id": 23,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "P"
+      ],
+      "text": "I do things for no apparent reason.",
+      "hints": [
+        "acts on impulse",
+        "does things without clear reason",
+        "spur-of-the-moment"
+      ]
+    },
+    {
+      "id": 24,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "P"
+      ],
+      "text": "It takes me days to do things that should take hours because I keep getting distracted.",
+      "hints": [
+        "easily distracted",
+        "procrastinates",
+        "takes too long due to drifting attention"
+      ]
+    },
+    {
+      "id": 25,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "J"
+      ],
+      "text": "I work on improving myself.",
+      "hints": [
+        "self-improvement",
+        "keeps improving",
+        "works on growth"
+      ]
+    },
+    {
+      "id": 26,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "J"
+      ],
+      "text": "I always feel like I need to be doing something important.",
+      "hints": [
+        "needs to do something important",
+        "seeks significance",
+        "driven toward meaningful action"
+      ]
+    },
+    {
+      "id": 27,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "P"
+      ],
+      "text": "I have unusual beliefs about the world.",
+      "hints": [
+        "unusual worldview",
+        "atypical beliefs",
+        "eccentric ideas"
+      ]
+    },
+    {
+      "id": 28,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "N",
+        "P"
+      ],
+      "text": "I dislike routine.",
+      "hints": [
+        "dislikes routine",
+        "hates repetition",
+        "wants variety"
+      ]
+    },
+    {
+      "id": 29,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "J"
+      ],
+      "text": "I try my best to follow the rules.",
+      "hints": [
+        "follows rules",
+        "rule-abiding",
+        "stays within guidelines"
+      ]
+    },
+    {
+      "id": 30,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "J"
+      ],
+      "text": "I respect authority.",
+      "hints": [
+        "respects authority",
+        "accepts hierarchy",
+        "values formal order"
+      ]
+    },
+    {
+      "id": 31,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "P"
+      ],
+      "text": "I like to take it easy.",
+      "hints": [
+        "likes to take it easy",
+        "prefers ease",
+        "does not want to overstrain"
+      ]
+    },
+    {
+      "id": 32,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "S",
+        "P"
+      ],
+      "text": "I choose the easy way.",
+      "hints": [
+        "chooses the easy way",
+        "prefers less effort",
+        "takes the easier route"
+      ]
+    },
+    {
+      "id": 33,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "F"
+      ],
+      "text": "I tell other people my secrets.",
+      "hints": [
+        "shares secrets",
+        "opens up to others",
+        "reveals private matters"
+      ]
+    },
+    {
+      "id": 34,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "F"
+      ],
+      "text": "I make big gestures of friendship to people.",
+      "hints": [
+        "makes big gestures of friendship",
+        "openly shows affection",
+        "demonstrative with people"
+      ]
+    },
+    {
+      "id": 35,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "T"
+      ],
+      "text": "I enjoy challenges and competition.",
+      "hints": [
+        "enjoys challenge",
+        "competitive",
+        "likes testing limits"
+      ]
+    },
+    {
+      "id": 36,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "E",
+        "T"
+      ],
+      "text": "I have very high self-esteem.",
+      "hints": [
+        "high self-esteem",
+        "very self-confident",
+        "rates self highly"
+      ]
+    },
+    {
+      "id": 37,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "F"
+      ],
+      "text": "I get embarrassed easily.",
+      "hints": [
+        "embarrassed easily",
+        "easily self-conscious",
+        "thin-skinned socially"
+      ]
+    },
+    {
+      "id": 38,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "F"
+      ],
+      "text": "I become overwhelmed by events.",
+      "hints": [
+        "gets overwhelmed easily",
+        "buckles under events",
+        "overloaded by too much happening"
+      ]
+    },
+    {
+      "id": 39,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "T"
+      ],
+      "text": "I have difficulty expressing my feelings.",
+      "hints": [
+        "struggles to express feelings",
+        "emotionally inexpressive",
+        "finds feelings hard to voice"
+      ]
+    },
+    {
+      "id": 40,
+      "section": 1,
+      "format": "agreement",
+      "poles": [
+        "I",
+        "T"
+      ],
+      "text": "I don't trust others easily.",
+      "hints": [
+        "slow to trust",
+        "guarded",
+        "does not trust easily"
+      ]
+    },
+    {
+      "id": 41,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "T",
+      "right_pole": "F",
+      "left_text": "skeptical",
+      "right_text": "wants to believe",
+      "left_hints": [
+        "skeptical",
+        "doubting",
+        "cautious"
+      ],
+      "right_hints": [
+        "wants to believe",
+        "trusting",
+        "ready to believe"
+      ]
+    },
+    {
+      "id": 42,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "P",
+      "right_pole": "J",
+      "left_text": "chaotic",
+      "right_text": "organized",
+      "left_hints": [
+        "chaotic",
+        "messy",
+        "unstructured"
+      ],
+      "right_hints": [
+        "organized",
+        "orderly",
+        "structured"
+      ]
+    },
+    {
+      "id": 43,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "N",
+      "right_pole": "S",
+      "left_text": "wants the big picture",
+      "right_text": "wants the details",
+      "left_hints": [
+        "big picture",
+        "overall view",
+        "direction-focused"
+      ],
+      "right_hints": [
+        "details",
+        "specifics",
+        "step-focused"
+      ]
+    },
+    {
+      "id": 44,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "E",
+      "right_pole": "I",
+      "left_text": "energetic",
+      "right_text": "mellow",
+      "left_hints": [
+        "energetic",
+        "high-energy",
+        "lively"
+      ],
+      "right_hints": [
+        "mellow",
+        "calm",
+        "gentle"
+      ]
+    },
+    {
+      "id": 45,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "F",
+      "right_pole": "T",
+      "left_text": "follows the heart",
+      "right_text": "follows the head",
+      "left_hints": [
+        "follows the heart",
+        "feeling-led",
+        "emotion first"
+      ],
+      "right_hints": [
+        "follows the head",
+        "logic-led",
+        "reason first"
+      ]
+    },
+    {
+      "id": 46,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "J",
+      "right_pole": "P",
+      "left_text": "prepares",
+      "right_text": "improvises",
+      "left_hints": [
+        "prepares",
+        "plans ahead",
+        "sets things up first"
+      ],
+      "right_hints": [
+        "improvises",
+        "ad-libs",
+        "makes it up on the spot"
+      ]
+    },
+    {
+      "id": 47,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "S",
+      "right_pole": "N",
+      "left_text": "focused on the present",
+      "right_text": "focused on the future",
+      "left_hints": [
+        "focused on the present",
+        "present-oriented",
+        "attends to now"
+      ],
+      "right_hints": [
+        "focused on the future",
+        "future-oriented",
+        "looks ahead"
+      ]
+    },
+    {
+      "id": 48,
+      "section": 2,
+      "format": "bipolar",
+      "left_pole": "I",
+      "right_pole": "E",
+      "left_text": "works best alone",
+      "right_text": "works best in groups",
+      "left_hints": [
+        "works best alone",
+        "better solo",
+        "strongest when working independently"
+      ],
+      "right_hints": [
+        "works best in groups",
+        "better in teams",
+        "strongest when collaborating"
+      ]
+    }
+  ]
+}
