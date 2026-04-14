@@ -4,8 +4,8 @@ window.BANGDREAM_MBTI_DATA = {
     "ojtsSource": "https://openpsychometrics.org/tests/OJTS/",
     "ojtsLicense": "CC BY-NC-SA 4.0",
     "referenceSite": "https://jcver.github.io/Gakumas-idolmaster-MBTI-test/",
-    "fandomCharacters": "https://bandori.fandom.com/wiki/Characters",
-    "fandomColorCodes": "https://bandori.fandom.com/wiki/Category:Character_Color_Codes",
+    "fandomCharacters": "",
+    "fandomColorCodes": "",
     "fandomWiki": "https://bandori.fandom.com/wiki/BanG_Dream!_Wikia",
     "copyrightNotice": "版权声明：页面中使用的 BanG Dream! 相关素材版权归 Bushiroad 所有，仅用于非商业角色性格拟合展示。"
   },
@@ -2230,66 +2230,66 @@ window.BANGDREAM_MBTI_DATA = {
   },
   "bands": {
     "popipa": {
-      "logo": "https://static.wikia.nocookie.net/bandori/images/2/2a/Poppin%27Party_logo.png/revision/latest/scale-to-width-down/250?cb=20200327142717",
-      "icon": "https://static.wikia.nocookie.net/bandori/images/b/b6/Icon_popipa.svg/revision/latest/scale-to-width-down/40?cb=20210407055615",
-      "page_url": "https://bandori.fandom.com/wiki/Poppin'Party"
+      "logo": "https://free.picui.cn/free/2026/04/14/69de332de0818.png",
+      "icon": "https://free.picui.cn/free/2026/04/14/69de332a1606d.png",
+      "page_url": ""
     },
     "afglo": {
-      "logo": "https://static.wikia.nocookie.net/bandori/images/f/f9/Afterglow_logo.png/revision/latest/scale-to-width-down/250?cb=20211201105320",
-      "icon": "https://static.wikia.nocookie.net/bandori/images/1/1f/Icon_afterglow.svg/revision/latest/scale-to-width-down/20?cb=20210328073813",
-      "page_url": "https://bandori.fandom.com/wiki/Afterglow"
+      "logo": "https://free.picui.cn/free/2026/04/14/69de332a38ba6.png",
+      "icon": "https://free.picui.cn/free/2026/04/14/69de33283a7eb.png",
+      "page_url": ""
     },
     "pasupare": {
-      "logo": "https://static.wikia.nocookie.net/bandori/images/2/2e/Pastel%2APalettes_logo.png/revision/latest/scale-to-width-down/228?cb=20230828140441",
-      "icon": "https://static.wikia.nocookie.net/bandori/images/b/bb/Icon_pasupare.svg/revision/latest/scale-to-width-down/40?cb=20210328073625",
-      "page_url": "https://bandori.fandom.com/wiki/Pastel*Palettes"
+      "logo": "https://free.picui.cn/free/2026/04/14/69de332d56589.png",
+      "icon": "https://free.picui.cn/free/2026/04/14/69de3329e667b.png",
+      "page_url": ""
     },
     "roselia": {
-      "logo": "https://static.wikia.nocookie.net/bandori/images/a/aa/Roselia_logo.png/revision/latest/scale-to-width-down/229?cb=20211201105701",
-      "icon": "https://static.wikia.nocookie.net/bandori/images/d/de/Icon_roselia.svg/revision/latest/scale-to-width-down/40?cb=20210710030837",
-      "page_url": "https://bandori.fandom.com/wiki/Roselia"
+      "logo": "https://free.picui.cn/free/2026/04/14/69de332de28a4.png",
+      "icon": "https://free.picui.cn/free/2026/04/14/69de332a31f36.png",
+      "page_url": ""
     },
     "hhw": {
-      "logo": "https://static.wikia.nocookie.net/bandori/images/6/65/Hello%2C_Happy_World%21_logo.png/revision/latest/scale-to-width-down/231?cb=20211201110149",
-      "icon": "https://static.wikia.nocookie.net/bandori/images/e/e4/Icon_hhw.svg/revision/latest/scale-to-width-down/35?cb=20210328073349",
-      "page_url": "https://bandori.fandom.com/wiki/Hello,_Happy_World!"
+      "logo": "https://free.picui.cn/free/2026/04/14/69de332c0bd3f.png",
+      "icon": "https://free.picui.cn/free/2026/04/14/69de33286186f.png",
+      "page_url": ""
     },
     "morfo": {
-      "logo": "https://static.wikia.nocookie.net/bandori/images/7/7a/Morfonica_logo.png/revision/latest/scale-to-width-down/231?cb=20200810080918",
-      "icon": "https://static.wikia.nocookie.net/bandori/images/3/34/Icon_morfonica.svg/revision/latest/scale-to-width-down/40?cb=20210215040928",
-      "page_url": "https://bandori.fandom.com/wiki/Morfonica"
+      "logo": "https://free.picui.cn/free/2026/04/14/69de332c0bd3e.png",
+      "icon": "https://free.picui.cn/free/2026/04/14/69de33286273e.png",
+      "page_url": ""
     },
     "ras": {
-      "logo": "https://static.wikia.nocookie.net/bandori/images/7/7f/RAISE_A_SUILEN_logo.png/revision/latest/scale-to-width-down/221?cb=20200810080553",
-      "icon": "https://static.wikia.nocookie.net/bandori/images/2/24/Icon_ras.svg/revision/latest/scale-to-width-down/40?cb=20210215040854",
-      "page_url": "https://bandori.fandom.com/wiki/RAISE_A_SUILEN"
+      "logo": "https://free.picui.cn/free/2026/04/14/69de332ddd5e3.png",
+      "icon": "https://free.picui.cn/free/2026/04/14/69de332a2e8fc.png",
+      "page_url": ""
     },
     "mygo": {
-      "logo": "https://static.wikia.nocookie.net/bandori/images/6/65/MyGO%21%21%21%21%21_logo.png/revision/latest/scale-to-width-down/205?cb=20230915160317",
-      "icon": "https://static.wikia.nocookie.net/bandori/images/a/ac/Icon_mygo.png/revision/latest/scale-to-width-down/40?cb=20230916120900",
-      "page_url": "https://bandori.fandom.com/wiki/MyGO!!!!!"
+      "logo": "https://free.picui.cn/free/2026/04/14/69de332c2eba6.png",
+      "icon": "https://free.picui.cn/free/2026/04/14/69de33285ecbc.png",
+      "page_url": ""
     },
     "ave": {
-      "logo": "https://static.wikia.nocookie.net/bandori/images/3/37/Ave_Mujica_logo.png/revision/latest/scale-to-width-down/242?cb=20250122144511",
-      "icon": "https://static.wikia.nocookie.net/bandori/images/d/dd/Ave_Mujica_icon.svg/revision/latest/scale-to-width-down/37?cb=20230605093732",
-      "page_url": "https://bandori.fandom.com/wiki/Ave_Mujica"
+      "logo": "https://free.picui.cn/free/2026/04/14/69de332bb7b5c.png",
+      "icon": "https://free.picui.cn/free/2026/04/14/69de33286e14f.png",
+      "page_url": ""
     },
     "sumimi": {
-      "logo": "https://static.wikia.nocookie.net/bandori/images/a/a4/Sumimi_logo.png/revision/latest/scale-to-width-down/150?cb=20240806011453",
-      "icon": "https://static.wikia.nocookie.net/bandori/images/a/a4/Sumimi_logo.png/revision/latest/scale-to-width-down/150?cb=20240806011453",
-      "page_url": "https://bandori.fandom.com/wiki/sumimi"
+      "logo": "https://free.picui.cn/free/2026/04/14/69de332e00205.png",
+      "icon": "https://free.picui.cn/free/2026/04/14/69de332e00205.png",
+      "page_url": ""
     },
     "bangdream": {
-      "logo": "https://static.wikia.nocookie.net/bandori/images/4/4b/BanG_Dream%21_Logo.svg/revision/latest?cb=20180922150901",
-      "icon": "https://static.wikia.nocookie.net/bandori/images/4/4b/BanG_Dream%21_Logo.svg/revision/latest?cb=20180922150901",
-      "page_url": "https://bandori.fandom.com/wiki/BanG_Dream!"
+      "logo": "https://free.picui.cn/free/2026/04/14/69de332c10887.png",
+      "icon": "https://free.picui.cn/free/2026/04/14/69de332c10887.png",
+      "page_url": ""
     }
   },
   "characters": [
     {
       "id": "char_ako_ako",
       "pageTitle": "Udagawa_Ako",
-      "pageUrl": "https://bandori.fandom.com/wiki/Udagawa_Ako",
+      "pageUrl": "",
       "englishName": "Ako Udagawa",
       "japaneseName": "宇田川 あこ",
       "displayName": "亚子",
@@ -2313,21 +2313,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 65.45
       },
       "color": "#DD0088",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/a/a0/024.png/revision/latest?cb=20230321083211",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de332f3c1ec.png",
       "description": "亚子不是单纯负责活泼气氛，而是把“我想成为更酷的人”这份愿望直接摆在台面上。亚子的成长多半不是变得成熟稳重，而是把原本有点浮夸的憧憬慢慢落实成真正的实力与勇气。和她相处时，很容易被那股先相信、先点亮别人的劲头感染，连原本犹豫的人也会被带着向前。越是和人长期相处，这种底色越藏不住。真到要慢下来收束细节时，才会露出一点冒失和不周全。",
       "descriptions": {
         "zh": "亚子不是单纯负责活泼气氛，而是把“我想成为更酷的人”这份愿望直接摆在台面上。亚子的成长多半不是变得成熟稳重，而是把原本有点浮夸的憧憬慢慢落实成真正的实力与勇气。和她相处时，很容易被那股先相信、先点亮别人的劲头感染，连原本犹豫的人也会被带着向前。越是和人长期相处，这种底色越藏不住。真到要慢下来收束细节时，才会露出一点冒失和不周全。",
         "en": "Ako is not simply responsible for the lively atmosphere, but directly puts the desire of \"I want to be a cooler person\" on the table. Ako's growth is mostly not about becoming mature and stable, but about slowly implementing the original somewhat exaggerated vision into real strength and courage. When getting along with her, it is easy to be infected by her enthusiasm to believe and light up others first, and even people who were originally hesitant will be led forward. The longer you stay with someone for a long time, the harder it is to hide this background. Only when you really have to slow down to tighten up the details will you become a little reckless and incomplete.",
         "ja": "あこはただ盛り上げるのではなく、「もっとカッコいい人になりたい」という思いをストレートに表しています。あこ の成長は、主に成熟して安定することではなく、当初のやや大げさなビジョンをゆっくりと現実の強さと勇気に実装することです。付き合っていくと、まず相手を信じて照らしてやろうとする熱意が伝わりやすく、元々躊躇していた人も前向きに導かれるようになるでしょう。誰かと長く一緒にいればいるほど、この背景を隠すのは難しくなります。細部を詰めるために本当に速度を落とさなければならない場合にのみ、少し無謀で不完全になってしまいます。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/a/aa/Roselia_logo.png/revision/latest/scale-to-width-down/229?cb=20211201105701",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/d/de/Icon_roselia.svg/revision/latest/scale-to-width-down/40?cb=20210710030837",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Roselia"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332de28a4.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a31f36.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_anon_anon",
       "pageTitle": "Chihaya_Anon",
-      "pageUrl": "https://bandori.fandom.com/wiki/Chihaya_Anon",
+      "pageUrl": "",
       "englishName": "Anon Chihaya",
       "japaneseName": "千早 愛音",
       "displayName": "爱音",
@@ -2351,21 +2351,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 64.8
       },
       "color": "#FF8899",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/8/89/037.png/revision/latest?cb=20230915155934",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de332fc1f75.png",
       "description": "爱音让人觉得社交力强、行动快、爱时髦、很会包装自己的人。爱音的人设核心是外向和不安并存，所以既会冲在前面，也很容易在受挫时心态失衡。她很少让场子冷下来，情绪、热度和行动几乎总是同时到场，因此也特别容易把别人一起卷进自己的节奏。在私下状态和正式场合之间，这种气质其实都很稳定。可一旦太相信当下的热度，后面的麻烦就未必都会提前想到。",
       "descriptions": {
         "zh": "爱音让人觉得社交力强、行动快、爱时髦、很会包装自己的人。爱音的人设核心是外向和不安并存，所以既会冲在前面，也很容易在受挫时心态失衡。她很少让场子冷下来，情绪、热度和行动几乎总是同时到场，因此也特别容易把别人一起卷进自己的节奏。在私下状态和正式场合之间，这种气质其实都很稳定。可一旦太相信当下的热度，后面的麻烦就未必都会提前想到。",
         "en": "Anon makes people think that they are social, fast, fashionable and good at packaging themselves. The core of Anon's character is that she is extroverted and restless, so she rushes to the front but is also prone to losing her balance when frustrated. She rarely lets the scene cool down, and her emotions, heat, and actions are almost always present at the same time, so she is particularly easy to involve others in her own rhythm. This temperament is actually very stable between private and formal situations. But once you believe too much in the current popularity, you may not be able to think of the troubles ahead.",
         "ja": "愛音 は、人々に自分たちが社交的で、スピードがあり、ファッショナブルで、自分自身をパッケージ化するのが上手だと思わせます。愛音 の性格の核心は、外向的で落ち着きがないため、前に突き進むが、イライラするとバランスを崩しやすいということです。彼女は場を冷めさせることがほとんどなく、感情、熱量、行動がほぼ常に同時に存在するため、特に他の人を自分のリズムに巻き込むのが簡単です。この気質は実際、プライベートな状況でもフォーマルな状況でも非常に安定しています。しかし、現在の人気を信じすぎると、今後の困難について考えることができなくなる可能性があります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/6/65/MyGO%21%21%21%21%21_logo.png/revision/latest/scale-to-width-down/205?cb=20230915160317",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/a/ac/Icon_mygo.png/revision/latest/scale-to-width-down/40?cb=20230916120900",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/MyGO!!!!!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c2eba6.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33285ecbc.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_arisa_arisa",
       "pageTitle": "Ichigaya_Arisa",
-      "pageUrl": "https://bandori.fandom.com/wiki/Ichigaya_Arisa",
+      "pageUrl": "",
       "englishName": "Arisa Ichigaya",
       "japaneseName": "市ヶ谷 有咲",
       "displayName": "有咲",
@@ -2389,21 +2389,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 62.55
       },
       "color": "#AA66DD",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/2/20/005.png/revision/latest?cb=20230321061357",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de332fc1fd7.png",
       "description": "有咲是成绩优秀、嘴硬、认真、带一点别扭感的典型“吐槽役”。有咲与香澄的对照尤其明显，一个靠梦想先冲，一个负责把梦想落到现实能运转的状态。和人相处时，她很多时候显得疏离，其实只是先在自己的思路里把事情想透。她看起来像总和人群隔着一点距离，可真要细看，就会发现她其实一直在用自己的方式理解眼前的一切。可她越沉进自己的思路里，越容易把真正的情绪留在外面。",
       "descriptions": {
         "zh": "有咲是成绩优秀、嘴硬、认真、带一点别扭感的典型“吐槽役”。有咲与香澄的对照尤其明显，一个靠梦想先冲，一个负责把梦想落到现实能运转的状态。和人相处时，她很多时候显得疏离，其实只是先在自己的思路里把事情想透。她看起来像总和人群隔着一点距离，可真要细看，就会发现她其实一直在用自己的方式理解眼前的一切。可她越沉进自己的思路里，越容易把真正的情绪留在外面。",
         "en": "Arisa is a typical \"complaint agent\" with excellent grades, tough talk, seriousness, and a bit of awkwardness. The contrast between Arisa and Kasumi is particularly obvious. One relies on dreams to advance first, while the other is responsible for bringing dreams to a state where reality can operate. When getting along with others, she often seems distant, but in fact she is just thinking things through in her own thoughts first. She always seems to be a little far away from the crowd, but if you really look closely, you will find that she has been understanding everything in front of her in her own way. But the more she sank into her own thoughts, the easier it was for her to leave her true emotions outside.",
         "ja": "有咲は、成績優秀、口は堅い、真面目、そして少し不器用な典型的な「苦情代理人」です。有咲 と 香澄 の対照は特に明らかです。 1 つは最初に前進するために夢に依存し、もう 1 つは夢を現実が機能できる状態に持っていく責任があります。他人と接しているとよそよそしく見えることも多いが、実は自分の頭で物事を考えているだけ。彼女はいつも群衆から少し離れているように見えますが、よく見てみると、目の前のすべてを彼女なりの方法で理解していることがわかります。しかし、彼女は自分の考えに沈むほど、本当の感情を外に出すことが容易になりました。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/2/2a/Poppin%27Party_logo.png/revision/latest/scale-to-width-down/250?cb=20200327142717",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/b/b6/Icon_popipa.svg/revision/latest/scale-to-width-down/40?cb=20210407055615",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Poppin'Party"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332de0818.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a1606d.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_asuka_asuka",
       "pageTitle": "Toyama_Asuka",
-      "pageUrl": "https://bandori.fandom.com/wiki/Toyama_Asuka",
+      "pageUrl": "",
       "englishName": "Asuka Toyama",
       "japaneseName": "戸山 明日香",
       "displayName": "明日香",
@@ -2427,21 +2427,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 16.95
       },
       "color": "#B490E4",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/e/ee/Toyama_Asuka_Live2D_Model.png/revision/latest/scale-to-width-down/268?cb=20220324022232",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de332fb31af.png",
       "description": "明日香总给人稳当、清楚、讲原则的感觉。她不太会随便摇摆，更相信经验、责任和判断。她不太靠夸张表达建立存在感，真正让人记住她的，往往是那种一步一步做出来的稳定。只是太想把分寸和标准守稳时，也会显得拘谨了一些。",
       "descriptions": {
         "zh": "明日香总给人稳当、清楚、讲原则的感觉。她不太会随便摇摆，更相信经验、责任和判断。她不太靠夸张表达建立存在感，真正让人记住她的，往往是那种一步一步做出来的稳定。只是太想把分寸和标准守稳时，也会显得拘谨了一些。",
         "en": "Asuka always gives people a sense of stability, clarity and principle. She is less likely to sway casually and believes more in experience, responsibility and judgment. She doesn't rely on exaggerated expressions to establish a sense of presence. What really makes people remember her is her step-by-step stability. If you just want to maintain your sense of proportion and standards too much, you will appear a little more reserved.",
         "ja": "明日香 は常に人々に安定性、明確さ、原則の感覚を与えます。彼女は軽率に動揺する可能性が低く、経験、責任、判断力をより信じています。彼女は存在感を確立するために大げさな表現に頼っていません。彼女の記憶に残るのは、彼女の一歩一歩の安定感です。自分のバランス感覚や標準を維持したいと考えすぎると、少し控えめに見えてしまいます。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/4/4b/BanG_Dream%21_Logo.svg/revision/latest?cb=20180922150901",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/4/4b/BanG_Dream%21_Logo.svg/revision/latest?cb=20180922150901",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/BanG_Dream!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c10887.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332c10887.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_aya_aya",
       "pageTitle": "Maruyama_Aya",
-      "pageUrl": "https://bandori.fandom.com/wiki/Maruyama_Aya",
+      "pageUrl": "",
       "englishName": "Aya Maruyama",
       "japaneseName": "丸山 彩",
       "displayName": "彩",
@@ -2465,21 +2465,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 14.2
       },
       "color": "#FF88BB",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/5/5c/016.png/revision/latest?cb=20230321082906",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de333012d7d.png",
       "description": "彩是努力家、憧憬偶像、总是拼尽全力的 Pastel＊Palettes 队长。彩不是天赋型偶像，反而正因为常觉得自己普通，才把每一次机会都当成必须抓住的证明。彩和其他更成熟或更耀眼的成员同团，反而会放大她那种笨拙但不放弃的魅力。她看起来总在照顾气氛，其实更在意的是每个人有没有被好好放进关系里。越是和人长期相处，这种底色越藏不住。可她越想把场面顾圆满，心里的执念就越不容易松开。",
       "descriptions": {
         "zh": "彩是努力家、憧憬偶像、总是拼尽全力的 Pastel＊Palettes 队长。彩不是天赋型偶像，反而正因为常觉得自己普通，才把每一次机会都当成必须抓住的证明。彩和其他更成熟或更耀眼的成员同团，反而会放大她那种笨拙但不放弃的魅力。她看起来总在照顾气氛，其实更在意的是每个人有没有被好好放进关系里。越是和人长期相处，这种底色越藏不住。可她越想把场面顾圆满，心里的执念就越不容易松开。",
         "en": "Aya is the leader of the Pastel*Palettes who is a hard worker, aspires to be an idol, and always tries her best. Aya is not a talented idol, but because she often feels that she is ordinary, she regards every opportunity as proof that she must seize it. Aya is in a group with other more mature or dazzling members, which will amplify her clumsy but never giving up charm. She always seems to be taking care of the atmosphere, but in fact she cares more about whether everyone is well put into the relationship. The longer you stay with someone for a long time, the harder it is to hide this background. But the more she tried to make the situation go smoothly, the harder it was for her to let go of her obsession.",
         "ja": "彩はPastel*Palettesのリーダーで、努力家でアイドルを志し、いつも全力を尽くします。彩 は才能のあるアイドルではありませんが、自分が平凡であると感じることが多いため、あらゆるチャンスを掴まなければならない証拠であると考えています。彩は、他のより成熟した、または眩しいメンバーとグループに所属しており、不器用だが決して諦めない彼女の魅力をさらに増幅させるでしょう。彼女はいつも雰囲気を大切にしているように見えますが、実際はみんながうまく関係にあるかどうかをもっと気にしています。誰かと長く一緒にいればいるほど、この背景を隠すのは難しくなります。しかし、状況をうまく進めようとすればするほど、彼女は執着を手放すことができなくなった。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/2/2e/Pastel%2APalettes_logo.png/revision/latest/scale-to-width-down/228?cb=20230828140441",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/b/bb/Icon_pasupare.svg/revision/latest/scale-to-width-down/40?cb=20210328073625",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Pastel*Palettes"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332d56589.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de3329e667b.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_chisato_chisato",
       "pageTitle": "Shirasagi_Chisato",
-      "pageUrl": "https://bandori.fandom.com/wiki/Shirasagi_Chisato",
+      "pageUrl": "",
       "englishName": "Chisato Shirasagi",
       "japaneseName": "白鷺 千聖",
       "displayName": "千圣",
@@ -2503,21 +2503,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 15.7
       },
       "color": "#FFEEAA",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/d/d1/018.png/revision/latest?cb=20230321082944",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de333147a6f.png",
       "description": "千圣让人觉得成熟、专业、外冷内热的演员兼偶像。千圣习惯把自己维持在得体、从容的一面，但也正因为从小站在被观看的位置上，她格外珍惜那些不用伪装也能相处的人。千圣的人设核心是职业性与真实情感之间的拉扯。和人相处时，她不太会随便摇摆，更相信经验、责任和判断。她不太靠夸张表达建立存在感，真正让人记住她的，往往是那种一步一步做出来的稳定。可她越想把事情放在正确的位置上，越不容易轻易放松下来。",
       "descriptions": {
         "zh": "千圣让人觉得成熟、专业、外冷内热的演员兼偶像。千圣习惯把自己维持在得体、从容的一面，但也正因为从小站在被观看的位置上，她格外珍惜那些不用伪装也能相处的人。千圣的人设核心是职业性与真实情感之间的拉扯。和人相处时，她不太会随便摇摆，更相信经验、责任和判断。她不太靠夸张表达建立存在感，真正让人记住她的，往往是那种一步一步做出来的稳定。可她越想把事情放在正确的位置上，越不容易轻易放松下来。",
         "en": "Chisato is an actor and idol who makes people feel mature, professional, cold on the outside and hot on the inside. Chisato is used to keeping herself decent and calm, but precisely because she has been in the position of being watched since she was a child, she especially cherishes those people who can get along with each other without pretending. The core of Chisato's character design is the tension between professionalism and real emotions. When getting along with others, she is less likely to sway casually and trusts more in experience, responsibility and judgment. She doesn't rely on exaggerated expressions to establish a sense of presence. What really makes people remember her is her step-by-step stability. But the more she tried to put things in the right place, the harder it was for her to relax easily.",
         "ja": "千聖 は、人々に成熟していてプロフェッショナルで、外見は冷たく内面は熱いと感じさせる俳優兼アイドルです。千聖は、きちんとした冷静さを保つことに慣れていますが、幼い頃から見られる立場にあったからこそ、飾らずに仲良くやっていける人を特に大切にしています。千聖 のキャラクター デザインの核心は、プロ意識と本当の感情の間の緊張感です。他人と仲良くするとき、彼女は軽率に動揺することが少なく、経験、責任、判断力をより信頼します。彼女は存在感を確立するために大げさな表現に頼っていません。彼女の記憶に残るのは、彼女の一歩一歩の安定感です。しかし、物事を正しい場所に戻そうとすればするほど、簡単にリラックスすることが難しくなっていきました。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/2/2e/Pastel%2APalettes_logo.png/revision/latest/scale-to-width-down/228?cb=20230828140441",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/b/bb/Icon_pasupare.svg/revision/latest/scale-to-width-down/40?cb=20210328073625",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Pastel*Palettes"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332d56589.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de3329e667b.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_chiyu_chiyu",
       "pageTitle": "CHU²",
-      "pageUrl": "https://bandori.fandom.com/wiki/CHU%C2%B2",
+      "pageUrl": "",
       "englishName": "Chiyu Tamade",
       "japaneseName": "珠手 ちゆ",
       "displayName": "知由",
@@ -2541,21 +2541,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 16.8
       },
       "color": "#00BBFF",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/0/05/035.png/revision/latest?cb=20230321083645",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3331a156a.png",
       "description": "CHU²像把自己当天才也当答案的人，聪明、骄傲、好胜，习惯用最直接的方式定义舞台和胜负。她身上那股不肯认输的锋芒很有压迫感，可真要看久了，又会发现那份强势里藏着孩子气的执拗，和其实很怕被否定的心。她总想站在最显眼也最正确的位置上，于是被理解这件事，对她来说反而比赢更难开口。",
       "descriptions": {
         "zh": "CHU²像把自己当天才也当答案的人，聪明、骄傲、好胜，习惯用最直接的方式定义舞台和胜负。她身上那股不肯认输的锋芒很有压迫感，可真要看久了，又会发现那份强势里藏着孩子气的执拗，和其实很怕被否定的心。她总想站在最显眼也最正确的位置上，于是被理解这件事，对她来说反而比赢更难开口。",
         "en": "CHU² is like a person who regards herself as both a genius and an answer. She is smart, proud, and competitive. She is used to defining the stage and winning or losing in the most direct way. The sharp edge in her body that refuses to admit defeat is very oppressive, but if you really look at it for a long time, you will find that there is a childish stubbornness hidden in that strength, and a heart that is actually very afraid of being denied. She always wants to stand in the most conspicuous and correct position, so being understood is more difficult for her than winning.",
         "ja": "CHU²は自分を天才であり、答えであると考えているような人です。彼女は賢く、誇り高く、競争力があります。彼女はステージを定義し、最も直接的な方法で勝ち負けを決めることに慣れています。負けを認めない体の鋭さはとても威圧的ですが、よくよく観察してみると、その強さの中に子供らしい頑固さが隠れていて、実は否定されることをとても恐れている心が見えてきます。彼女は常に最も目立つ正しい位置に立ちたいと考えているため、勝つことよりも理解されることの方が難しいです。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/7/7f/RAISE_A_SUILEN_logo.png/revision/latest/scale-to-width-down/221?cb=20200810080553",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/2/24/Icon_ras.svg/revision/latest/scale-to-width-down/40?cb=20210215040854",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/RAISE_A_SUILEN"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332ddd5e3.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a2e8fc.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_eve_eve",
       "pageTitle": "Wakamiya_Eve",
-      "pageUrl": "https://bandori.fandom.com/wiki/Wakamiya_Eve",
+      "pageUrl": "",
       "englishName": "Eve Wakamiya",
       "japaneseName": "若宮 イヴ",
       "displayName": "伊芙",
@@ -2579,21 +2579,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 17.65
       },
       "color": "#DDBBFF",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/8/8d/020.png/revision/latest?cb=20230321083021",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3331c9b16.png",
       "description": "伊芙是日芬混血、性格率直温柔，并且对“武士道”抱有非常强烈的向往。伊芙的魅力来自真诚和行动力，往往先相信美好的原则，再用力去实践。她不是那种会把关心挂在嘴边的人，却总会在别人快要失衡的时候先一步补上那个空缺。真到关系被拉近之后，这一面往往会更清楚。可她越舍不得让别人失望，越容易把压力都悄悄往自己身上收。",
       "descriptions": {
         "zh": "伊芙是日芬混血、性格率直温柔，并且对“武士道”抱有非常强烈的向往。伊芙的魅力来自真诚和行动力，往往先相信美好的原则，再用力去实践。她不是那种会把关心挂在嘴边的人，却总会在别人快要失衡的时候先一步补上那个空缺。真到关系被拉近之后，这一面往往会更清楚。可她越舍不得让别人失望，越容易把压力都悄悄往自己身上收。",
         "en": "Eve is a Japanese-Finnish mixed-race, with a straightforward and gentle personality, and a very strong yearning for \"Bushido\". The charm of Eve comes from sincerity and action. We often believe in beautiful principles first and then work hard to practice them. She is not the kind of person who talks about caring, but she always fills the gap when others are about to lose balance. This aspect often becomes clearer after the relationship is really drawn closer. But the more reluctant she is to let others down, the easier it is for her to quietly put the pressure on herself.",
         "ja": "イヴは日本とフィンランドの混血で、素直で優しい性格で、「武士道」への憧れがとても強いです。イヴの魅力は誠実さと行動力にあります。私たちは多くの場合、まず美しい原則を信じてから、それを実践するために一生懸命努力します。彼女は気遣いについて話すような人ではありませんが、他の人がバランスを崩しそうになっているときは、いつもそのギャップを埋めてくれます。この側面は、関係が本当に緊密になった後に明らかになることもよくあります。しかし、他人を失望させたくないほど、彼女は静かに自分自身にプレッシャーをかけることが容易になります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/2/2e/Pastel%2APalettes_logo.png/revision/latest/scale-to-width-down/228?cb=20230828140441",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/b/bb/Icon_pasupare.svg/revision/latest/scale-to-width-down/40?cb=20210328073625",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Pastel*Palettes"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332d56589.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de3329e667b.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_hagumi_hagumi",
       "pageTitle": "Kitazawa_Hagumi",
-      "pageUrl": "https://bandori.fandom.com/wiki/Kitazawa_Hagumi",
+      "pageUrl": "",
       "englishName": "Hagumi Kitazawa",
       "japaneseName": "北沢 はぐみ",
       "displayName": "育美",
@@ -2617,21 +2617,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 66.35
       },
       "color": "#FF9922",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/c/cf/013.png/revision/latest?cb=20230321082721",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3331a93df.png",
       "description": "育美没有太多弯弯绕绕的思考习惯，因此一旦认定某件事是好的，就会用最直线的方式全力投入。育美没有太多弯弯绕绕的思考习惯，因此一旦认定某件事是好的，就会用最直线的方式全力投入。她很少让场子冷下来，情绪、热度和行动几乎总是同时到场，因此也特别容易把别人一起卷进自己的节奏。越是和人长期相处，这种底色越藏不住。只是凭着感觉往前冲的时候，偶尔也会显得有些冒进。",
       "descriptions": {
         "zh": "育美没有太多弯弯绕绕的思考习惯，因此一旦认定某件事是好的，就会用最直线的方式全力投入。育美没有太多弯弯绕绕的思考习惯，因此一旦认定某件事是好的，就会用最直线的方式全力投入。她很少让场子冷下来，情绪、热度和行动几乎总是同时到场，因此也特别容易把别人一起卷进自己的节奏。越是和人长期相处，这种底色越藏不住。只是凭着感觉往前冲的时候，偶尔也会显得有些冒进。",
         "en": "Hagumi doesn't have the habit of thinking in many twists and turns, so once she decides that something is good, she will devote herself to it in the straightest way. Hagumi doesn't have the habit of thinking in many twists and turns, so once she decides that something is good, she will devote herself to it in the straightest way. She rarely lets the scene cool down, and her emotions, heat, and actions are almost always present at the same time, so she is particularly easy to involve others in her own rhythm. The longer you stay with someone for a long time, the harder it is to hide this background. When I just rush forward based on my feelings, I sometimes seem a little aggressive.",
         "ja": "はぐみは、あまり紆余曲折して考える癖がないので、一度これが良いと思ったら、真っ直ぐに突き進んでいきます。はぐみは、あまり紆余曲折して考える癖がないので、一度これが良いと思ったら、真っ直ぐに突き進んでいきます。彼女は場を冷めさせることがほとんどなく、感情、熱量、行動がほぼ常に同時に存在するため、特に他の人を自分のリズムに巻き込むのが簡単です。誰かと長く一緒にいればいるほど、この背景を隠すのは難しくなります。自分の気持ちだけで突き進んでしまうと、少し強引に見えることもあります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/6/65/Hello%2C_Happy_World%21_logo.png/revision/latest/scale-to-width-down/231?cb=20211201110149",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/e/e4/Icon_hhw.svg/revision/latest/scale-to-width-down/35?cb=20210328073349",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Hello,_Happy_World!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c0bd3f.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286186f.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_himari_himari",
       "pageTitle": "Uehara_Himari",
-      "pageUrl": "https://bandori.fandom.com/wiki/Uehara_Himari",
+      "pageUrl": "",
       "englishName": "Himari Uehara",
       "japaneseName": "上原 ひまり",
       "displayName": "绯玛丽",
@@ -2655,21 +2655,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 23.1
       },
       "color": "#FF9999",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/1/17/008.png/revision/latest?cb=20230321080643",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3331e50a7.png",
       "description": "绯玛丽会努力让团队看起来轻松顺畅，但也正因为太在意关系，偶尔会先替别人着急或替气氛负责。绯玛丽会努力让团队看起来轻松顺畅，但也正因为太在意关系，偶尔会先替别人着急或替气氛负责。她看起来总在照顾气氛，其实更在意的是每个人有没有被好好放进关系里。真到关系被拉近之后，这一面往往会更清楚。可她越想把场面顾圆满，心里的执念就越不容易松开。",
       "descriptions": {
         "zh": "绯玛丽会努力让团队看起来轻松顺畅，但也正因为太在意关系，偶尔会先替别人着急或替气氛负责。绯玛丽会努力让团队看起来轻松顺畅，但也正因为太在意关系，偶尔会先替别人着急或替气氛负责。她看起来总在照顾气氛，其实更在意的是每个人有没有被好好放进关系里。真到关系被拉近之后，这一面往往会更清楚。可她越想把场面顾圆满，心里的执念就越不容易松开。",
         "en": "Himari will work hard to make the team look relaxed and smooth, but because it cares so much about relationships, it will occasionally worry about others first or take responsibility for the atmosphere. Himari will work hard to make the team look relaxed and smooth, but because it cares so much about relationships, it will occasionally worry about others first or take responsibility for the atmosphere. She always seems to be taking care of the atmosphere, but in fact she cares more about whether everyone is well put into the relationship. This aspect often becomes clearer after the relationship is really drawn closer. But the more she tried to make the situation go smoothly, the harder it was for her to let go of her obsession.",
         "ja": "ひまり は、チームをリラックスしてスムーズに見せるために一生懸命働きますが、人間関係を非常に重視するため、時には他の人のことを優先して心配したり、雰囲気に責任を負ったりすることがあります。ひまり は、チームをリラックスしてスムーズに見せるために一生懸命働きますが、人間関係を非常に重視するため、時には他の人のことを優先して心配したり、雰囲気に責任を負ったりすることがあります。彼女はいつも雰囲気を大切にしているように見えますが、実際はみんながうまく関係にあるかどうかをもっと気にしています。この側面は、関係が本当に緊密になった後に明らかになることもよくあります。しかし、状況をうまく進めようとすればするほど、彼女は執着を手放すことができなくなった。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/f/f9/Afterglow_logo.png/revision/latest/scale-to-width-down/250?cb=20211201105320",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/1/1f/Icon_afterglow.svg/revision/latest/scale-to-width-down/20?cb=20210328073813",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Afterglow"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332a38ba6.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33283a7eb.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_hina_hina",
       "pageTitle": "Hikawa_Hina",
-      "pageUrl": "https://bandori.fandom.com/wiki/Hikawa_Hina",
+      "pageUrl": "",
       "englishName": "Hina Hikawa",
       "japaneseName": "氷川 日菜",
       "displayName": "日菜",
@@ -2693,21 +2693,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 85.1
       },
       "color": "#55DDEE",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/c/cf/017.png/revision/latest?cb=20230321082924",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de33331a058.png",
       "description": "日菜是非常典型的天才型角色，聪明、反应快、随性，而且会用“るんっ”来表达自己被点亮的瞬间。日菜不是不在乎别人，而是常常先从“我觉得有趣吗”出发，再去理解人与事。和纱夜的双子关系，是理解她人物魅力与局限都非常重要的轴线。落到具体相处里，她总会先盯住眼前最实际的突破口。她身上那种利落感很像临场直觉先一步落地，所以越到需要马上做决定的时候，越能看出她的存在感。真到胜负心被点起来的时候，她的步子通常会比别人更猛一点。",
       "descriptions": {
         "zh": "日菜是非常典型的天才型角色，聪明、反应快、随性，而且会用“るんっ”来表达自己被点亮的瞬间。日菜不是不在乎别人，而是常常先从“我觉得有趣吗”出发，再去理解人与事。和纱夜的双子关系，是理解她人物魅力与局限都非常重要的轴线。落到具体相处里，她总会先盯住眼前最实际的突破口。她身上那种利落感很像临场直觉先一步落地，所以越到需要马上做决定的时候，越能看出她的存在感。真到胜负心被点起来的时候，她的步子通常会比别人更猛一点。",
         "en": "Hina is a very typical genius character. She is smart, quick to respond, casual, and can use \"るんっ\" to express the moment when she is illuminated. Hina doesn't care about others, but always starts from \"Do I find it interesting? \" before understanding people and things. The twin relationship with Sayo is a very important axis for understanding the charm and limitations of her character. When it comes to actual interactions, she will always focus on the most practical breakthrough in front of her. Her sense of neatness is very much like her intuition being on the spot, so the more she needs to make an immediate decision, the more her presence can be seen. When her ambition to win is really aroused, her steps will usually be a little faster than others.",
         "ja": "日菜 は、非常に典型的な天才キャラクターです。頭が良くて、反応が早くて、カジュアルで、光が当たった瞬間を「るんっ」で表現できる。日菜は他人のことは気にせず、常に「自分が面白いと思うか？」からスタートします。人や物事を理解する前に。紗夜との双子の関係は、彼女のキャラクターの魅力と限界を理解する上で非常に重要な軸です。実際のやり取りとなると、彼女は常に目の前にある最も現実的な突破口に焦点を当てます。きちんと感があり、その場の直感に近いので、即断即決が必要なほど存在感が増します。彼女の勝ちたいという野心が本当に高まっているとき、彼女の歩みは通常、他の人より少し速くなります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/2/2e/Pastel%2APalettes_logo.png/revision/latest/scale-to-width-down/228?cb=20230828140441",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/b/bb/Icon_pasupare.svg/revision/latest/scale-to-width-down/40?cb=20210328073625",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Pastel*Palettes"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332d56589.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de3329e667b.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_kanon_kanon",
       "pageTitle": "Matsubara_Kanon",
-      "pageUrl": "https://bandori.fandom.com/wiki/Matsubara_Kanon",
+      "pageUrl": "",
       "englishName": "Kanon Matsubara",
       "japaneseName": "松原 花音",
       "displayName": "花音",
@@ -2731,21 +2731,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 20.45
       },
       "color": "#44DDFF",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/5/52/014.png/revision/latest?cb=20230321082746",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de333382f57.png",
       "description": "花音让人觉得温柔、容易紧张、看起来最像普通人的印象。花音会害怕、会犹豫、会先想象失败，但也正因为如此，她在一群过于强烈的人当中显得尤其有人味和亲近感。花音的人设重点是胆小与温柔并存，因此她的每次坚持都会显得格外真诚。和人相处时，她总会默默记住别人没说出口的部分。她很少抢着站到最前面，却常常会在别人最容易忽略的地方把事情悄悄接住。真到情绪被逼近边缘时，她那份安静里才会慢慢露出疲惫。",
       "descriptions": {
         "zh": "花音让人觉得温柔、容易紧张、看起来最像普通人的印象。花音会害怕、会犹豫、会先想象失败，但也正因为如此，她在一群过于强烈的人当中显得尤其有人味和亲近感。花音的人设重点是胆小与温柔并存，因此她的每次坚持都会显得格外真诚。和人相处时，她总会默默记住别人没说出口的部分。她很少抢着站到最前面，却常常会在别人最容易忽略的地方把事情悄悄接住。真到情绪被逼近边缘时，她那份安静里才会慢慢露出疲惫。",
         "en": "Kanon gives people the impression of being gentle, easily nervous, and looks the most like an ordinary person. Kanon will be afraid, hesitant, and will imagine failure first, but because of this, she seems particularly humane and approachable among a group of people who are too strong. The focus of Kanon's character is the coexistence of timidity and gentleness, so every time she persists will appear particularly sincere. When getting along with others, she always silently remembers the unspoken parts of others. She rarely rushes to stand at the front, but often quietly catches things in places where others can most easily ignore them. When her emotions are pushed to the edge, her fatigue will slowly show in her tranquility.",
         "ja": "花音 は、穏やかで緊張しやすい印象を与え、最も普通の人に見えます。花音は怖がったり、躊躇したり、失敗を最初に想像してしまいますが、そのため、強すぎる人々のグループの中で特に人間味があり、親しみやすいように見えます。花音 のキャラクターの焦点は、臆病さと優しさの共存であるため、彼女が固執するたびに特に誠実に見えます。他人と仲良くするとき、彼女はいつも他人の語られない部分を静かに覚えています。彼女は急いで前に立とうとすることはめったにありませんが、他の人が最も簡単に無視できる場所で静かに物事をキャッチすることがよくあります。彼女の感情が限界に達すると、彼女の静けさの中にゆっくりと疲れが現れます。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/6/65/Hello%2C_Happy_World%21_logo.png/revision/latest/scale-to-width-down/231?cb=20211201110149",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/e/e4/Icon_hhw.svg/revision/latest/scale-to-width-down/35?cb=20210328073349",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Hello,_Happy_World!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c0bd3f.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286186f.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_kaoru_kaoru",
       "pageTitle": "Seta_Kaoru",
-      "pageUrl": "https://bandori.fandom.com/wiki/Seta_Kaoru",
+      "pageUrl": "",
       "englishName": "Kaoru Seta",
       "japaneseName": "瀬田 薫",
       "displayName": "薰",
@@ -2769,21 +2769,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 13.45
       },
       "color": "#AA33CC",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/b/b8/012.png/revision/latest?cb=20230321082658",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3333b88e0.png",
       "description": "薰很清楚自己在舞台上应该呈现什么，也愿意用这份表演性去保护别人、哄别人开心。比起单纯耍帅，她更像是主动承担了让气氛浪漫化、戏剧化的角色。她不是那种会把关心挂在嘴边的人，却总会在别人快要失衡的时候先一步补上那个空缺。真到关系被拉近之后，这一面往往会更清楚。真到什么都想维系住的时候，她也容易把自己逼得太紧。",
       "descriptions": {
         "zh": "薰很清楚自己在舞台上应该呈现什么，也愿意用这份表演性去保护别人、哄别人开心。比起单纯耍帅，她更像是主动承担了让气氛浪漫化、戏剧化的角色。她不是那种会把关心挂在嘴边的人，却总会在别人快要失衡的时候先一步补上那个空缺。真到关系被拉近之后，这一面往往会更清楚。真到什么都想维系住的时候，她也容易把自己逼得太紧。",
         "en": "Kaoru knows very well what she should present on stage, and is willing to use this performance to protect others and make others happy. Rather than simply acting cool, she seemed to take the initiative to romanticize and dramatize the atmosphere. She is not the kind of person who talks about caring, but she always fills the gap when others are about to lose balance. This aspect often becomes clearer after the relationship is really drawn closer. When she really wants to hold on to everything, she can easily push herself too hard.",
         "ja": "薫 はステージで何を表現すべきかをよく知っており、このパフォーマンスを他の人を守り、他の人を幸せにするために喜んで利用します。彼女は単にクールに振る舞うのではなく、率先して雰囲気をロマンチックにし、ドラマチックにすることに取り組んでいるように見えました。彼女は気遣いについて話すような人ではありませんが、他の人がバランスを崩しそうになっているときは、いつもそのギャップを埋めてくれます。この側面は、関係が本当に緊密になった後に明らかになることもよくあります。彼女は本当にすべてを我慢したいとき、自分を無理させすぎてしまうことがあります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/6/65/Hello%2C_Happy_World%21_logo.png/revision/latest/scale-to-width-down/231?cb=20211201110149",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/e/e4/Icon_hhw.svg/revision/latest/scale-to-width-down/35?cb=20210328073349",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Hello,_Happy_World!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c0bd3f.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286186f.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_kasumi_kasumi",
       "pageTitle": "Toyama_Kasumi",
-      "pageUrl": "https://bandori.fandom.com/wiki/Toyama_Kasumi",
+      "pageUrl": "",
       "englishName": "Kasumi Toyama",
       "japaneseName": "戸山 香澄",
       "displayName": "香澄",
@@ -2807,21 +2807,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 64.8
       },
       "color": "#FF5522",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/0/03/001.png/revision/latest?cb=20230321060047",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3333d95d3.png",
       "description": "户山香澄像会自己发光的人，心里一有“好喜欢”“好想试试”的念头，就会立刻拉着别人一起向前。她的热情很有感染力，擅长把模糊的憧憬变成真实的起点；真到要慢下来收束细节时，才会露出一点冒失和不周全。可也正因为她总肯先相信那点心动，身边的人才会一次次被她带着迈出第一步。",
       "descriptions": {
         "zh": "户山香澄像会自己发光的人，心里一有“好喜欢”“好想试试”的念头，就会立刻拉着别人一起向前。她的热情很有感染力，擅长把模糊的憧憬变成真实的起点；真到要慢下来收束细节时，才会露出一点冒失和不周全。可也正因为她总肯先相信那点心动，身边的人才会一次次被她带着迈出第一步。",
         "en": "Kasumi Toyama is like a person who can shine on her own. Once she has the thought of \"I really like it\" or \"I really want to try it\" in her heart, she will immediately pull others forward together. Her enthusiasm is very contagious, and she is good at turning vague visions into real starting points; only when she has to slow down and tighten up the details will she become a little reckless and incomplete. But precisely because she is always willing to believe in that heartbeat first, people around her will be led by her to take the first step again and again.",
         "ja": "戸山 香澄は、ひとりで輝ける人のような人です。 「すごく好き」「やってみたい」という思いが心の中にあると、すぐに周りを引っ張っていく人です。彼女の熱意は非常に伝染性が高く、漠然としたビジョンを本当の出発点に変えるのが得意です。速度を落として詳細を詰める必要がある場合にのみ、彼女は少し無謀で不完全になります。でも、その鼓動を最初に信じようとする彼女だからこそ、周りの人々も彼女に導かれて何度でも最初の一歩を踏み出すだろう。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/2/2a/Poppin%27Party_logo.png/revision/latest/scale-to-width-down/250?cb=20200327142717",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/b/b6/Icon_popipa.svg/revision/latest/scale-to-width-down/40?cb=20210407055615",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Poppin'Party"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332de0818.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a1606d.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_kokoro_kokoro",
       "pageTitle": "Tsurumaki_Kokoro",
-      "pageUrl": "https://bandori.fandom.com/wiki/Tsurumaki_Kokoro",
+      "pageUrl": "",
       "englishName": "Kokoro Tsurumaki",
       "japaneseName": "弦巻 こころ",
       "displayName": "心",
@@ -2845,21 +2845,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 64.0
       },
       "color": "#FFEE22",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/9/96/011.png/revision/latest?cb=20230321082312",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3333ef8b1.png",
       "description": "心是 Hello, Happy World! 最彻底的中心人物，她把“让全世界都露出笑容”当成几乎不可动摇的行动原则。心看起来像夸张喜剧角色，但真正支撑她的其实是非常强的善意与执行力。虽然常像风暴一样卷着大家跑，但出发点几乎始终是让别人更开心。她很少让场子冷下来，情绪、热度和行动几乎总是同时到场，因此也特别容易把别人一起卷进自己的节奏。真到关系被拉近之后，这一面往往会更清楚。可一旦太相信当下的热度，后面的麻烦就未必都会提前想到。",
       "descriptions": {
         "zh": "心是 Hello, Happy World! 最彻底的中心人物，她把“让全世界都露出笑容”当成几乎不可动摇的行动原则。心看起来像夸张喜剧角色，但真正支撑她的其实是非常强的善意与执行力。虽然常像风暴一样卷着大家跑，但出发点几乎始终是让别人更开心。她很少让场子冷下来，情绪、热度和行动几乎总是同时到场，因此也特别容易把别人一起卷进自己的节奏。真到关系被拉近之后，这一面往往会更清楚。可一旦太相信当下的热度，后面的麻烦就未必都会提前想到。",
         "en": "Kokoro is the most thorough Kokoro character in Hello, Happy World!. She regards \"making the whole world smile\" as an almost unshakable principle of action. Kokoro looks like an exaggerated comedy character, but what really supports her is her strong kindness and execution ability. Although it often sweeps everyone away like a storm, the starting point is almost always to make others open Kokoro more. She rarely lets the scene cool down, and her emotions, heat, and actions are almost always present at the same time, so she is particularly easy to involve others in her own rhythm. This aspect often becomes clearer after the relationship is really drawn closer. But once you believe too much in the current popularity, you may not be able to think of the troubles ahead.",
         "ja": "こころ は、Hello, Happy World! で最も徹底した こころ キャラクターです。彼女は「全世界を笑顔にする」ことを、ほぼ揺るぎない行動原理と考えています。こころは一見大袈裟なコメディキャラクターに見えますが、彼女を支えているのはその強い優しさと実行力です。多くの場合、嵐のように全員を押し流しますが、ほとんどの場合、出発点は他の人に こころ をもっと開かせることです。彼女は場を冷めさせることがほとんどなく、感情、熱量、行動がほぼ常に同時に存在するため、特に他の人を自分のリズムに巻き込むのが簡単です。この側面は、関係が本当に緊密になった後に明らかになることもよくあります。しかし、現在の人気を信じすぎると、今後の困難について考えることができなくなる可能性があります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/6/65/Hello%2C_Happy_World%21_logo.png/revision/latest/scale-to-width-down/231?cb=20211201110149",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/e/e4/Icon_hhw.svg/revision/latest/scale-to-width-down/35?cb=20210328073349",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Hello,_Happy_World!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c0bd3f.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286186f.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_lisa_lisa",
       "pageTitle": "Imai_Lisa",
-      "pageUrl": "https://bandori.fandom.com/wiki/Imai_Lisa",
+      "pageUrl": "",
       "englishName": "Lisa Imai",
       "japaneseName": "今井 リサ",
       "displayName": "莉莎",
@@ -2883,21 +2883,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 18.85
       },
       "color": "#DD2200",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/e/ee/023.png/revision/latest?cb=20230321083152",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3334ec2c8.png",
       "description": "莉莎让人觉得时尚、开朗、亲和力很强，同时也是 Roselia 里最会顾及他人心情的人。莉莎的存在让这个高压、高标准的乐队不至于只剩锋利，而多了一层能让人靠近的温度。莉莎和友希那的关系尤其重要，因为她是少数能贴近友希那孤高内核、又不轻易被其压住的人。她不是那种会把关心挂在嘴边的人，却总会在别人快要失衡的时候先一步补上那个空缺。放到亲近关系和团体相处里看，这一面通常会更明显。可她越舍不得让别人失望，越容易把压力都悄悄往自己身上收。",
       "descriptions": {
         "zh": "莉莎让人觉得时尚、开朗、亲和力很强，同时也是 Roselia 里最会顾及他人心情的人。莉莎的存在让这个高压、高标准的乐队不至于只剩锋利，而多了一层能让人靠近的温度。莉莎和友希那的关系尤其重要，因为她是少数能贴近友希那孤高内核、又不轻易被其压住的人。她不是那种会把关心挂在嘴边的人，却总会在别人快要失衡的时候先一步补上那个空缺。放到亲近关系和团体相处里看，这一面通常会更明显。可她越舍不得让别人失望，越容易把压力都悄悄往自己身上收。",
         "en": "Lisa makes people feel fashionable, cheerful, and very approachable. She is also the person in Roselia who is most considerate of others' moods. The existence of Lisa makes this high-pressure and high-standard band not just sharp, but has an extra layer of warmth that allows people to get closer. The relationship between Lisa and Yukina is particularly important, because she is one of the few people who can get close to Yukina's aloof core without being easily suppressed by it. She is not the kind of person who talks about caring, but she always fills the gap when others are about to lose balance. This aspect is usually more obvious when looking at close relationships and group interactions. But the more reluctant she is to let others down, the easier it is for her to quietly put the pressure on herself.",
         "ja": "リサ は人々にファッショナブルで明るく、とても親しみやすい印象を与えます。 Roseliaの中で一番人の気持ちを考えられる人物でもある。リサの存在によって、この高圧的かつ高規格なバンドは、ただ鋭いだけではなく、人々を近づける温もりを持っています。リサ と 友希那 の関係は特に重要です。なぜなら、彼女は 友希那 の孤高の核に容易に抑圧されることなく近づくことができる数少ない人物の 1 人だからです。彼女は気遣いについて話すような人ではありませんが、他の人がバランスを崩しそうになっているときは、いつもそのギャップを埋めてくれます。この側面は通常、親密な関係やグループの相互作用を見るとより明らかになります。しかし、他人を失望させたくないほど、彼女は静かに自分自身にプレッシャーをかけることが容易になります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/a/aa/Roselia_logo.png/revision/latest/scale-to-width-down/229?cb=20211201105701",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/d/de/Icon_roselia.svg/revision/latest/scale-to-width-down/40?cb=20210710030837",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Roselia"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332de28a4.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a31f36.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_mana_mana",
       "pageTitle": "Sumita_Mana",
-      "pageUrl": "https://bandori.fandom.com/wiki/Sumita_Mana",
+      "pageUrl": "",
       "englishName": "Mana Sumita",
       "japaneseName": "純田 まな",
       "displayName": "真奈",
@@ -2921,21 +2921,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 17.05
       },
       "color": "#D8B14D",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/1/1a/Sumita_Mana_-_Live2D_Model.png/revision/latest/scale-to-width-down/268?cb=20250205162918",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de333531413.png",
       "description": "真奈是和初华一起活动的偶像组合 `sumimi` 成员，性格天真烂漫，靠元气笑容收获人气，而且喜欢甜甜圈。真奈的重要性不在于个人秘密很多，而在于她让初华身边始终存在一个“正常而明亮”的参照系。她常把体贴和稳妥放在最前面。她看起来总在照顾气氛，其实更在意的是每个人有没有被好好放进关系里。可她越想把场面顾圆满，心里的执念就越不容易松开。",
       "descriptions": {
         "zh": "真奈是和初华一起活动的偶像组合 `sumimi` 成员，性格天真烂漫，靠元气笑容收获人气，而且喜欢甜甜圈。真奈的重要性不在于个人秘密很多，而在于她让初华身边始终存在一个“正常而明亮”的参照系。她常把体贴和稳妥放在最前面。她看起来总在照顾气氛，其实更在意的是每个人有没有被好好放进关系里。可她越想把场面顾圆满，心里的执念就越不容易松开。",
         "en": "Mana is a member of the idol group `sumimi` who is active with Uika. She has an innocent personality and is popular with her energetic smile. She also likes donuts. The importance of Mana does not lie in the many personal secrets, but in the fact that she always has a \"normal and bright\" frame of reference around Uika. She always puts thoughtfulness and stability first. She always seems to be taking care of the atmosphere, but in fact she cares more about whether everyone is well put into the relationship. But the more she tried to make the situation go smoothly, the harder it was for her to let go of her obsession.",
         "ja": "まな は、初華 として活動するアイドルグループ「すみみ」のメンバーです。天真爛漫な性格と元気な笑顔が人気。彼女はドーナツも好きです。まな の重要性は、多くの個人的な秘密にあるのではなく、彼女が 初華 に関して常に「正常で明るい」基準を持っているという事実にあります。彼女は常に思慮深さと安定性を第一に考えています。彼女はいつも雰囲気を大切にしているように見えますが、実際はみんながうまく関係にあるかどうかをもっと気にしています。しかし、状況をうまく進めようとすればするほど、彼女は執着を手放すことができなくなった。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/a/a4/Sumimi_logo.png/revision/latest/scale-to-width-down/150?cb=20240806011453",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/a/a4/Sumimi_logo.png/revision/latest/scale-to-width-down/150?cb=20240806011453",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/sumimi"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332e00205.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332e00205.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_marina_marina",
       "pageTitle": "Tsukishima_Marina",
-      "pageUrl": "https://bandori.fandom.com/wiki/Tsukishima_Marina",
+      "pageUrl": "",
       "englishName": "Marina Tsukishima",
       "japaneseName": "月島 まりな",
       "displayName": "麻里奈",
@@ -2959,21 +2959,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 15.45
       },
       "color": "#E00050",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/c/ca/Tsukishima_Marina_Live2D_Model.png/revision/latest/scale-to-width-down/268?cb=20220324015242",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de33358a889.png",
       "description": "麻里奈身上总带着温和又能把人聚拢起来的气质。她不是那种会把关心挂在嘴边的人，却总会在别人快要失衡的时候先一步补上那个空缺。一旦进入长期相处的状态，这一面就会慢慢浮出来。真到什么都想维系住的时候，她也容易把自己逼得太紧。",
       "descriptions": {
         "zh": "麻里奈身上总带着温和又能把人聚拢起来的气质。她不是那种会把关心挂在嘴边的人，却总会在别人快要失衡的时候先一步补上那个空缺。一旦进入长期相处的状态，这一面就会慢慢浮出来。真到什么都想维系住的时候，她也容易把自己逼得太紧。",
         "en": "Marina always has a gentle temperament that can bring people together. She is not the kind of person who talks about caring, but she always fills the gap when others are about to lose balance. Once you enter a long-term relationship, this side will slowly emerge. When she really wants to hold on to everything, she can easily push herself too hard.",
         "ja": "まりな は常に人々を団結させる優しい気質を持っています。彼女は気遣いについて話すような人ではありませんが、他の人がバランスを崩しそうになっているときは、いつもそのギャップを埋めてくれます。長期的な関係に入ると、この側面が徐々に現れます。彼女は本当にすべてを我慢したいとき、自分を無理させすぎてしまうことがあります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/4/4b/BanG_Dream%21_Logo.svg/revision/latest?cb=20180922150901",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/4/4b/BanG_Dream%21_Logo.svg/revision/latest?cb=20180922150901",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/BanG_Dream!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c10887.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332c10887.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_mashiro_mashiro",
       "pageTitle": "Kurata_Mashiro",
-      "pageUrl": "https://bandori.fandom.com/wiki/Kurata_Mashiro",
+      "pageUrl": "",
       "englishName": "Mashiro Kurata",
       "japaneseName": "倉田 ましろ",
       "displayName": "真白",
@@ -2997,21 +2997,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 70.35
       },
       "color": "#6677CC",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/b/b3/026.png/revision/latest?cb=20230321083311",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3335b7fe0.png",
       "description": "真白让人觉得内向、想象力丰富、容易沉进自己世界的女孩。真白的歌词和表达常带有空想感，这并不是脱离现实，而是她理解现实、消化情绪的重要方式。真白常常最先被自我否定绊住，但也最能把微小的感受写成有力量的词句。她不一定总把想法说得很响亮，但很多真正重要的选择，反而都藏在那些安静又不肯让步的地方。放到亲近关系和团体相处里看，这一面通常会更明显。只是心里越珍惜什么，越不肯轻易退开，于是敏感和固执也常会一起出现。",
       "descriptions": {
         "zh": "真白让人觉得内向、想象力丰富、容易沉进自己世界的女孩。真白的歌词和表达常带有空想感，这并不是脱离现实，而是她理解现实、消化情绪的重要方式。真白常常最先被自我否定绊住，但也最能把微小的感受写成有力量的词句。她不一定总把想法说得很响亮，但很多真正重要的选择，反而都藏在那些安静又不肯让步的地方。放到亲近关系和团体相处里看，这一面通常会更明显。只是心里越珍惜什么，越不肯轻易退开，于是敏感和固执也常会一起出现。",
         "en": "Mashiro makes people think of a girl who is introverted, imaginative and easy to sink into her own world. Mashiro's lyrics and expressions often have a sense of fantasy. This is not a departure from reality, but an important way for her to understand reality and digest emotions. Mashiro is often the first to be tripped up by self-denial, but she is also the best at turning small feelings into powerful words. She may not always express her thoughts loudly, but many truly important choices are hidden in those quiet and unwilling places. This aspect is usually more obvious when looking at close relationships and group interactions. It's just that the more you cherish something in your heart, the more reluctant you are to get away easily, so sensitivity and stubbornness often appear together.",
         "ja": "ましろ というと、人々は内向的で想像力豊かで、自分の世界に没頭しやすい女の子を思い浮かべます。ましろの歌詞や表現はファンタジー感のあるものが多いです。これは現実からの逸脱ではありませんが、彼女が現実を理解し、感情を消化するための重要な方法です。ましろ は、最初に自己否定につまずいてしまうことが多いですが、小さな感情を力強い言葉に変えるのが得意でもあります。彼女は自分の考えを常に大声で表現するわけではないかもしれませんが、本当に重要な選択の多くは、静かで不本意な場所に隠されています。この側面は通常、親密な関係やグループの相互作用を見るとより明らかになります。ただ、心の中で大切にしているものほど、簡単に離れることを嫌がるので、繊細さと頑固さがセットになって現れることが多いです。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/7/7a/Morfonica_logo.png/revision/latest/scale-to-width-down/231?cb=20200810080918",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/3/34/Icon_morfonica.svg/revision/latest/scale-to-width-down/40?cb=20210215040928",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Morfonica"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c0bd3e.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286273e.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_masuki_masuki",
       "pageTitle": "MASKING",
-      "pageUrl": "https://bandori.fandom.com/wiki/MASKING",
+      "pageUrl": "",
       "englishName": "Masuki Sato",
       "japaneseName": "佐藤 ますき",
       "displayName": "益木",
@@ -3035,21 +3035,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 67.05
       },
       "color": "#EEBB44",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/1/17/033.png/revision/latest?cb=20230321083609",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3335a707f.png",
       "description": "益木的粗暴感更像一种直接而不会掩饰的表达方式，而不是对人真正冷酷。益木的人设核心是力量感和保护欲，常常用最硬的姿态表达最直的在意。她身上那种利落感很像临场直觉先一步落地，所以越到需要马上做决定的时候，越能看出她的存在感。在私下状态和正式场合之间，这种气质其实都很稳定。只是那股敢冲的劲头上来时，往往顾不上给自己留太多余地。",
       "descriptions": {
         "zh": "益木的粗暴感更像一种直接而不会掩饰的表达方式，而不是对人真正冷酷。益木的人设核心是力量感和保护欲，常常用最硬的姿态表达最直的在意。她身上那种利落感很像临场直觉先一步落地，所以越到需要马上做决定的时候，越能看出她的存在感。在私下状态和正式场合之间，这种气质其实都很稳定。只是那股敢冲的劲头上来时，往往顾不上给自己留太多余地。",
         "en": "The roughness of Masuki is more like a direct and undisguised expression, rather than being truly cold towards people. The core of Masuki's character is a sense of strength and a desire for protection, and she often uses the toughest posture to express her most direct care. Her sense of neatness is very much like her intuition being on the spot, so the more she needs to make an immediate decision, the more her presence can be seen. This temperament is actually very stable between private and formal situations. It's just that when the courage to rush comes, I often don't bother to leave myself too much room.",
         "ja": "ますき の荒々しさは、人に対して真に冷たいというよりは、むしろ直接的で包み隠さず表現しているようなものです。ますき の性格の核心は強さの感覚と保護への欲求であり、彼女はしばしば最も直接的なケアを表現するために最も厳しい姿勢を使用します。きちんと感があり、その場の直感に近いので、即断即決が必要なほど存在感が増します。この気質は実際、プライベートな状況でもフォーマルな状況でも非常に安定しています。ただ、急ぐ勇気が湧いたとき、私はあまり余裕を持たないことが多いのです。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/7/7f/RAISE_A_SUILEN_logo.png/revision/latest/scale-to-width-down/221?cb=20200810080553",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/2/24/Icon_ras.svg/revision/latest/scale-to-width-down/40?cb=20210215040854",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/RAISE_A_SUILEN"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332ddd5e3.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a2e8fc.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_maya_maya",
       "pageTitle": "Yamato_Maya",
-      "pageUrl": "https://bandori.fandom.com/wiki/Yamato_Maya",
+      "pageUrl": "",
       "englishName": "Maya Yamato",
       "japaneseName": "大和 麻弥",
       "displayName": "麻弥",
@@ -3073,21 +3073,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 66.05
       },
       "color": "#99DD88",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/0/01/019.png/revision/latest?cb=20230321083003",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3336d90e0.png",
       "description": "麻弥最鲜明的标签是器材宅、原本是录音室乐手、谈到设备就会兴奋起来。麻弥平时有点低调甚至不起眼，但一旦进入熟悉领域，整个人会立刻变得非常有存在感。她未必会主动解释自己，但很多判断其实都藏在那种冷静、迅速又不多余的反应里。放到亲近关系和团体相处里看，这一面通常会更明显。真到情绪碰上来时，她常常还是先选择不声不响地自己扛。",
       "descriptions": {
         "zh": "麻弥最鲜明的标签是器材宅、原本是录音室乐手、谈到设备就会兴奋起来。麻弥平时有点低调甚至不起眼，但一旦进入熟悉领域，整个人会立刻变得非常有存在感。她未必会主动解释自己，但很多判断其实都藏在那种冷静、迅速又不多余的反应里。放到亲近关系和团体相处里看，这一面通常会更明显。真到情绪碰上来时，她常常还是先选择不声不响地自己扛。",
         "en": "Maya's most distinctive label is that she is an equipment geek. She was originally a recording studio musician and gets excited when talking about equipment. Maya is usually a bit low-key or even inconspicuous, but once it enters a familiar field, it will immediately become very present. She may not take the initiative to explain herself, but a lot of judgment is actually hidden in that calm, quick and non-redundant reaction. This aspect is usually more obvious when looking at close relationships and group interactions. When emotions really come up, she often chooses to handle them silently.",
         "ja": "麻弥 の最も特徴的なレーベルは、彼女が機器オタクであることです。彼女はもともとレコーディングスタジオミュージシャンだったので、機材の話になると盛り上がる。麻弥 は、通常は少し目立たないか、目立たないものですが、馴染みのある分野に入ると、すぐに非常に存在感のあるものになります。彼女は率先して自分のことを説明しようとはしないかもしれませんが、実際には、その冷静で素早い、冗長性のない反応の中に多くの判断力が隠されています。この側面は通常、親密な関係やグループの相互作用を見るとより明らかになります。感情が本当に湧き上がってくると、彼女はしばしばそれを静かに処理することを選択します。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/2/2e/Pastel%2APalettes_logo.png/revision/latest/scale-to-width-down/228?cb=20230828140441",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/b/bb/Icon_pasupare.svg/revision/latest/scale-to-width-down/40?cb=20210328073625",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Pastel*Palettes"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332d56589.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de3329e667b.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_misaki_misaki",
       "pageTitle": "Okusawa_Misaki",
-      "pageUrl": "https://bandori.fandom.com/wiki/Okusawa_Misaki",
+      "pageUrl": "",
       "englishName": "Misaki Okusawa",
       "japaneseName": "奥沢 美咲",
       "displayName": "美咲",
@@ -3111,21 +3111,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 17.05
       },
       "color": "#DD33CC",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/5/5e/015.png/revision/latest?cb=20230321082806",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de33370d710.png",
       "description": "美咲是 Hello, Happy World! 的常识人、吐槽役，也是“米歇尔”形象背后真正承担执行的人。美咲嘴上常说麻烦，实际上却总是最清楚团队缺了什么、事情该怎样才做得成。美咲和心的关系是理解 HHW 的关键，一方把世界搅动起来，一方负责把这场搅动变成真的舞台。落到具体相处里，她很多可靠感不是说出来的，而是一步一步做出来的。她不太靠夸张表达建立存在感，真正让人记住她的，往往是那种一步一步做出来的稳定。真到责任压上来的时候，她往往会先把自己收得更紧。",
       "descriptions": {
         "zh": "美咲是 Hello, Happy World! 的常识人、吐槽役，也是“米歇尔”形象背后真正承担执行的人。美咲嘴上常说麻烦，实际上却总是最清楚团队缺了什么、事情该怎样才做得成。美咲和心的关系是理解 HHW 的关键，一方把世界搅动起来，一方负责把这场搅动变成真的舞台。落到具体相处里，她很多可靠感不是说出来的，而是一步一步做出来的。她不太靠夸张表达建立存在感，真正让人记住她的，往往是那种一步一步做出来的稳定。真到责任压上来的时候，她往往会先把自己收得更紧。",
         "en": "Misaki is the common sense person and commentator of Hello, Happy World!, and the person behind the \"Michelle\" image who is really responsible for execution. Misaki often talks about trouble, but in fact she always knows best what the team lacks and how things should be done. The relationship between Misaki and the heart is the key to understanding HHW. One party stirs up the world, and the other party is responsible for turning this stir into a real stage. When it comes to actual interactions, a lot of her sense of reliability is not something she says, but something she does step by step. She doesn't rely on exaggerated expressions to establish a sense of presence. What really makes people remember her is her step-by-step stability. When responsibilities really come to bear, she will often tighten herself tighter first.",
         "ja": "美咲 は、ハロー、ハッピーワールド! の常識人兼解説者であり、「ミッシェル」のイメージの真の実行責任者です。美咲 はトラブルについてよく話しますが、実際のところ、チームに何が欠けているのか、どうすればよいのかを常に一番よく知っているのは彼女です。美咲 とハートの関係が HHW を理解する鍵となります。一方は世界を騒がせ、もう一方はその騒動を本物の舞台に変える責任がある。実際のやり取りに関しては、彼女の信頼感の多くは、彼女が言うことではなく、彼女が一歩ずつ実行するものです。彼女は存在感を確立するために大げさな表現に頼っていません。彼女の記憶に残るのは、彼女の一歩一歩の安定感です。本当に責任が課せられることになると、彼女はまず自分自身をきつく締めることがよくあります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/6/65/Hello%2C_Happy_World%21_logo.png/revision/latest/scale-to-width-down/231?cb=20211201110149",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/e/e4/Icon_hhw.svg/revision/latest/scale-to-width-down/35?cb=20210328073349",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Hello,_Happy_World!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c0bd3f.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286186f.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_moca_moca",
       "pageTitle": "Aoba_Moca",
-      "pageUrl": "https://bandori.fandom.com/wiki/Aoba_Moca",
+      "pageUrl": "",
       "englishName": "Moca Aoba",
       "japaneseName": "青葉 モカ",
       "displayName": "摩卡",
@@ -3149,21 +3149,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 82.6
       },
       "color": "#00CCAA",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/e/e8/007.png/revision/latest?cb=20230321064837",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de333758a09.png",
       "description": "摩卡不是传统意义上的高调角色，却经常在最关键的时候看穿气氛、看穿别人没说出口的真实情绪。摩卡很多戏份的重点都在“明明看得最清楚，却选择用轻巧方式守住关系”，因此比表面更有重量。和人相处时，她比起立刻表态，更习惯先观察和拆解。她看起来像总和人群隔着一点距离，可真要细看，就会发现她其实一直在用自己的方式理解眼前的一切。可她越沉进自己的思路里，越容易把真正的情绪留在外面。",
       "descriptions": {
         "zh": "摩卡不是传统意义上的高调角色，却经常在最关键的时候看穿气氛、看穿别人没说出口的真实情绪。摩卡很多戏份的重点都在“明明看得最清楚，却选择用轻巧方式守住关系”，因此比表面更有重量。和人相处时，她比起立刻表态，更习惯先观察和拆解。她看起来像总和人群隔着一点距离，可真要细看，就会发现她其实一直在用自己的方式理解眼前的一切。可她越沉进自己的思路里，越容易把真正的情绪留在外面。",
         "en": "Moca is not a high-profile character in the traditional sense, but she often sees through the atmosphere and the unspoken true emotions of others at the most critical moments. The focus of many of Moca's scenes is \"Obviously seeing things clearly, but choosing to maintain relationships in a light way\", so they are more weighty than they appear. When getting along with people, she prefers to observe and dismantle them rather than express her opinions immediately. She always seems to be a little far away from the crowd, but if you really look closely, you will find that she has been understanding everything in front of her in her own way. But the more she sank into her own thoughts, the easier it was for her to leave her true emotions outside.",
         "ja": "モカ は伝統的な意味での注目度の高いキャラクターではありませんが、最も重要な瞬間に周囲の雰囲気や他人の口にしない本当の感情を見抜くことがよくあります。モカ のシーンの多くは、「物事をはっきりと見ることはもちろんですが、関係を軽めに維持することを選択する」ことに焦点を当てているため、見た目よりも重みがあります。人と仲良くなるとき、彼女は自分の意見をすぐに言うよりも、観察して解体することを好みます。彼女はいつも群衆から少し離れているように見えますが、よく見てみると、目の前のすべてを彼女なりの方法で理解していることがわかります。しかし、彼女は自分の考えに沈むほど、本当の感情を外に出すことが容易になりました。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/f/f9/Afterglow_logo.png/revision/latest/scale-to-width-down/250?cb=20211201105320",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/1/1f/Icon_afterglow.svg/revision/latest/scale-to-width-down/20?cb=20210328073813",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Afterglow"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332a38ba6.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33283a7eb.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_mutsumi_mutsumi",
       "pageTitle": "Wakaba_Mutsumi",
-      "pageUrl": "https://bandori.fandom.com/wiki/Wakaba_Mutsumi",
+      "pageUrl": "",
       "englishName": "Mutsumi Wakaba",
       "japaneseName": "若葉 睦",
       "displayName": "睦",
@@ -3187,21 +3187,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 74.8
       },
       "color": "#779977",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/c/c6/Wakaba_Mutsumi_-_Casual_Live2D_Model.png/revision/latest/scale-to-width-down/268?cb=20240311211222",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de33378036d.png",
       "description": "睦像总和热闹隔着一点距离，却始终在看、在想的人。睦在关系中往往不是主动说出需求的人，而是先吞下情绪、再以极端方式爆发。她常把真正的想法留在心里慢慢推演。她看起来像总和人群隔着一点距离，可真要细看，就会发现她其实一直在用自己的方式理解眼前的一切。只是想得太深太久的时候，她和别人的距离也会被无声地拉开。",
       "descriptions": {
         "zh": "睦像总和热闹隔着一点距离，却始终在看、在想的人。睦在关系中往往不是主动说出需求的人，而是先吞下情绪、再以极端方式爆发。她常把真正的想法留在心里慢慢推演。她看起来像总和人群隔着一点距离，可真要细看，就会发现她其实一直在用自己的方式理解眼前的一切。只是想得太深太久的时候，她和别人的距离也会被无声地拉开。",
         "en": "Mutsumi is like a person who is always a little far away from the excitement, but is always watching and thinking. Mutsumi is often not the one who takes the initiative to express her needs in a relationship. Instead, she swallows her emotions first and then explodes in extreme ways. She often keeps her true thoughts in her heart and deduce them slowly. She always seems to be a little far away from the crowd, but if you really look closely, you will find that she has been understanding everything in front of her in her own way. But when she thinks too deeply and for too long, the distance between her and others will be silently widened.",
         "ja": "睦は、いつもワクワクから少し離れたところにいて、でも常に見つめて考えている人のような人です。睦 は、多くの場合、人間関係において自分のニーズを率先して表現する人ではありません。代わりに、彼女は最初に自分の感情を飲み込み、その後極端な方法で爆発させます。彼女は自分の本当の考えを胸に秘め、ゆっくりとそれを推理することがよくあります。彼女はいつも群衆から少し離れているように見えますが、よく見てみると、目の前のすべてを彼女なりの方法で理解していることがわかります。しかし、深く考えすぎると、他人との距離は静かに広がってしまう。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/3/37/Ave_Mujica_logo.png/revision/latest/scale-to-width-down/242?cb=20250122144511",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/d/dd/Ave_Mujica_icon.svg/revision/latest/scale-to-width-down/37?cb=20230605093732",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Ave_Mujica"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332bb7b5c.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286e14f.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_nanami_nanami",
       "pageTitle": "Hiromachi_Nanami",
-      "pageUrl": "https://bandori.fandom.com/wiki/Hiromachi_Nanami",
+      "pageUrl": "",
       "englishName": "Nanami Hiromachi",
       "japaneseName": "広町 七深",
       "displayName": "七深",
@@ -3225,21 +3225,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 20.75
       },
       "color": "#EE7744",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/e/e7/028.png/revision/latest?cb=20230321083400",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3337c0a89.png",
       "description": "七深非常在意自己看起来是不是和别人不一样，因此那种轻飘感里其实常带着自我位置的不安。七深的人设核心是“想变普通”与“实际上很特别”的落差。和人相处时，她很多温柔和执拗都藏在不声张的地方。她并不急着让人理解自己，可一旦真的认定了谁或什么，心里的分量往往会沉得比表面重很多。真到某些不能退开的时刻，她心里的坚持会比表面露出来得更重。",
       "descriptions": {
         "zh": "七深非常在意自己看起来是不是和别人不一样，因此那种轻飘感里其实常带着自我位置的不安。七深的人设核心是“想变普通”与“实际上很特别”的落差。和人相处时，她很多温柔和执拗都藏在不声张的地方。她并不急着让人理解自己，可一旦真的认定了谁或什么，心里的分量往往会沉得比表面重很多。真到某些不能退开的时刻，她心里的坚持会比表面露出来得更重。",
         "en": "Nanami is very concerned about whether she looks different from others, so the feeling of lightness is often accompanied by the uneasiness of her own position. The core of Nanami's character design is the gap between \"wanting to be ordinary\" and \"actually special\". When getting along with others, a lot of her tenderness and stubbornness are hidden in a quiet place. She is not in a hurry to let people understand her, but once she really identifies someone or something, the weight in her heart will often be much heavier than it appears. At certain moments when she cannot retreat, her inner persistence will be heavier than what appears on the surface.",
         "ja": "七深 は、自分が他の人と違って見えるかどうかを非常に気にしているため、軽い気持ちには自分の立場の不安が伴うことがよくあります。七深のキャラクターデザインの核となるのは、「普通でありたい」と「実は特別」のギャップです。他人と仲良くするとき、彼女の優しさと頑固さは静かな場所にたくさん隠れています。彼女は人々に自分のことを理解してもらうことを急いでいませんが、一度誰かや何かを本当に認識すると、彼女の心の重みは見た目よりもはるかに重くなることがよくあります。彼女が後退できない特定の瞬間には、彼女の内なる執拗さが表面に現れるものよりも重くなるでしょう。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/7/7a/Morfonica_logo.png/revision/latest/scale-to-width-down/231?cb=20200810080918",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/3/34/Icon_morfonica.svg/revision/latest/scale-to-width-down/40?cb=20210215040928",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Morfonica"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c0bd3e.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286273e.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_nyamu_nyamu",
       "pageTitle": "Yuutenji_Nyamu",
-      "pageUrl": "https://bandori.fandom.com/wiki/Yuutenji_Nyamu",
+      "pageUrl": "",
       "englishName": "Nyamu Yutenji",
       "japaneseName": "祐天寺 にゃむ",
       "displayName": "若麦",
@@ -3263,21 +3263,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 67.05
       },
       "color": "#AA4477",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/0/00/Yuutenji_Nyamu_-_Casual_Live2D_Model.png/revision/latest/scale-to-width-down/268?cb=20240311211558",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3338b6e3b.png",
       "description": "若麦不是先有乐队、后有曝光，而是一开始就把“被看见”“变得更红”作为人生战略的一部分。若麦非常现实，懂流量、懂镜头、懂怎样把自己包装成可传播的对象。她越是变化快的场面，越能看出她的狠劲和手感。她身上那种利落感很像临场直觉先一步落地，所以越到需要马上做决定的时候，越能看出她的存在感。只是那股敢冲的劲头上来时，往往顾不上给自己留太多余地。",
       "descriptions": {
         "zh": "若麦不是先有乐队、后有曝光，而是一开始就把“被看见”“变得更红”作为人生战略的一部分。若麦非常现实，懂流量、懂镜头、懂怎样把自己包装成可传播的对象。她越是变化快的场面，越能看出她的狠劲和手感。她身上那种利落感很像临场直觉先一步落地，所以越到需要马上做决定的时候，越能看出她的存在感。只是那股敢冲的劲头上来时，往往顾不上给自己留太多余地。",
         "en": "Nyamu does not have a band first and exposure later. Instead, Nyamu has considered \"being seen\" and \"becoming more popular\" as part of its life strategy from the very beginning. Nyamu is very realistic. It understands traffic, lenses, and how to package itself into a spreadable object. The more quickly she changes the scene, the more you can see her fierceness and touch. Her sense of neatness is very much like her intuition being on the spot, so the more she needs to make an immediate decision, the more her presence can be seen. It's just that when the courage to rush comes, I often don't bother to leave myself too much room.",
         "ja": "にゃむは、先にバンドをやって、後から露出するということはありません。その代わり、にゃむは当初から「注目されること」と「人気が高まること」を人生戦略の一環として考えてきました。にゃむ は非常に現実的です。トラフィック、レンズ、およびそれ自体を展開可能なオブジェクトにパッケージ化する方法を理解しています。場面が切り替わるのが早ければ早いほど、彼女の激しさとタッチがより伝わってきます。きちんと感があり、その場の直感に近いので、即断即決が必要なほど存在感が増します。ただ、急ぐ勇気が湧いたとき、私はあまり余裕を持たないことが多いのです。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/3/37/Ave_Mujica_logo.png/revision/latest/scale-to-width-down/242?cb=20250122144511",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/d/dd/Ave_Mujica_icon.svg/revision/latest/scale-to-width-down/37?cb=20230605093732",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Ave_Mujica"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332bb7b5c.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286e14f.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_owner_livehouse",
       "pageTitle": "Tsuzuki_Shifune",
-      "pageUrl": "https://bandori.fandom.com/wiki/Tsuzuki_Shifune",
+      "pageUrl": "",
       "englishName": "Shifune Tsuzuki",
       "japaneseName": "都築 詩船",
       "displayName": "店长",
@@ -3301,21 +3301,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 15.05
       },
       "color": "#E00050",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/c/c3/Tsuzuki_Shifune_Live2D_Model.png/revision/latest/scale-to-width-down/268?cb=20220324023027",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3338d6a5c.png",
       "description": "店长总像把很多话都藏在心里的人。和人相处时，她很多温柔和执拗都藏在不声张的地方。她并不急着让人理解自己，可一旦真的认定了谁或什么，心里的分量往往会沉得比表面重很多。只是很多情绪都压在很深的地方，真碰到在意的人和事时，反而会显得格外执拗。",
       "descriptions": {
         "zh": "店长总像把很多话都藏在心里的人。和人相处时，她很多温柔和执拗都藏在不声张的地方。她并不急着让人理解自己，可一旦真的认定了谁或什么，心里的分量往往会沉得比表面重很多。只是很多情绪都压在很深的地方，真碰到在意的人和事时，反而会显得格外执拗。",
         "en": "Shifune always looks like a person who hides a lot of things in her heart. When getting along with others, a lot of her tenderness and stubbornness are hidden in a quiet place. She is not in a hurry to let people understand her, but once she really identifies someone or something, the weight in her heart will often be much heavier than it appears. It's just that a lot of emotions are suppressed very deep, and when you really encounter people and things that you care about, you will appear to be particularly stubborn.",
         "ja": "詩船はいつも心の中にたくさんのことを隠している人のように見えます。他人と仲良くするとき、彼女の優しさと頑固さは静かな場所にたくさん隠れています。彼女は人々に自分のことを理解してもらうことを急いでいませんが、一度誰かや何かを本当に認識すると、彼女の心の重みは見た目よりもはるかに重くなることがよくあります。ただ、多くの感情が非常に奥深くで抑圧されており、本当に自分が大切にしている人や物事に出会ったときは、特に頑固に見えるでしょう。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/4/4b/BanG_Dream%21_Logo.svg/revision/latest?cb=20180922150901",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/4/4b/BanG_Dream%21_Logo.svg/revision/latest?cb=20180922150901",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/BanG_Dream!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c10887.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332c10887.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_ran_ran",
       "pageTitle": "Mitake_Ran",
-      "pageUrl": "https://bandori.fandom.com/wiki/Mitake_Ran",
+      "pageUrl": "",
       "englishName": "Ran Mitake",
       "japaneseName": "美竹 蘭",
       "displayName": "兰",
@@ -3339,21 +3339,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 86.35
       },
       "color": "#EE0022",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/1/18/006.png/revision/latest?cb=20230321064811",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de333963190.png",
       "description": "兰很重视幼驯染关系，也很抗拒那些会让“现在的同伴关系”变质的变化，因此她的强硬很多时候都和珍惜有关。兰的外在是直来直往和有距离感，内里却非常在乎“大家还能不能像以前一样”。很多时候，她比起解释自己，更习惯顺着真实的心意去做选择。她的温和并不等于没有棱角，只是那些坚持很少喊出来，而是安静地落在每一次选择里。只是心事一旦压得太久，那份温和里也会慢慢生出一点别扭和倔强。",
       "descriptions": {
         "zh": "兰很重视幼驯染关系，也很抗拒那些会让“现在的同伴关系”变质的变化，因此她的强硬很多时候都和珍惜有关。兰的外在是直来直往和有距离感，内里却非常在乎“大家还能不能像以前一样”。很多时候，她比起解释自己，更习惯顺着真实的心意去做选择。她的温和并不等于没有棱角，只是那些坚持很少喊出来，而是安静地落在每一次选择里。只是心事一旦压得太久，那份温和里也会慢慢生出一点别扭和倔强。",
         "en": "Ran attaches great importance to the relationship between cubs and tamers, and also resists changes that would deteriorate the \"current companionship\", so her toughness is often related to cherishing. On the outside, Ran is straightforward and distant, but on the inside, she cares very much about \"whether everyone can be the same as before. \"Many times, she is more accustomed to making choices based on her true feelings than explaining herself. Her gentleness does not mean that she has no edges, but those persistences are rarely shouted out, but fall quietly into every choice. But once the worries are pressed for too long, a little awkwardness and stubbornness will gradually arise in that gentleness.",
         "ja": "蘭 は子供と飼い主の関係を非常に重視しており、「現在の関係」を悪化させるような変化にも抵抗するため、彼女のタフさは多くの場合、大切にすることに関連しています。蘭は、表向きは真っ直ぐでよそよそしいけど、内心は「みんなが以前と同じでいられるかどうか」をとても大切にしています。多くの場合、彼女は自分自身を説明するよりも、自分の本当の気持ちに基づいて選択をすることに慣れています。彼女の優しさは彼女にエッジがないことを意味するものではありませんが、その固執はめったに叫ばれず、あらゆる選択の中に静かに落ちます。しかし、悩みを長く抱えすぎると、その優しさの中に少しぎこちなさや頑固さが徐々に生まれてきます。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/f/f9/Afterglow_logo.png/revision/latest/scale-to-width-down/250?cb=20211201105320",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/1/1f/Icon_afterglow.svg/revision/latest/scale-to-width-down/20?cb=20210328073813",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Afterglow"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332a38ba6.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33283a7eb.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_rana_rana",
       "pageTitle": "Kaname_Raana",
-      "pageUrl": "https://bandori.fandom.com/wiki/Kaname_Raana",
+      "pageUrl": "",
       "englishName": "Rana Kaname",
       "japaneseName": "要 楽奈",
       "displayName": "乐奈",
@@ -3377,21 +3377,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 75.6
       },
       "color": "#77DD77",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/e/ef/038.png/revision/latest?cb=20230915155933",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de33396fc52.png",
       "description": "乐奈并不是离群索居的冷角色，而是按自己的感受法则与世界发生连接。乐奈的人设核心是本能、天赋和极强的个人节奏感。和人相处时，她比起立刻表态，更习惯先观察和拆解。她看起来像总和人群隔着一点距离，可真要细看，就会发现她其实一直在用自己的方式理解眼前的一切。只是想得太深太久的时候，她和别人的距离也会被无声地拉开。",
       "descriptions": {
         "zh": "乐奈并不是离群索居的冷角色，而是按自己的感受法则与世界发生连接。乐奈的人设核心是本能、天赋和极强的个人节奏感。和人相处时，她比起立刻表态，更习惯先观察和拆解。她看起来像总和人群隔着一点距离，可真要细看，就会发现她其实一直在用自己的方式理解眼前的一切。只是想得太深太久的时候，她和别人的距离也会被无声地拉开。",
         "en": "Rana is not a cold character who lives in isolation, but connects with the world according to her own feelings. The core of Rana's character design is instinct, talent and a strong sense of personal rhythm. When getting along with people, she prefers to observe and dismantle them rather than express her opinions immediately. She always seems to be a little far away from the crowd, but if you really look closely, you will find that she has been understanding everything in front of her in her own way. But when she thinks too deeply and for too long, the distance between her and others will be silently widened.",
         "ja": "楽奈は孤独に生きる冷たいキャラクターではなく、自分の感情に従って世界とつながっていくキャラクターです。楽奈 のキャラクター デザインの核となるのは、本能、才能、そして個人のリズム感です。人と仲良くなるとき、彼女は自分の意見をすぐに言うよりも、観察して解体することを好みます。彼女はいつも群衆から少し離れているように見えますが、よく見てみると、目の前のすべてを彼女なりの方法で理解していることがわかります。しかし、深く考えすぎると、他人との距離は静かに広がってしまう。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/6/65/MyGO%21%21%21%21%21_logo.png/revision/latest/scale-to-width-down/205?cb=20230915160317",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/a/ac/Icon_mygo.png/revision/latest/scale-to-width-down/40?cb=20230916120900",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/MyGO!!!!!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c2eba6.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33285ecbc.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_rei_rei",
       "pageTitle": "LAYER",
-      "pageUrl": "https://bandori.fandom.com/wiki/LAYER",
+      "pageUrl": "",
       "englishName": "Rei Wakana",
       "japaneseName": "和奏 レイ",
       "displayName": "瑞依",
@@ -3415,21 +3415,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 17.05
       },
       "color": "#CC0000",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/6/61/031.png/revision/latest?cb=20230321083520",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3339a6f45.png",
       "description": "瑞依带着职业感和距离感进入关系，但又不是冷漠型人物，而是会先确认自己是否真的认同一件事，才决定投入多深。瑞依和 CHU2 的互动尤其重要，因为那条线会不断碰撞“制作人视角”与“演唱者情感”之间的差异。落到具体相处里，她很多温柔和执拗都藏在不声张的地方。她并不急着让人理解自己，可一旦真的认定了谁或什么，心里的分量往往会沉得比表面重很多。只是很多情绪都压在很深的地方，真碰到在意的人和事时，反而会显得格外执拗。",
       "descriptions": {
         "zh": "瑞依带着职业感和距离感进入关系，但又不是冷漠型人物，而是会先确认自己是否真的认同一件事，才决定投入多深。瑞依和 CHU2 的互动尤其重要，因为那条线会不断碰撞“制作人视角”与“演唱者情感”之间的差异。落到具体相处里，她很多温柔和执拗都藏在不声张的地方。她并不急着让人理解自己，可一旦真的认定了谁或什么，心里的分量往往会沉得比表面重很多。只是很多情绪都压在很深的地方，真碰到在意的人和事时，反而会显得格外执拗。",
         "en": "Rei enters relationships with a sense of professionalism and distance, but she is not an indifferent person. Instead, she will first confirm whether she really agrees with something before deciding how deeply to invest. The interaction between Rei and CHU2 is particularly important, because that line will constantly collide with the difference between the \"producer's perspective\" and the \"singer's emotion\". When it comes to actual interactions, a lot of her tenderness and stubbornness are hidden in a quiet place. She is not in a hurry to let people understand her, but once she really identifies someone or something, the weight in her heart will often be much heavier than it appears. It's just that a lot of emotions are suppressed very deep, and when you really encounter people and things that you care about, you will appear to be particularly stubborn.",
         "ja": "レイ はプロ意識と距離感を持って関係を築きますが、無関心な人ではありません。代わりに、どの程度深く投資するかを決定する前に、まず自分が本当に同意するかどうかを確認します。レイとCHU2のやり取りは特に重要で、そのラインは「プロデューサーの視点」と「歌い手の感情」の違いと常に衝突するからです。実際のやりとりとなると、彼女の優しさと頑固さの多くは静かな場所に隠されています。彼女は人々に自分のことを理解してもらうことを急いでいませんが、一度誰かや何かを本当に認識すると、彼女の心の重みは見た目よりもはるかに重くなることがよくあります。ただ、多くの感情が非常に奥深くで抑圧されており、本当に自分が大切にしている人や物事に出会ったときは、特に頑固に見えるでしょう。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/7/7f/RAISE_A_SUILEN_logo.png/revision/latest/scale-to-width-down/221?cb=20200810080553",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/2/24/Icon_ras.svg/revision/latest/scale-to-width-down/40?cb=20210215040854",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/RAISE_A_SUILEN"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332ddd5e3.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a2e8fc.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_reona_reona",
       "pageTitle": "PAREO",
-      "pageUrl": "https://bandori.fandom.com/wiki/PAREO",
+      "pageUrl": "",
       "englishName": "Reona Nyubara",
       "japaneseName": "鳰原 れおな",
       "displayName": "令王那",
@@ -3453,21 +3453,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 17.05
       },
       "color": "#FF99BB",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/7/7d/034.png/revision/latest?cb=20230321083628",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de333a7b3ea.png",
       "description": "玲奈以 PAREO 形象活动，喜欢可爱事物、追星热情很强，也对 CHU2 带有近乎绝对的忠诚。令王那看起来很偶像宅，但真正有趣的地方在于她会把热爱、崇拜和执行力全部压进自己的表演里。令王那的人设核心是把“喜欢”推到极致，因此行动力非常惊人。她看起来总在照顾气氛，其实更在意的是每个人有没有被好好放进关系里。在私下状态和正式场合之间，这种气质其实都很稳定。真到最怕失去什么的时候，她那份温柔反而会变得格外用力。",
       "descriptions": {
         "zh": "玲奈以 PAREO 形象活动，喜欢可爱事物、追星热情很强，也对 CHU2 带有近乎绝对的忠诚。令王那看起来很偶像宅，但真正有趣的地方在于她会把热爱、崇拜和执行力全部压进自己的表演里。令王那的人设核心是把“喜欢”推到极致，因此行动力非常惊人。她看起来总在照顾气氛，其实更在意的是每个人有没有被好好放进关系里。在私下状态和正式场合之间，这种气质其实都很稳定。真到最怕失去什么的时候，她那份温柔反而会变得格外用力。",
         "en": "Reina acts as PAREO. She likes cute things and has a strong passion for chasing stars. She also has almost absolute loyalty to CHU2. Reona looks like an idol nerd, but the really interesting thing is that she puts all her love, admiration and execution into her performance. The core of Reona's character design is to push \"like\" to the extreme, so its mobility is amazing. She always seems to be taking care of the atmosphere, but in fact she cares more about whether everyone is well put into the relationship. This temperament is actually very stable between private and formal situations. When she is really afraid of losing something, her tenderness will become extra strong.",
         "ja": "玲奈がパレオ役を務める。かわいいものが好きで、星を追うことに強い情熱を持っています。 CHU2に対してもほぼ絶対的な忠誠心を持っている。れおな はアイドルオタクのように見えますが、本当に興味深いのは、彼女がパフォーマンスに愛情、賞賛、実行力のすべてを注ぎ込んでいることです。れおなのキャラクターデザインの根幹は「らしさ」を極限まで突き詰めたものなので、その機動力はすごいです。彼女はいつも雰囲気を大切にしているように見えますが、実際はみんながうまく関係にあるかどうかをもっと気にしています。この気質は実際、プライベートな状況でもフォーマルな状況でも非常に安定しています。何かを失うのが本当に怖いとき、彼女の優しさはさらに強くなります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/7/7f/RAISE_A_SUILEN_logo.png/revision/latest/scale-to-width-down/221?cb=20200810080553",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/2/24/Icon_ras.svg/revision/latest/scale-to-width-down/40?cb=20210215040854",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/RAISE_A_SUILEN"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332ddd5e3.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a2e8fc.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_rimi_rimi",
       "pageTitle": "Ushigome_Rimi",
-      "pageUrl": "https://bandori.fandom.com/wiki/Ushigome_Rimi",
+      "pageUrl": "",
       "englishName": "Rimi Ushigome",
       "japaneseName": "牛込 りみ",
       "displayName": "里美",
@@ -3491,21 +3491,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 25.3
       },
       "color": "#FF55BB",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/b/b0/003.png/revision/latest?cb=20230321061237",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de333a9d475.png",
       "description": "里美的形象并不靠强烈存在感取胜，而是靠稳定、细腻和会为他人着想的姿态积累信任。里美和姐姐、和 Poppin'Party 成员之间的关系，会不断强化她“想被需要，也想回应别人期待”的内核。她很少抢着站到最前面，却常常会在别人最容易忽略的地方把事情悄悄接住。放到亲近关系和团体相处里看，这一面通常会更明显。只是她太习惯忍耐和承担，所以很多真实想法都不会第一时间说出口。",
       "descriptions": {
         "zh": "里美的形象并不靠强烈存在感取胜，而是靠稳定、细腻和会为他人着想的姿态积累信任。里美和姐姐、和 Poppin'Party 成员之间的关系，会不断强化她“想被需要，也想回应别人期待”的内核。她很少抢着站到最前面，却常常会在别人最容易忽略的地方把事情悄悄接住。放到亲近关系和团体相处里看，这一面通常会更明显。只是她太习惯忍耐和承担，所以很多真实想法都不会第一时间说出口。",
         "en": "Rimi's image is not won by a strong sense of presence, but by a stable, delicate and considerate posture to accumulate trust. The relationship between Rimi, her sister, and the members of Poppin' Party will continue to strengthen her core of \"wanting to be needed, and also wanting to respond to others' expectations. \"She rarely rushes to stand at the front, but often quietly catches things in places where others can most easily ignore them. This aspect is usually more obvious when looking at close relationships and group interactions. It's just that she is too used to being patient and responsible, so many of her true thoughts will not be spoken out immediately.",
         "ja": "りみのイメージは、存在感の強さではなく、安定感と繊細さ、思いやりを持って信頼を積み重ねる姿勢によって決まります。りみと妹、そしてPoppin’Partyのメンバーとの関係は、彼女の「必要とされたい、そして他者の期待に応えたい」という軸をさらに強めていくことになるだろう。彼女は急いで前に立とうとすることはめったにありませんが、他の人が最も簡単に無視できる場所で静かに物事をキャッチすることがよくあります。この側面は通常、親密な関係やグループの相互作用を見るとより明らかになります。ただ、彼女は忍耐強く責任感を持つことに慣れすぎているため、多くの本当の考えがすぐには語られません。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/2/2a/Poppin%27Party_logo.png/revision/latest/scale-to-width-down/250?cb=20200327142717",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/b/b6/Icon_popipa.svg/revision/latest/scale-to-width-down/40?cb=20210407055615",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Poppin'Party"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332de0818.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a1606d.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_rinko_rinko",
       "pageTitle": "Shirokane_Rinko",
-      "pageUrl": "https://bandori.fandom.com/wiki/Shirokane_Rinko",
+      "pageUrl": "",
       "englishName": "Rinko Shirokane",
       "japaneseName": "白金 燐子",
       "displayName": "燐子",
@@ -3529,21 +3529,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 24.8
       },
       "color": "#BBBBBB",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/0/0a/025.png/revision/latest?cb=20230321083230",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de333b56253.png",
       "description": "白金燐子安静得像总与人群隔着半步距离，说话轻，情绪也收得很深，却会把重要的人和事默默记得很久。她并不是没有主见，只是比起张扬表达，更习惯把心意放进行动和坚持里，因此越相处，越能感到她温柔背后那份安静而稳定的力量。",
       "descriptions": {
         "zh": "白金燐子安静得像总与人群隔着半步距离，说话轻，情绪也收得很深，却会把重要的人和事默默记得很久。她并不是没有主见，只是比起张扬表达，更习惯把心意放进行动和坚持里，因此越相处，越能感到她温柔背后那份安静而稳定的力量。",
         "en": "Rinko Shirokane is as quiet as if she is always half a step away from the crowd. She speaks softly and has deep emotions, but she will silently remember important people and things for a long time. It’s not that she doesn’t have her own opinion, it’s just that she is more accustomed to putting her thoughts into action and persistence than to express herself openly. Therefore, the more we get along with her, the more she can feel the quiet and stable power behind her gentleness.",
         "ja": "白金 燐子 は、常に群衆から半歩離れているかのように静かです。穏やかな口調で感情豊かですが、大切な人や物事のことは静かに長く記憶に残ります。彼女は自分の意見を持っていないわけではなく、自分を率直に表現するよりも、自分の考えを行動に移し粘り強く続けることに慣れているだけなのです。そのため、仲良くなればなるほど、その優しさの裏にある静かで安定した力を感じることができます。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/a/aa/Roselia_logo.png/revision/latest/scale-to-width-down/229?cb=20211201105701",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/d/de/Icon_roselia.svg/revision/latest/scale-to-width-down/40?cb=20210710030837",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Roselia"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332de28a4.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a31f36.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_rokka_rokka",
       "pageTitle": "LOCK",
-      "pageUrl": "https://bandori.fandom.com/wiki/LOCK",
+      "pageUrl": "",
       "englishName": "Rokka Asahi",
       "japaneseName": "朝日 六花",
       "displayName": "六花",
@@ -3567,21 +3567,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 67.05
       },
       "color": "#AAEE22",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/2/2e/032.png/revision/latest?cb=20230321083549",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de333b54697.png",
       "description": "六花是努力、质朴、容易紧张，但在音乐上非常投入的角色。六花从仰望舞台的一侧走到真正站上舞台的一侧，这种带着粉丝心态的成长路线让她特别有代入感。六花从仰望舞台的一侧走到真正站上舞台的一侧，这种带着粉丝心态的成长路线让她特别有代入感。落到具体相处里，她很多选择都来自内心很个人的坚持。她不一定总把想法说得很响亮，但很多真正重要的选择，反而都藏在那些安静又不肯让步的地方。可一旦真的碰到触动内心的事，她往往比表面看起来更难放下。",
       "descriptions": {
         "zh": "六花是努力、质朴、容易紧张，但在音乐上非常投入的角色。六花从仰望舞台的一侧走到真正站上舞台的一侧，这种带着粉丝心态的成长路线让她特别有代入感。六花从仰望舞台的一侧走到真正站上舞台的一侧，这种带着粉丝心态的成长路线让她特别有代入感。落到具体相处里，她很多选择都来自内心很个人的坚持。她不一定总把想法说得很响亮，但很多真正重要的选择，反而都藏在那些安静又不肯让步的地方。可一旦真的碰到触动内心的事，她往往比表面看起来更难放下。",
         "en": "Rokka is a hard-working, simple, easily nervous character, but very devoted to music. Rokka went from looking up at the stage to actually standing on the stage. This growth path with a fan mentality made her feel particularly involved. Rokka went from looking up at the stage to actually standing on the stage. This growth path with a fan mentality made her feel particularly involved. When it comes to specific interactions, many of her choices come from her inner and very personal persistence. She may not always express her thoughts loudly, but many truly important choices are hidden in those quiet and unwilling places. But once she really encounters something that touches her heart, it's often harder to let go than it seems on the surface.",
         "ja": "六花 は、勤勉で単純で緊張しやすいキャラクターですが、音楽に非常に熱心です。六花はステージを見上げていたところから、実際にステージに立つことになった。ファン心理を伴うこの成長過程は、彼女に特に関与していると感じさせました。六花はステージを見上げていたところから、実際にステージに立つことになった。ファン心理を伴うこの成長過程は、彼女に特に関与していると感じさせました。特定のやり取りに関して、彼女の選択の多くは彼女の内なる、そして非常に個人的な粘り強さから来ています。彼女は自分の考えを常に大声で表現するわけではないかもしれませんが、本当に重要な選択の多くは、静かで不本意な場所に隠されています。しかし、一度本当に心に響くものに出会ってしまうと、表面的に思っているよりも手放すのは難しいことがよくあります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/7/7f/RAISE_A_SUILEN_logo.png/revision/latest/scale-to-width-down/221?cb=20200810080553",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/2/24/Icon_ras.svg/revision/latest/scale-to-width-down/40?cb=20210215040854",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/RAISE_A_SUILEN"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332ddd5e3.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a2e8fc.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_rui_rui",
       "pageTitle": "Yashio_Rui",
-      "pageUrl": "https://bandori.fandom.com/wiki/Yashio_Rui",
+      "pageUrl": "",
       "englishName": "Rui Yashio",
       "japaneseName": "八潮 瑠唯",
       "displayName": "瑠唯",
@@ -3605,21 +3605,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 14.05
       },
       "color": "#669988",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/9/94/030.png/revision/latest?cb=20230321083436",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de333b721e5.png",
       "description": "瑠唯是冷静、聪明、拉小提琴实力极强，同时又对结果和效率有明确追求的人。瑠唯看起来最理性，也最像会把一切情感都先交给分析的人，但这正让她后来的柔软显得很动人。她的可靠不只是能把事情做完，更在于一旦大家开始摇摆，她往往会是先把方向重新拎正的那个人。放到和人的相处里看，这种气质会更鲜明。可越是认定什么该怎么做，她越不容易轻易松口。",
       "descriptions": {
         "zh": "瑠唯是冷静、聪明、拉小提琴实力极强，同时又对结果和效率有明确追求的人。瑠唯看起来最理性，也最像会把一切情感都先交给分析的人，但这正让她后来的柔软显得很动人。她的可靠不只是能把事情做完，更在于一旦大家开始摇摆，她往往会是先把方向重新拎正的那个人。放到和人的相处里看，这种气质会更鲜明。可越是认定什么该怎么做，她越不容易轻易松口。",
         "en": "Rui is a person who is calm, smart, and very good at playing the violin. At the same time, she has a clear pursuit of results and efficiency. Rui looks the most rational, and the most like a person who would submit all emotions to analysis first, but this makes her subsequent softness very touching. Her reliability is not only in getting things done, but also in that once everyone starts to waver, she is often the first to correct the direction. This kind of temperament will be more vivid when you look at it when you get along with others. But the more determined she was about what to do, the less likely she was to let go.",
         "ja": "瑠唯さんは、穏やかで頭が良くて、バイオリンがとても上手な人です。同時に、彼女は結果と効率を明確に追求しています。瑠唯 は最も合理的で、すべての感情を最初に分析する人のように見えますが、これがその後の彼女の柔らかさを非常に感動的なものにしています。彼女の信頼性は、物事をやり遂げることだけでなく、皆が迷い始めても、最初に方向性を修正することが多いという点でもあります。この種の気質は、他人と仲良くしているときに見るとより鮮明になります。しかし、何をすべきかについて彼女が決心をすればするほど、それを手放す可能性は低くなりました。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/7/7a/Morfonica_logo.png/revision/latest/scale-to-width-down/231?cb=20200810080918",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/3/34/Icon_morfonica.svg/revision/latest/scale-to-width-down/40?cb=20210215040928",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Morfonica"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c0bd3e.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286273e.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_saaya_saaya",
       "pageTitle": "Yamabuki_Saaya",
-      "pageUrl": "https://bandori.fandom.com/wiki/Yamabuki_Saaya",
+      "pageUrl": "",
       "englishName": "Saaya Yamabuki",
       "japaneseName": "山吹 沙綾",
       "displayName": "沙绫",
@@ -3643,21 +3643,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 14.25
       },
       "color": "#FFCC11",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/d/d5/004.png/revision/latest?cb=20230321061300",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de33409062b.png",
       "description": "沙绫的家庭背景和照料家人的经验，使她比同龄人更早习惯在热情与责任之间做平衡。沙绫和香澄、有咲等人的互动，经常构成 Poppin'Party 从热情走向持续运作的关键支点。很多时候，她总会先顾到气氛、关系和分寸。她看起来总在照顾气氛，其实更在意的是每个人有没有被好好放进关系里。只是越在意关系，越容易把真正的不安也一起藏深。",
       "descriptions": {
         "zh": "沙绫的家庭背景和照料家人的经验，使她比同龄人更早习惯在热情与责任之间做平衡。沙绫和香澄、有咲等人的互动，经常构成 Poppin'Party 从热情走向持续运作的关键支点。很多时候，她总会先顾到气氛、关系和分寸。她看起来总在照顾气氛，其实更在意的是每个人有没有被好好放进关系里。只是越在意关系，越容易把真正的不安也一起藏深。",
         "en": "Saaya's family background and experience in taking care of her family made her accustomed to balancing passion and responsibility earlier than her peers. The interaction between Saaya and Kasumi, Arisa and others often constitutes a key fulcrum for Poppin' Party to move from enthusiasm to sustainable operation. Most of the time, she always puts atmosphere, relationship and proportion first. She always seems to be taking care of the atmosphere, but in fact she cares more about whether everyone is well put into the relationship. It's just that the more you care about relationships, the easier it is to hide your real uneasiness.",
         "ja": "沙綾 さんは、家族背景と家族の世話をした経験により、情熱と責任のバランスをとることに他の人より早く慣れました。沙綾 と 香澄、有咲 などの相互作用は、Poppin' Party が熱意から持続可能な運営に移行するための重要な支点となることがよくあります。ほとんどの場合、彼女は常に雰囲気、関係性、バランスを第一に考えています。彼女はいつも雰囲気を大切にしているように見えますが、実際はみんながうまく関係にあるかどうかをもっと気にしています。ただ、人間関係を気にすればするほど、本当の不安を隠すのは簡単になります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/2/2a/Poppin%27Party_logo.png/revision/latest/scale-to-width-down/250?cb=20200327142717",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/b/b6/Icon_popipa.svg/revision/latest/scale-to-width-down/40?cb=20210407055615",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Poppin'Party"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332de0818.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a1606d.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_sakiko_sakiko",
       "pageTitle": "Togawa_Sakiko",
-      "pageUrl": "https://bandori.fandom.com/wiki/Togawa_Sakiko",
+      "pageUrl": "",
       "englishName": "Sakiko Togawa",
       "japaneseName": "豊川 祥子",
       "displayName": "祥子",
@@ -3681,21 +3681,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 16.0
       },
       "color": "#7799CC",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/3/3d/Togawa_Sakiko_-_Casual_Live2D_Model.png/revision/latest/scale-to-width-down/268?cb=20240311211835",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de33407ace3.png",
       "description": "丰川祥子身上有种近乎苛刻的骄傲与秩序感。她习惯把局面握在自己手里，也习惯把责任揽到自己肩上，像是只允许事情按她认定的方式成立。只是那份强硬并不单是冷漠，更像不愿再失去什么之后，留下的一层锋利外壳。她不愿把脆弱摊给任何人看，于是连求助和退让，常常也说得像命令一样。",
       "descriptions": {
         "zh": "丰川祥子身上有种近乎苛刻的骄傲与秩序感。她习惯把局面握在自己手里，也习惯把责任揽到自己肩上，像是只允许事情按她认定的方式成立。只是那份强硬并不单是冷漠，更像不愿再失去什么之后，留下的一层锋利外壳。她不愿把脆弱摊给任何人看，于是连求助和退让，常常也说得像命令一样。",
         "en": "Sakiko Togawa has an almost harsh sense of pride and order. She is used to taking situations into her own hands and taking responsibility on her shoulders, as if she only allows things to happen the way she thinks they will. But that toughness is not just indifference, but more like a sharp shell left behind after not wanting to lose anything. She didn't want to show her vulnerability to anyone, so even asking for help and giving in, she often said it like an order.",
         "ja": "豊川 祥子 は、ほとんど厳しいプライドと秩序の感覚を持っています。彼女は、まるで自分の思った通りに物事が起こることだけを許すかのように、状況を自分の手で受け止め、責任を自分の肩に負うことに慣れています。しかし、そのタフさは単なる無関心ではなく、何も失いたくない後に残された鋭い殻のようなものです。彼女は自分の弱さを誰にも見せたくなかったので、助けを求めることも屈服することも、命令のように言うことが多かった。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/3/37/Ave_Mujica_logo.png/revision/latest/scale-to-width-down/242?cb=20250122144511",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/d/dd/Ave_Mujica_icon.svg/revision/latest/scale-to-width-down/37?cb=20230605093732",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Ave_Mujica"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332bb7b5c.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286e14f.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_sayo_sayo",
       "pageTitle": "Hikawa_Sayo",
-      "pageUrl": "https://bandori.fandom.com/wiki/Hikawa_Sayo",
+      "pageUrl": "",
       "englishName": "Sayo Hikawa",
       "japaneseName": "氷川 紗夜",
       "displayName": "纱夜",
@@ -3719,21 +3719,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 20.85
       },
       "color": "#00AABB",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/2/27/022.png/revision/latest?cb=20230321083135",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3340cf89d.png",
       "description": "纱夜对自己很严格，也曾长期活在与妹妹比较的压力里，因此她的成熟感里一直带着一层不肯服输的紧绷。纱夜的人设核心是努力与自尊，经常把情绪先压成可执行的目标。她不太靠夸张表达建立存在感，真正让人记住她的，往往是那种一步一步做出来的稳定。越是和人长期相处，这种底色越藏不住。可她越想把事情放在正确的位置上，越不容易轻易放松下来。",
       "descriptions": {
         "zh": "纱夜对自己很严格，也曾长期活在与妹妹比较的压力里，因此她的成熟感里一直带着一层不肯服输的紧绷。纱夜的人设核心是努力与自尊，经常把情绪先压成可执行的目标。她不太靠夸张表达建立存在感，真正让人记住她的，往往是那种一步一步做出来的稳定。越是和人长期相处，这种底色越藏不住。可她越想把事情放在正确的位置上，越不容易轻易放松下来。",
         "en": "Sayo is very strict with herself and has lived under the pressure of comparison with her sister for a long time. Therefore, her sense of maturity has always been filled with a layer of tension that refuses to admit defeat. The core of Sayo's character is hard work and self-esteem, and she often suppresses emotions into executable goals. She doesn't rely on exaggerated expressions to establish a sense of presence. What really makes people remember her is her step-by-step stability. The longer you stay with someone for a long time, the harder it is to hide this background. But the more she tried to put things in the right place, the harder it was for her to relax easily.",
         "ja": "紗夜 は自分自身に非常に厳しく、長い間妹と比較されるというプレッシャーの下で生きてきました。したがって、彼女の成熟感は常に敗北を認めない緊張感に満ちています。紗夜 の性格の中心は勤勉と自尊心であり、彼女はしばしば感情を実行可能な目標に押し殺します。彼女は存在感を確立するために大げさな表現に頼っていません。彼女の記憶に残るのは、彼女の一歩一歩の安定感です。誰かと長く一緒にいればいるほど、この背景を隠すのは難しくなります。しかし、物事を正しい場所に戻そうとすればするほど、簡単にリラックスすることが難しくなっていきました。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/a/aa/Roselia_logo.png/revision/latest/scale-to-width-down/229?cb=20211201105701",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/d/de/Icon_roselia.svg/revision/latest/scale-to-width-down/40?cb=20210710030837",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Roselia"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332de28a4.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a31f36.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_soyo_soyo",
       "pageTitle": "Nagasaki_Soyo",
-      "pageUrl": "https://bandori.fandom.com/wiki/Nagasaki_Soyo",
+      "pageUrl": "",
       "englishName": "Soyo Nagasaki",
       "japaneseName": "長崎 そよ",
       "displayName": "爽世",
@@ -3757,21 +3757,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 15.05
       },
       "color": "#FFDD88",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/3/34/039.png/revision/latest?cb=20230915155933",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de33409650a.png",
       "description": "长崎爽世表面总是温柔得体，很会照顾人，也很懂得把关系维持在体面的样子里。可她越是看重羁绊，越容易把不安和执念藏得更深，于是温柔里常带着一点不肯松手的控制感，让人既想依赖她，又难完全看透她。她习惯把自己放在最能周旋的位置上，所以越是亲近的人，越会察觉她那份体贴里其实藏着防备。",
       "descriptions": {
         "zh": "长崎爽世表面总是温柔得体，很会照顾人，也很懂得把关系维持在体面的样子里。可她越是看重羁绊，越容易把不安和执念藏得更深，于是温柔里常带着一点不肯松手的控制感，让人既想依赖她，又难完全看透她。她习惯把自己放在最能周旋的位置上，所以越是亲近的人，越会察觉她那份体贴里其实藏着防备。",
         "en": "Soyo Nagasaki is always gentle and decent on the surface, very good at taking care of others, and knows how to maintain a decent relationship. But the more she values ​​the bond, the easier it is for her to hide her uneasiness and obsession deeper, so her gentleness often carries a sense of control that refuses to let go, making people want to rely on her, but it is difficult to fully understand her. She is used to putting herself in the most advantageous position, so the closer people are to her, the more they will notice that her thoughtfulness is actually defensive.",
         "ja": "長崎 そよ は、表面上は常に穏やかで礼儀正しく、他人の世話をするのがとても上手で、まともな関係を維持する方法を知っています。しかし、絆を大切にすればするほど不安や執着を奥深くに隠しやすくなるため、その優しさには手放すことを許さない抑制感があり、頼りたくなるものだが、完全に理解するのは難しい。彼女は自分を最も有利な立場に置くことに慣れているため、人々が彼女に近づくほど、彼女の思慮深さが実は防御的であることに気づくでしょう。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/6/65/MyGO%21%21%21%21%21_logo.png/revision/latest/scale-to-width-down/205?cb=20230915160317",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/a/ac/Icon_mygo.png/revision/latest/scale-to-width-down/40?cb=20230916120900",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/MyGO!!!!!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c2eba6.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33285ecbc.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_tae_tae",
       "pageTitle": "Hanazono_Tae",
-      "pageUrl": "https://bandori.fandom.com/wiki/Hanazono_Tae",
+      "pageUrl": "",
       "englishName": "Tae Hanazono",
       "japaneseName": "花園 たえ",
       "displayName": "多惠",
@@ -3795,21 +3795,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 69.15
       },
       "color": "#0077DD",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/b/b0/002.png/revision/latest?cb=20230321061202",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de33409fa45.png",
       "description": "多惠平时看似飘忽，真正重要的情感和判断却常常通过演奏来表达，而不是通过长篇解释来说明。多惠不擅长把复杂想法拆开讲清，但会用行动和音色去回应重要的人。和人相处时，她对情绪和意义有很深的在意。她不一定总把想法说得很响亮，但很多真正重要的选择，反而都藏在那些安静又不肯让步的地方。只是心里越珍惜什么，越不肯轻易退开，于是敏感和固执也常会一起出现。",
       "descriptions": {
         "zh": "多惠平时看似飘忽，真正重要的情感和判断却常常通过演奏来表达，而不是通过长篇解释来说明。多惠不擅长把复杂想法拆开讲清，但会用行动和音色去回应重要的人。和人相处时，她对情绪和意义有很深的在意。她不一定总把想法说得很响亮，但很多真正重要的选择，反而都藏在那些安静又不肯让步的地方。只是心里越珍惜什么，越不肯轻易退开，于是敏感和固执也常会一起出现。",
         "en": "Tae usually seems erratic, but the really important emotions and judgments are often expressed through performances rather than long explanations. Tae is not good at breaking down complex ideas and explaining them clearly, but she can use actions and voice to respond to important people. She cares deeply about emotions and meaning when dealing with people. She may not always express her thoughts loudly, but many truly important choices are hidden in those quiet and unwilling places. It's just that the more you cherish something in your heart, the more reluctant you are to get away easily, so sensitivity and stubbornness often appear together.",
         "ja": "たえ は通常、不安定に見えますが、本当に重要な感情や判断は、長い説明ではなくパフォーマンスを通じて表現されることがよくあります。たえ は、複雑なアイデアを分解して明確に説明するのが苦手ですが、行動と声を使って重要な人に応答することができます。彼女は人と接するときの感情や意味をとても大切にしています。彼女は自分の考えを常に大声で表現するわけではないかもしれませんが、本当に重要な選択の多くは、静かで不本意な場所に隠されています。ただ、心の中で大切にしているものほど、簡単に離れることを嫌がるので、繊細さと頑固さがセットになって現れることが多いです。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/2/2a/Poppin%27Party_logo.png/revision/latest/scale-to-width-down/250?cb=20200327142717",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/b/b6/Icon_popipa.svg/revision/latest/scale-to-width-down/40?cb=20210407055615",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Poppin'Party"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332de0818.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a1606d.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_taki_taki",
       "pageTitle": "Shiina_Taki",
-      "pageUrl": "https://bandori.fandom.com/wiki/Shiina_Taki",
+      "pageUrl": "",
       "englishName": "Taki Shiina",
       "japaneseName": "椎名 立希",
       "displayName": "立希",
@@ -3833,21 +3833,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 12.2
       },
       "color": "#7777AA",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/9/9c/040.png/revision/latest?cb=20230915155932",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3342434ba.png",
       "description": "立希看起来最难相处，但实际上很多怒气都来自她太在乎结果、太在乎某些人，却又不擅长温和表达。立希对音乐和编曲的投入，让她天然带有创作者那种控制细节和受不了敷衍的气质。她不太靠夸张表达建立存在感，真正让人记住她的，往往是那种一步一步做出来的稳定。放到亲近关系和团体相处里看，这一面通常会更明显。真到责任压上来的时候，她往往会先把自己收得更紧。",
       "descriptions": {
         "zh": "立希看起来最难相处，但实际上很多怒气都来自她太在乎结果、太在乎某些人，却又不擅长温和表达。立希对音乐和编曲的投入，让她天然带有创作者那种控制细节和受不了敷衍的气质。她不太靠夸张表达建立存在感，真正让人记住她的，往往是那种一步一步做出来的稳定。放到亲近关系和团体相处里看，这一面通常会更明显。真到责任压上来的时候，她往往会先把自己收得更紧。",
         "en": "Taki seems to be the most difficult to get along with, but in fact a lot of her anger comes from the fact that she cares too much about results and certain people, but is not good at expressing it gently. Taki's investment in music and arrangement gives her the natural temperament of a creator who controls details and can't stand perfunctory work. She doesn't rely on exaggerated expressions to establish a sense of presence. What really makes people remember her is her step-by-step stability. This aspect is usually more obvious when looking at close relationships and group interactions. When responsibilities really come to bear, she will often tighten herself tighter first.",
         "ja": "立希 は最も仲良くなれないように見えますが、実際には彼女の怒りの多くは、結果と特定の人々を気にしすぎるという事実から来ていますが、それを穏やかに表現するのが苦手です。立希 の音楽と編曲への投資は、細部を管理し、おざなりな作業に耐えられないクリエイターとしての生来の気質を彼女に与えています。彼女は存在感を確立するために大げさな表現に頼っていません。彼女の記憶に残るのは、彼女の一歩一歩の安定感です。この側面は通常、親密な関係やグループの相互作用を見るとより明らかになります。本当に責任が課せられることになると、彼女はまず自分自身をきつく締めることがよくあります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/6/65/MyGO%21%21%21%21%21_logo.png/revision/latest/scale-to-width-down/205?cb=20230915160317",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/a/ac/Icon_mygo.png/revision/latest/scale-to-width-down/40?cb=20230916120900",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/MyGO!!!!!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c2eba6.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33285ecbc.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_tomoe_tomoe",
       "pageTitle": "Udagawa_Tomoe",
-      "pageUrl": "https://bandori.fandom.com/wiki/Udagawa_Tomoe",
+      "pageUrl": "",
       "englishName": "Tomoe Udagawa",
       "japaneseName": "宇田川 巴",
       "displayName": "巴",
@@ -3871,21 +3871,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 72.6
       },
       "color": "#BB0033",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/d/d2/009.png/revision/latest?cb=20230321080708",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de334285988.png",
       "description": "巴让人觉得爽朗、仗义、有大姐头气质的鼓手。巴和兰、绯玛丽之间的互动，会把 Afterglow 从单纯的幼驯染感推进到更成熟的同伴感。她身上那种利落感很像临场直觉先一步落地，所以越到需要马上做决定的时候，越能看出她的存在感。越是和人长期相处，这种底色越藏不住。真到胜负心被点起来的时候，她的步子通常会比别人更猛一点。",
       "descriptions": {
         "zh": "巴让人觉得爽朗、仗义、有大姐头气质的鼓手。巴和兰、绯玛丽之间的互动，会把 Afterglow 从单纯的幼驯染感推进到更成熟的同伴感。她身上那种利落感很像临场直觉先一步落地，所以越到需要马上做决定的时候，越能看出她的存在感。越是和人长期相处，这种底色越藏不住。真到胜负心被点起来的时候，她的步子通常会比别人更猛一点。",
         "en": "Tomoe makes people think of a drummer who is cheerful, generous and has a sisterly temperament. The interaction between Tomoe, Lan, and Himari will advance Afterglow from a simple sense of tameness to a more mature sense of companionship. Her sense of neatness is very much like her intuition being on the spot, so the more she needs to make an immediate decision, the more her presence can be seen. The longer you stay with someone for a long time, the harder it is to hide this background. When her ambition to win is really aroused, her steps will usually be a little faster than others.",
         "ja": "巴 というと、明るくて寛大で妹のような気質を持つドラマーを思い浮かべます。巴、Lan、ひまり の相互作用により、Afterglow は単なるおとなしい感覚から、より成熟した仲間意識へと進化します。きちんと感があり、その場の直感に近いので、即断即決が必要なほど存在感が増します。誰かと長く一緒にいればいるほど、この背景を隠すのは難しくなります。彼女の勝ちたいという野心が本当に高まっているとき、彼女の歩みは通常、他の人より少し速くなります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/f/f9/Afterglow_logo.png/revision/latest/scale-to-width-down/250?cb=20211201105320",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/1/1f/Icon_afterglow.svg/revision/latest/scale-to-width-down/20?cb=20210328073813",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Afterglow"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332a38ba6.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33283a7eb.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_tomori_tomori",
       "pageTitle": "Takamatsu_Tomori",
-      "pageUrl": "https://bandori.fandom.com/wiki/Takamatsu_Tomori",
+      "pageUrl": "",
       "englishName": "Tomori Takamatsu",
       "japaneseName": "高松 燈",
       "displayName": "灯",
@@ -3909,21 +3909,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 64.05
       },
       "color": "#77BBDD",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/0/08/036.png/revision/latest?cb=20230915155935",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de334285333.png",
       "description": "高松灯安静、迟缓，却并不空白；她对情绪、词句和细小事物有近乎本能的敏感，总会把别人忽略的东西放进心里反复回响。她不擅长顺畅地靠近人，却很认真地渴望被理解，所以越沉默，越能让人感觉到她内里那份柔软而固执的重量。",
       "descriptions": {
         "zh": "高松灯安静、迟缓，却并不空白；她对情绪、词句和细小事物有近乎本能的敏感，总会把别人忽略的东西放进心里反复回响。她不擅长顺畅地靠近人，却很认真地渴望被理解，所以越沉默，越能让人感觉到她内里那份柔软而固执的重量。",
         "en": "Tomori Takamatsu is quiet and slow, but not blank; she has an almost instinctive sensitivity to emotions, words, and small things, and will always put things that others ignore into her heart and echo them repeatedly. She is not good at approaching people smoothly, but she earnestly desires to be understood, so the more silent she is, the more people can feel the soft and stubborn weight inside her.",
         "ja": "高松 燈 は静かで遅いですが、空白ではありません。彼女は感情や言葉、小さなことに対して本能的に敏感で、他の人が無視するものを常に自分の心の中に入れて繰り返し反響させます。人にスムーズに接するのは苦手だが、理解してもらいたい一心で、寡黙であればあるほど、彼女の中に柔らかくも頑固な重みを感じる人が多い。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/6/65/MyGO%21%21%21%21%21_logo.png/revision/latest/scale-to-width-down/205?cb=20230915160317",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/a/ac/Icon_mygo.png/revision/latest/scale-to-width-down/40?cb=20230916120900",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/MyGO!!!!!"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c2eba6.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33285ecbc.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_touko_touko",
       "pageTitle": "Kirigaya_Touko",
-      "pageUrl": "https://bandori.fandom.com/wiki/Kirigaya_Touko",
+      "pageUrl": "",
       "englishName": "Toko Kirigaya",
       "japaneseName": "桐ヶ谷 透子",
       "displayName": "透子",
@@ -3947,21 +3947,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 77.7
       },
       "color": "#EE6666",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/e/e3/027.png/revision/latest?cb=20230321083343",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3342bcc6e.png",
       "description": "透子经常显得随性甚至有点任性，但其实很会观察场面，也很清楚怎样把自己放在会发光的位置上。表面上的轻浮感下面，其实藏着不愿随便把时间浪费在无意义事情上的认真。她很少让场子冷下来，情绪、热度和行动几乎总是同时到场，因此也特别容易把别人一起卷进自己的节奏。真到关系被拉近之后，这一面往往会更清楚。只是凭着感觉往前冲的时候，偶尔也会显得有些冒进。",
       "descriptions": {
         "zh": "透子经常显得随性甚至有点任性，但其实很会观察场面，也很清楚怎样把自己放在会发光的位置上。表面上的轻浮感下面，其实藏着不愿随便把时间浪费在无意义事情上的认真。她很少让场子冷下来，情绪、热度和行动几乎总是同时到场，因此也特别容易把别人一起卷进自己的节奏。真到关系被拉近之后，这一面往往会更清楚。只是凭着感觉往前冲的时候，偶尔也会显得有些冒进。",
         "en": "Toko often seems casual and even a little willful, but in fact she is very good at observing the scene and knows how to put herself in a position to shine. Beneath the superficial frivolity, there is actually a seriousness that does not want to waste time on meaningless things. She rarely lets the scene cool down, and her emotions, heat, and actions are almost always present at the same time, so she is particularly easy to involve others in her own rhythm. This aspect often becomes clearer after the relationship is really drawn closer. When I just rush forward based on my feelings, I sometimes seem a little aggressive.",
         "ja": "透子 は、カジュアルで少しワガママに見えることが多いですが、実際には現場を観察するのがとても上手で、自分を輝かせる立場に置く方法を知っています。表面的な軽薄さの裏には、実は意味のないことに時間を費やしたくないという真剣さがあるんです。彼女は場を冷めさせることがほとんどなく、感情、熱量、行動がほぼ常に同時に存在するため、特に他の人を自分のリズムに巻き込むのが簡単です。この側面は、関係が本当に緊密になった後に明らかになることもよくあります。自分の気持ちだけで突き進んでしまうと、少し強引に見えることもあります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/7/7a/Morfonica_logo.png/revision/latest/scale-to-width-down/231?cb=20200810080918",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/3/34/Icon_morfonica.svg/revision/latest/scale-to-width-down/40?cb=20210215040928",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Morfonica"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c0bd3e.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286273e.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_tsugumi_tsugumi",
       "pageTitle": "Hazawa_Tsugumi",
-      "pageUrl": "https://bandori.fandom.com/wiki/Hazawa_Tsugumi",
+      "pageUrl": "",
       "englishName": "Tsugumi Hazawa",
       "japaneseName": "羽沢 つぐみ",
       "displayName": "鸫",
@@ -3985,21 +3985,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 18.85
       },
       "color": "#FFEE88",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/5/5c/010.png/revision/latest?cb=20230321080735",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3342c5daf.png",
       "description": "鸫经常被说是最“普通”的成员，但这个“普通”并不是缺乏特点，而是她特别擅长把别人忽略的细节扛起来。鸫与成员们的日常互动非常能体现 Afterglow 的生活感，因为很多平衡都由她来维持。很多时候，她温和外表下有很深的在意和忍耐。她很少抢着站到最前面，却常常会在别人最容易忽略的地方把事情悄悄接住。真到情绪被逼近边缘时，她那份安静里才会慢慢露出疲惫。",
       "descriptions": {
         "zh": "鸫经常被说是最“普通”的成员，但这个“普通”并不是缺乏特点，而是她特别擅长把别人忽略的细节扛起来。鸫与成员们的日常互动非常能体现 Afterglow 的生活感，因为很多平衡都由她来维持。很多时候，她温和外表下有很深的在意和忍耐。她很少抢着站到最前面，却常常会在别人最容易忽略的地方把事情悄悄接住。真到情绪被逼近边缘时，她那份安静里才会慢慢露出疲惫。",
         "en": "Tsugumi is often said to be the most \"ordinary\" member, but this \"ordinary\" does not mean that she lacks characteristics, but that she is particularly good at picking up details that others ignore. Tsugumi's daily interactions with the members can very well reflect Afterglow's sense of life, because she maintains a lot of balance. Many times, beneath her gentle appearance, there is deep care and patience. She rarely rushes to stand at the front, but often quietly catches things in places where others can most easily ignore them. When her emotions are pushed to the edge, her fatigue will slowly show in her tranquility.",
         "ja": "つぐみはメンバーの中で一番「普通」だとよく言われますが、その「普通」というのは彼女に特徴がないということではなく、他の人が無視している細かいところを拾うのが特に得意ということです。つぐみ のメンバーとの日々のやりとりは、Afterglow の生活感覚をよく反映しています。彼女は非常にバランスを保っているからです。多くの場合、彼女の穏やかな外見の下には、深い思いやりと忍耐力があります。彼女は急いで前に立とうとすることはめったにありませんが、他の人が最も簡単に無視できる場所で静かに物事をキャッチすることがよくあります。彼女の感情が限界に達すると、彼女の静けさの中にゆっくりと疲れが現れます。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/f/f9/Afterglow_logo.png/revision/latest/scale-to-width-down/250?cb=20211201105320",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/1/1f/Icon_afterglow.svg/revision/latest/scale-to-width-down/20?cb=20210328073813",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Afterglow"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332a38ba6.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33283a7eb.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_tsukushi_tsukushi",
       "pageTitle": "Futaba_Tsukushi",
-      "pageUrl": "https://bandori.fandom.com/wiki/Futaba_Tsukushi",
+      "pageUrl": "",
       "englishName": "Tsukushi Futaba",
       "japaneseName": "二葉 つくし",
       "displayName": "筑紫",
@@ -4023,21 +4023,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 11.85
       },
       "color": "#EE7788",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/a/a7/029.png/revision/latest?cb=20230321083416",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de334409d41.png",
       "description": "筑紫让人觉得有点冒失、很认真、喜欢主持局面和承担责任的班长型人物。筑紫有明显的自尊心，也会因为自己不够高大、不够厉害而暗暗着急，所以她的努力里总带着一点逞强味道。筑紫的人设核心是责任感和不服输，即使常常手忙脚乱也还是会先站出来。落到具体相处里，她习惯一边顾全别人一边推动事情。她不是那种会把关心挂在嘴边的人，却总会在别人快要失衡的时候先一步补上那个空缺。真到什么都想维系住的时候，她也容易把自己逼得太紧。",
       "descriptions": {
         "zh": "筑紫让人觉得有点冒失、很认真、喜欢主持局面和承担责任的班长型人物。筑紫有明显的自尊心，也会因为自己不够高大、不够厉害而暗暗着急，所以她的努力里总带着一点逞强味道。筑紫的人设核心是责任感和不服输，即使常常手忙脚乱也还是会先站出来。落到具体相处里，她习惯一边顾全别人一边推动事情。她不是那种会把关心挂在嘴边的人，却总会在别人快要失衡的时候先一步补上那个空缺。真到什么都想维系住的时候，她也容易把自己逼得太紧。",
         "en": "Tsukushi makes people think that she is a bit reckless, very serious, a monitor-type figure who likes to preside over situations and take responsibility. Tsukushi has obvious self-esteem, and is secretly anxious because she is not tall enough or powerful enough, so her efforts always have a bit of a flair to show off. The core of Tsukushi's character is a sense of responsibility and an unwillingness to admit defeat. Even if she is often in a hurry, she will still stand up first. When it comes to actual interactions, she is used to taking care of others while pushing things forward. She is not the kind of person who talks about caring, but she always fills the gap when others are about to lose balance. When she really wants to hold on to everything, she can easily push herself too hard.",
         "ja": "つくし は、人々に彼女が少し無謀だが非常に真面目で、状況を管理し責任を取ることを好むモニタータイプの人物であると思わせます。つくし は明らかな自尊心を持っていますが、身長や力が十分ではないため、密かに不安を感じています。そのため、彼女の努力には常にちょっとしたセンスが見られます。つくし の性格の核心は、責任感と負けを認めたくないという気持ちです。たとえ急いでいることが多いとしても、彼女は必ず先に立ちます。実際のやりとりに関しては、彼女は他人の世話をしながら物事を進めることに慣れています。彼女は気遣いについて話すような人ではありませんが、他の人がバランスを崩しそうになっているときは、いつもそのギャップを埋めてくれます。彼女は本当にすべてを我慢したいとき、自分を無理させすぎてしまうことがあります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/7/7a/Morfonica_logo.png/revision/latest/scale-to-width-down/231?cb=20200810080918",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/3/34/Icon_morfonica.svg/revision/latest/scale-to-width-down/40?cb=20210215040928",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Morfonica"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332c0bd3e.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286273e.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_uika_uika",
       "pageTitle": "Misumi_Uika",
-      "pageUrl": "https://bandori.fandom.com/wiki/Misumi_Uika",
+      "pageUrl": "",
       "englishName": "Uika Misumi",
       "japaneseName": "三角 初華",
       "displayName": "初华",
@@ -4061,21 +4061,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 17.05
       },
       "color": "#BB9955",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/b/be/Misumi_Uika_-_Casual_Live2D_Model.png/revision/latest/scale-to-width-down/268?cb=20240311210508",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de33447b20d.png",
       "description": "初华天然同时属于“偶像舞台”与“秘密乐队舞台”两种身份。内里却有极强的执念，尤其是对祥子的情感与对“能否被看见真实自我”的焦虑。很多时候，她很少把心事轻易摊开。她并不急着让人理解自己，可一旦真的认定了谁或什么，心里的分量往往会沉得比表面重很多。真到某些不能退开的时刻，她心里的坚持会比表面露出来得更重。",
       "descriptions": {
         "zh": "初华天然同时属于“偶像舞台”与“秘密乐队舞台”两种身份。内里却有极强的执念，尤其是对祥子的情感与对“能否被看见真实自我”的焦虑。很多时候，她很少把心事轻易摊开。她并不急着让人理解自己，可一旦真的认定了谁或什么，心里的分量往往会沉得比表面重很多。真到某些不能退开的时刻，她心里的坚持会比表面露出来得更重。",
         "en": "Uika naturally belongs to both the \"idol stage\" and the \"secret band stage\". There is a strong obsession inside, especially the emotion for Sakiko and the anxiety about \"whether the true self can be seen. \"Most of the time, she rarely reveals her worries easily. She is not in a hurry to let people understand her, but once she really identifies someone or something, the weight in her heart will often be much heavier than it appears. At certain moments when she cannot retreat, her inner persistence will be heavier than what appears on the surface.",
         "ja": "初華は当然「アイドルステージ」と「シークレットバンドステージ」の両方に属します。中には強い執着があり、特に祥子に対する感情と「本当の自分が見られるかどうか」への不安が強い。ほとんどの場合、彼女は自分の悩みを簡単に打ち明けることはめったにありません。彼女は人々に自分のことを理解してもらうことを急いでいませんが、一度誰かや何かを本当に認識すると、彼女の心の重みは見た目よりもはるかに重くなることがよくあります。彼女が後退できない特定の瞬間には、彼女の内なる執拗さが表面に現れるものよりも重くなるでしょう。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/3/37/Ave_Mujica_logo.png/revision/latest/scale-to-width-down/242?cb=20250122144511",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/d/dd/Ave_Mujica_icon.svg/revision/latest/scale-to-width-down/37?cb=20230605093732",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Ave_Mujica"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332bb7b5c.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286e14f.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_umiri_umiri",
       "pageTitle": "Yahata_Umiri",
-      "pageUrl": "https://bandori.fandom.com/wiki/Yahata_Umiri",
+      "pageUrl": "",
       "englishName": "Umiri Yahata",
       "japaneseName": "八幡 海鈴",
       "displayName": "海铃",
@@ -4099,21 +4099,21 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 62.1
       },
       "color": "#335566",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/9/90/Yahata_Umiri_-_Casual_Live2D_model.png/revision/latest/scale-to-width-down/268?cb=20240311211427",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de33447002f.png",
       "description": "海铃是花咲川女子学园高一生，和初华、立希同班；她的贝斯水准接近职业级，会同时支援大量乐队，在 Ave Mujica 里还承担行程协调等幕后工作。她并不是单纯“话少的贝斯手”，而是一个把效率、安排和执行力都做得很强的人。表面是扑克脸、业务能力超强、像职业雇员一样冷静。和人相处时，她比起解释情绪，更擅长用行动和反应来处理问题。她未必会主动解释自己，但很多判断其实都藏在那种冷静、迅速又不多余的反应里。可她越习惯自己消化一切，越容易把距离留在身上。",
       "descriptions": {
         "zh": "海铃是花咲川女子学园高一生，和初华、立希同班；她的贝斯水准接近职业级，会同时支援大量乐队，在 Ave Mujica 里还承担行程协调等幕后工作。她并不是单纯“话少的贝斯手”，而是一个把效率、安排和执行力都做得很强的人。表面是扑克脸、业务能力超强、像职业雇员一样冷静。和人相处时，她比起解释情绪，更擅长用行动和反应来处理问题。她未必会主动解释自己，但很多判断其实都藏在那种冷静、迅速又不多余的反应里。可她越习惯自己消化一切，越容易把距离留在身上。",
         "en": "Umiri is a freshman at Hanasakigawa Girls' Academy and is in the same class as Uika and Taki. Her bass level is close to professional level and she supports a large number of bands at the same time. She also takes on behind-the-scenes work such as schedule coordination in Ave Mujica. She is not just a \"bass player who talks little\", but a person who is very efficient, arrangement and execution. On the surface, she has a poker face, strong business ability, and is as calm as a professional employee. When dealing with people, she is better at using actions and reactions to deal with problems than explaining emotions. She may not take the initiative to explain herself, but a lot of judgment is actually hidden in that calm, quick and non-redundant reaction. But the more accustomed she is to digesting everything by herself, the easier it is for her to keep the distance on her body.",
         "ja": "海鈴は花咲川女子学園の新入生で、初華、立希と同じクラスです。彼女の低音レベルはプロレベルに近く、同時に多数のバンドをサポートしています。アヴェ・ムヒカのスケジュール調整など裏方の仕事も担う。彼女は単なる「口数の少ないベーシスト」ではなく、非常に効率的で、段取りも実行力も優れた人です。表面的にはポーカーフェイスでビジネス能力が高く、プロフェッショナルな会社員のような冷静さを持っています。人々と接するとき、彼女は感情を説明するよりも、行動や反応を利用して問題に対処するほうが得意です。彼女は率先して自分のことを説明しようとはしないかもしれませんが、実際には、その冷静で素早い、冗長性のない反応の中に多くの判断力が隠されています。しかし、すべてを自分で消化することに慣れれば慣れるほど、体の距離を保つことが容易になります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/3/37/Ave_Mujica_logo.png/revision/latest/scale-to-width-down/242?cb=20250122144511",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/d/dd/Ave_Mujica_icon.svg/revision/latest/scale-to-width-down/37?cb=20230605093732",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Ave_Mujica"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332bb7b5c.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de33286e14f.png",
+      "bandPageUrl": ""
     },
     {
       "id": "char_yukina_yukina",
       "pageTitle": "Minato_Yukina",
-      "pageUrl": "https://bandori.fandom.com/wiki/Minato_Yukina",
+      "pageUrl": "",
       "englishName": "Yukina Minato",
       "japaneseName": "湊 友希那",
       "displayName": "友希那",
@@ -4137,16 +4137,16 @@ window.BANGDREAM_MBTI_DATA = {
         "P": 17.5
       },
       "color": "#881188",
-      "portraitUrl": "https://static.wikia.nocookie.net/bandori/images/8/82/021.png/revision/latest?cb=20230321083114",
+      "portraitUrl": "https://free.picui.cn/free/2026/04/14/69de3344c0f32.png",
       "description": "友希那始终是 Roselia 最鲜明的旗帜型人物，冷静、强硬、以高标准要求自己和身边人。友希那对音乐的认真不是单纯好胜，而是一种近乎信仰式的纯度，因此会自然把周围人也拉进更严苛的世界。友希那和莉莎、纱夜等人的关系会不断证明：真正的强大不只在于独自前进，也在于愿意信赖同伴。和人相处时，她骨子里有很强的秩序感和方向感。她并不依赖热闹来证明自己，很多力量都藏在提前看清方向、然后稳稳站住的位置里。真到局面偏离预想的时候，她先露出来的往往不是慌乱，而是更硬的控制感。",
       "descriptions": {
         "zh": "友希那始终是 Roselia 最鲜明的旗帜型人物，冷静、强硬、以高标准要求自己和身边人。友希那对音乐的认真不是单纯好胜，而是一种近乎信仰式的纯度，因此会自然把周围人也拉进更严苛的世界。友希那和莉莎、纱夜等人的关系会不断证明：真正的强大不只在于独自前进，也在于愿意信赖同伴。和人相处时，她骨子里有很强的秩序感和方向感。她并不依赖热闹来证明自己，很多力量都藏在提前看清方向、然后稳稳站住的位置里。真到局面偏离预想的时候，她先露出来的往往不是慌乱，而是更硬的控制感。",
         "en": "Yukina has always been Roselia’s most distinctive banner character, calm, tough, and demanding of herself and those around her with high standards. Yukina's seriousness towards music is not simply competitive, but an almost faith-like purity, so it will naturally draw the people around them into a more demanding world. The relationship between Yukina and Lisa, Sayo and others will continue to prove that true strength lies not only in moving forward alone, but also in being willing to trust your partners. When getting along with others, she has a strong sense of order and direction. She does not rely on excitement to prove herself. A lot of her strength lies in seeing the direction in advance and then standing firm. When the situation really deviates from expectations, the first thing she shows is often not panic, but a stronger sense of control.",
         "ja": "友希那 は常に Roselia の最も特徴的なバナー キャラクターであり、穏やかでタフで、自分自身と周囲の人々に高い基準を要求します。友希那 の音楽に対する真剣さは、単なる競争ではなく、信仰のような純粋さがあるため、自然と周囲の人々をより厳しい世界に引き込んでいきます。友希那 と リサ、紗夜 などの関係は、真の強さは一人で前進するだけではなく、パートナーを喜んで信頼することにあることを証明し続けます。他の人と仲良くするとき、彼女は強い秩序と方向性の感覚を持っています。彼女は自分を証明するために興奮に頼っていません。彼女の強さの多くは、方向性を事前に見て、しっかりと立っていることにあります。状況が予想から大きく逸脱したとき、彼女が最初に示すのは、パニックではなく、より強い自制心であることがよくあります。"
       },
-      "bandLogoUrl": "https://static.wikia.nocookie.net/bandori/images/a/aa/Roselia_logo.png/revision/latest/scale-to-width-down/229?cb=20211201105701",
-      "bandIconUrl": "https://static.wikia.nocookie.net/bandori/images/d/de/Icon_roselia.svg/revision/latest/scale-to-width-down/40?cb=20210710030837",
-      "bandPageUrl": "https://bandori.fandom.com/wiki/Roselia"
+      "bandLogoUrl": "https://free.picui.cn/free/2026/04/14/69de332de28a4.png",
+      "bandIconUrl": "https://free.picui.cn/free/2026/04/14/69de332a31f36.png",
+      "bandPageUrl": ""
     }
   ]
 };

@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent
 DATASET = ROOT / "dataset"
 DOSSIERS = DATASET / "character_dossiers"
 OUTPUT = ROOT / "site" / "site-data.js"
+ASSET_MANIFEST = ROOT / "site" / "assets" / "asset-manifest.json"
 FANDOM_API = "https://bandori.fandom.com/api.php"
 FANDOM_WIKI = "https://bandori.fandom.com/wiki/"
 
@@ -122,6 +123,22 @@ CHARACTER_CONFIG = {
 USER_AGENT = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
 }
+
+
+@lru_cache(maxsize=1)
+def load_asset_manifest() -> dict[str, dict[str, str]]:
+    if not ASSET_MANIFEST.exists():
+        return {}
+    return json.loads(ASSET_MANIFEST.read_text(encoding="utf-8"))
+
+
+def localize_image_url(url: str) -> str:
+    if not url:
+        return url
+    for item in load_asset_manifest().values():
+        if item.get("source") == url:
+            return item.get("local", url)
+    return url
 
 
 def fetch_json(params: dict[str, Any]) -> dict[str, Any]:
@@ -311,8 +328,8 @@ def extract_band_assets(page_title: str) -> dict[str, str]:
     if not icon_url:
         icon_url = logo_url
     return {
-        "logo": logo_url,
-        "icon": icon_url,
+        "logo": localize_image_url(logo_url),
+        "icon": localize_image_url(icon_url),
         "page_url": f"{FANDOM_WIKI}{page_title}",
     }
 
@@ -371,13 +388,10 @@ def build_character_record(folder_name: str, portraits_from_characters: dict[str
 
     band_key = config["band"]
     band = band_assets[band_key]
-    page_path = quote(config["page_title"], safe="()!'")
-    page_url = f"{FANDOM_WIKI}{page_path}"
-
     return {
         "id": folder_name,
         "pageTitle": config["page_title"],
-        "pageUrl": page_url,
+        "pageUrl": "",
         "englishName": profile["names"]["en"],
         "japaneseName": profile["names"]["ja"],
         "displayName": mbti["display_name"],
@@ -388,12 +402,12 @@ def build_character_record(folder_name: str, portraits_from_characters: dict[str
         "type": mbti["type"],
         "percentages": mbti["percentages"],
         "color": color,
-        "portraitUrl": portrait,
+        "portraitUrl": localize_image_url(portrait),
         "description": profile["descriptions"]["zh"],
         "descriptions": profile["descriptions"],
-        "bandLogoUrl": band["logo"],
-        "bandIconUrl": band["icon"],
-        "bandPageUrl": band["page_url"],
+        "bandLogoUrl": localize_image_url(band["logo"]),
+        "bandIconUrl": localize_image_url(band["icon"]),
+        "bandPageUrl": "",
     }
 
 

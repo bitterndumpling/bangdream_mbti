@@ -759,10 +759,7 @@ function renderMatchCards(userResult, matches) {
     titleWrap.querySelector(".match-sub").textContent = `${secondaryNames.join(" / ")}${secondaryNames.length ? " / " : ""}${t.characterType}: ${character.type}`;
 
     const bands = createElement("div", "match-bands");
-    const bandChip = createElement("a", "band-chip");
-    bandChip.href = character.bandPageUrl;
-    bandChip.target = "_blank";
-    bandChip.rel = "noreferrer";
+    const bandChip = createElement("div", "band-chip");
     bandChip.title = `${t.band}: ${localizedBandName}`;
     const logo = document.createElement("img");
     logo.src = character.bandLogoUrl;
@@ -821,10 +818,7 @@ function renderGallery() {
     const meta = createElement("span", "gallery-band-count", getCharacterCountText(characters.length));
     titleWrap.append(bandTitle);
 
-    const chip = createElement("a", "band-chip");
-    chip.href = characters[0].bandPageUrl;
-    chip.target = "_blank";
-    chip.rel = "noreferrer";
+    const chip = createElement("div", "band-chip");
     chip.title = localizedBandName;
     const logo = document.createElement("img");
     logo.src = characters[0].bandLogoUrl;
@@ -843,10 +837,7 @@ function renderGallery() {
       const card = createElement("article", "gallery-item");
       card.style.setProperty("--card-color", character.color);
 
-      const visual = createElement("a", "gallery-visual");
-      visual.href = character.pageUrl;
-      visual.target = "_blank";
-      visual.rel = "noreferrer";
+      const visual = createElement("div", "gallery-visual");
       const portrait = document.createElement("img");
       portrait.src = character.portraitUrl;
       portrait.alt = localizedName;
