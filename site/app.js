@@ -34,7 +34,7 @@ const EXPORT_IMAGE_CONFIG = {
 };
 
 const LOCAL_ASSET_MAP = window.BANGDREAM_LOCAL_ASSET_MAP || {};
-const EMBEDDED_ASSET_MAP = window.BANGDREAM_EMBEDDED_ASSET_MAP || {};
+let embeddedAssetMapPromise = null;
 
 const UI = {
   zh: {
@@ -559,9 +559,45 @@ function createElement(tag, className, text) {
   return node;
 }
 
+function getEmbeddedAssetMap() {
+  return window.BANGDREAM_EMBEDDED_ASSET_MAP || {};
+}
+
+function ensureEmbeddedAssetMapLoaded() {
+  const embeddedAssetMap = getEmbeddedAssetMap();
+  if (Object.keys(embeddedAssetMap).length) {
+    return Promise.resolve(embeddedAssetMap);
+  }
+
+  if (!embeddedAssetMapPromise) {
+    embeddedAssetMapPromise = new Promise((resolve, reject) => {
+      const existingScript = document.querySelector('script[data-asset-inline="true"]');
+      if (existingScript) {
+        existingScript.addEventListener("load", () => resolve(getEmbeddedAssetMap()), { once: true });
+        existingScript.addEventListener("error", () => reject(new Error("Failed to load export assets")), { once: true });
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.src = "./asset-inline.js";
+      script.async = true;
+      script.dataset.assetInline = "true";
+      script.onload = () => resolve(getEmbeddedAssetMap());
+      script.onerror = () => {
+        embeddedAssetMapPromise = null;
+        reject(new Error("Failed to load export assets"));
+      };
+      document.head.appendChild(script);
+    });
+  }
+
+  return embeddedAssetMapPromise;
+}
+
 function resolveExportAssetUrl(url) {
   const localUrl = LOCAL_ASSET_MAP[url] || url;
-  return EMBEDDED_ASSET_MAP[url] || EMBEDDED_ASSET_MAP[localUrl] || localUrl;
+  const embeddedAssetMap = getEmbeddedAssetMap();
+  return embeddedAssetMap[url] || embeddedAssetMap[localUrl] || localUrl;
 }
 
 function loadExportImage(url) {
@@ -1452,6 +1488,7 @@ async function saveResultImage(previewWindow = null) {
   renderUserResult(userResult, matches);
 
   try {
+    await ensureEmbeddedAssetMapLoaded();
     const canvas = await buildResultImageCanvas(userResult, matches);
     const blob = await canvasToBlob(canvas);
     openBlobPreview(blob, getExportFileName(userResult), previewWindow);
