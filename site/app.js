@@ -34,7 +34,7 @@ const EXPORT_IMAGE_CONFIG = {
 };
 
 const LOCAL_ASSET_MAP = window.BANGDREAM_LOCAL_ASSET_MAP || {};
-let embeddedAssetMapPromise = null;
+const imageLoadCache = new Map();
 
 const UI = {
   zh: {
@@ -563,54 +563,98 @@ function getEmbeddedAssetMap() {
   return window.BANGDREAM_EMBEDDED_ASSET_MAP || {};
 }
 
-function ensureEmbeddedAssetMapLoaded() {
-  const embeddedAssetMap = getEmbeddedAssetMap();
-  if (Object.keys(embeddedAssetMap).length) {
-    return Promise.resolve(embeddedAssetMap);
-  }
-
-  if (!embeddedAssetMapPromise) {
-    embeddedAssetMapPromise = new Promise((resolve, reject) => {
-      const existingScript = document.querySelector('script[data-asset-inline="true"]');
-      if (existingScript) {
-        existingScript.addEventListener("load", () => resolve(getEmbeddedAssetMap()), { once: true });
-        existingScript.addEventListener("error", () => reject(new Error("Failed to load export assets")), { once: true });
-        return;
-      }
-
-      const script = document.createElement("script");
-      script.src = "./asset-inline.js";
-      script.async = true;
-      script.dataset.assetInline = "true";
-      script.onload = () => resolve(getEmbeddedAssetMap());
-      script.onerror = () => {
-        embeddedAssetMapPromise = null;
-        reject(new Error("Failed to load export assets"));
-      };
-      document.head.appendChild(script);
-    });
-  }
-
-  return embeddedAssetMapPromise;
-}
-
-function resolveExportAssetUrl(url) {
+function resolveAssetUrl(url) {
   const localUrl = LOCAL_ASSET_MAP[url] || url;
   const embeddedAssetMap = getEmbeddedAssetMap();
   return embeddedAssetMap[url] || embeddedAssetMap[localUrl] || localUrl;
 }
 
-function loadExportImage(url) {
-  const resolvedUrl = resolveExportAssetUrl(url);
+function normalizeAssetUrl(url) {
+  const resolvedUrl = resolveAssetUrl(url);
+  try {
+    return new URL(resolvedUrl, window.location.href).href;
+  } catch {
+    return resolvedUrl;
+  }
+}
 
+function waitForImageElement(image, cacheKey) {
   return new Promise((resolve, reject) => {
+    const cleanup = () => {
+      image.removeEventListener("load", handleLoad);
+      image.removeEventListener("error", handleError);
+    };
+
+    const handleLoad = () => {
+      cleanup();
+      imageLoadCache.set(cacheKey, Promise.resolve(image));
+      resolve(image);
+    };
+
+    const handleError = () => {
+      cleanup();
+      imageLoadCache.delete(cacheKey);
+      reject(new Error(`Failed to load image: ${image.currentSrc || image.src || cacheKey}`));
+    };
+
+    if (image.complete) {
+      if (image.naturalWidth > 0) {
+        handleLoad();
+      } else {
+        handleError();
+      }
+      return;
+    }
+
+    image.addEventListener("load", handleLoad, { once: true });
+    image.addEventListener("error", handleError, { once: true });
+  });
+}
+
+function setAssetImageSource(image, url) {
+  const cacheKey = normalizeAssetUrl(url);
+  image.decoding = "async";
+  image.dataset.assetKey = cacheKey;
+  image.src = resolveAssetUrl(url);
+
+  if (image.complete && image.naturalWidth > 0) {
+    imageLoadCache.set(cacheKey, Promise.resolve(image));
+    return;
+  }
+
+  if (!imageLoadCache.has(cacheKey)) {
+    imageLoadCache.set(cacheKey, waitForImageElement(image, cacheKey));
+  }
+}
+
+function loadExportImage(url) {
+  const cacheKey = normalizeAssetUrl(url);
+  const cachedImage = imageLoadCache.get(cacheKey);
+  if (cachedImage) {
+    return cachedImage.catch(() => {
+      imageLoadCache.delete(cacheKey);
+      return loadExportImage(url);
+    });
+  }
+
+  const resolvedUrl = resolveAssetUrl(url);
+  const loadingPromise = new Promise((resolve, reject) => {
     const image = new Image();
     if (/^https?:/i.test(resolvedUrl)) image.crossOrigin = "anonymous";
     image.decoding = "async";
-    image.onload = () => resolve(image);
-    image.onerror = () => reject(new Error(`Failed to load image: ${resolvedUrl}`));
+    image.onload = () => {
+      imageLoadCache.set(cacheKey, Promise.resolve(image));
+      resolve(image);
+    };
+    image.onerror = () => {
+      imageLoadCache.delete(cacheKey);
+      reject(new Error(`Failed to load image: ${resolvedUrl}`));
+    };
     image.src = resolvedUrl;
   });
+
+  imageLoadCache.set(cacheKey, loadingPromise);
+  return loadingPromise;
 }
 
 function canvasToBlob(canvas) {
@@ -903,8 +947,8 @@ function renderMatchCards(userResult, matches) {
     visual.appendChild(createElement("span", "rank-badge", t.rankLabel(index + 1)));
     const portrait = document.createElement("img");
     portrait.className = "portrait";
-    portrait.src = character.portraitUrl;
     portrait.alt = localizedName;
+    setAssetImageSource(portrait, character.portraitUrl);
     visual.appendChild(portrait);
 
     const body = createElement("div", "match-body");
@@ -924,8 +968,8 @@ function renderMatchCards(userResult, matches) {
     const bandChip = createElement("div", "band-chip");
     bandChip.title = `${t.band}: ${localizedBandName}`;
     const logo = document.createElement("img");
-    logo.src = character.bandLogoUrl;
     logo.alt = localizedBandName;
+    setAssetImageSource(logo, character.bandLogoUrl);
     bandChip.append(logo, createElement("span", null, localizedBandName));
     bands.appendChild(bandChip);
 
@@ -983,8 +1027,8 @@ function renderGallery() {
     const chip = createElement("div", "band-chip");
     chip.title = localizedBandName;
     const logo = document.createElement("img");
-    logo.src = characters[0].bandLogoUrl;
     logo.alt = localizedBandName;
+    setAssetImageSource(logo, characters[0].bandLogoUrl);
     chip.append(logo, createElement("span", null, localizedBandName));
 
     header.append(titleWrap, createElement("div", "gallery-band-meta"));
@@ -1001,8 +1045,8 @@ function renderGallery() {
 
       const visual = createElement("div", "gallery-visual");
       const portrait = document.createElement("img");
-      portrait.src = character.portraitUrl;
       portrait.alt = localizedName;
+      setAssetImageSource(portrait, character.portraitUrl);
       visual.appendChild(portrait);
 
       const body = createElement("div", "gallery-body");
@@ -1508,7 +1552,6 @@ async function saveResultImage(previewWindow = null) {
 
   try {
     await nextPaint();
-    await ensureEmbeddedAssetMapLoaded();
     const canvas = await buildResultImageCanvas(userResult, matches);
     const blob = await canvasToBlob(canvas);
     openBlobPreview(blob, getExportFileName(userResult), previewWindow);
@@ -1578,7 +1621,7 @@ function render() {
   renderQuestion();
   renderUserResult(userResult, matches);
   if (userResult) renderMatchCards(userResult, matches);
-  renderGallery();
+  if (state.view === "gallery") renderGallery();
   renderReadme();
   renderView(userResult);
   rerenderCharts();
