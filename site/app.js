@@ -329,7 +329,9 @@ const elements = {
   resultPreviewModal: document.getElementById("result-preview-modal"),
   resultPreviewBackdrop: document.getElementById("result-preview-backdrop"),
   resultPreviewHint: document.getElementById("result-preview-hint"),
+  resultPreviewStage: document.getElementById("result-preview-stage"),
   resultPreviewImage: document.getElementById("result-preview-image"),
+  resultPreviewRotate: document.getElementById("result-preview-rotate"),
   resultPreviewClose: document.getElementById("result-preview-close"),
   hoverTooltip: document.getElementById("hover-tooltip"),
   brand: document.querySelector(".brand"),
@@ -343,6 +345,7 @@ const state = {
   view: "home",
   readmeOpen: false,
   resultPreviewOpen: false,
+  resultPreviewPortrait: false,
   resultPreviewUrl: "",
   exporting: false,
 };
@@ -698,13 +701,23 @@ function cleanupResultPreviewUrl() {
 
 function closeResultPreview() {
   state.resultPreviewOpen = false;
+  state.resultPreviewPortrait = false;
   elements.resultPreviewModal.hidden = true;
+  elements.resultPreviewStage.classList.remove("is-portrait");
   elements.resultPreviewImage.removeAttribute("src");
   elements.resultPreviewHint.textContent = "";
   cleanupResultPreviewUrl();
 }
 
-function getSaveHintText() {
+function getResultPreviewHintText() {
+  if (isMobileLikeDevice()) {
+    return state.lang === "zh"
+      ? "可切换横屏或竖屏查看"
+      : state.lang === "ja"
+        ? "横向き表示と縦向き表示を切り替えて見られます"
+        : "Switch between landscape and portrait viewing";
+  }
+
   return UI[state.lang].saveHint
     || (state.lang === "zh"
       ? "长按图片即可保存到相册"
@@ -713,18 +726,28 @@ function getSaveHintText() {
         : "Long press the image to save it");
 }
 
+function getResultPreviewRotateText() {
+  return state.resultPreviewPortrait
+    ? (state.lang === "zh" ? "切回横屏" : state.lang === "ja" ? "横向き表示" : "Landscape View")
+    : (state.lang === "zh" ? "切换竖屏" : state.lang === "ja" ? "縦向き表示" : "Portrait View");
+}
+
 function showResultPreview(blob) {
   cleanupResultPreviewUrl();
   state.resultPreviewUrl = URL.createObjectURL(blob);
   state.resultPreviewOpen = true;
-  elements.resultPreviewHint.textContent = getSaveHintText();
+  state.resultPreviewPortrait = false;
+  elements.resultPreviewStage.classList.remove("is-portrait");
+  elements.resultPreviewHint.textContent = getResultPreviewHintText();
+  elements.resultPreviewRotate.textContent = getResultPreviewRotateText();
+  elements.resultPreviewRotate.hidden = !isMobileLikeDevice();
   elements.resultPreviewClose.textContent = UI[state.lang].readmeClose;
   elements.resultPreviewImage.src = state.resultPreviewUrl;
   elements.resultPreviewModal.hidden = false;
 }
 
 function openBlobPreview(blob, fileName, previewWindow = null) {
-  if (isRestrictedInAppBrowser()) {
+  if (isRestrictedInAppBrowser() || isMobileLikeDevice()) {
     showResultPreview(blob);
     return;
   }
@@ -1651,7 +1674,9 @@ function renderReadme() {
     </section>
   `;
   elements.readmeModal.hidden = !state.readmeOpen;
-  elements.resultPreviewHint.textContent = getSaveHintText();
+  elements.resultPreviewHint.textContent = getResultPreviewHintText();
+  elements.resultPreviewRotate.textContent = getResultPreviewRotateText();
+  elements.resultPreviewRotate.hidden = !isMobileLikeDevice();
   elements.resultPreviewClose.textContent = t.readmeClose;
   elements.resultPreviewModal.hidden = !state.resultPreviewOpen;
 }
@@ -1768,6 +1793,11 @@ elements.readmeClose.addEventListener("click", () => {
 elements.readmeBackdrop.addEventListener("click", () => {
   state.readmeOpen = false;
   renderReadme();
+});
+elements.resultPreviewRotate.addEventListener("click", () => {
+  state.resultPreviewPortrait = !state.resultPreviewPortrait;
+  elements.resultPreviewStage.classList.toggle("is-portrait", state.resultPreviewPortrait);
+  elements.resultPreviewRotate.textContent = getResultPreviewRotateText();
 });
 elements.resultPreviewClose.addEventListener("click", closeResultPreview);
 elements.resultPreviewBackdrop.addEventListener("click", closeResultPreview);

@@ -923,6 +923,14 @@ button {
   gap: 12px;
 }
 
+.result-preview-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .result-preview-hint {
   margin: 0;
   color: var(--ink-soft);
@@ -934,6 +942,20 @@ button {
   justify-items: center;
   align-content: start;
   padding-right: 0;
+}
+
+.result-preview-stage {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+}
+
+.result-preview-stage.is-portrait img {
+  width: min(100%, 520px);
+  transform: rotate(90deg);
+  transform-origin: center center;
+  margin-block: 290px;
 }
 
 .result-preview-content img {
@@ -1143,5 +1165,19 @@ button {
 
   .result-preview-header {
     justify-items: stretch;
+  }
+
+  .result-preview-actions {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .result-preview-actions .ghost-btn {
+    width: 100%;
+  }
+
+  .result-preview-stage.is-portrait img {
+    width: min(100%, 420px);
+    margin-block: 220px;
   }
 }
