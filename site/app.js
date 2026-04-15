@@ -622,8 +622,27 @@ function canvasToBlob(canvas) {
   });
 }
 
+function isMobileLikeDevice() {
+  const coarsePointer = window.matchMedia ? window.matchMedia("(pointer: coarse)").matches : false;
+  return coarsePointer || /Android|webOS|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || "");
+}
+
+function nextPaint() {
+  return new Promise((resolve) => {
+    requestAnimationFrame(() => resolve());
+  });
+}
+
 function openBlobPreview(blob, fileName, previewWindow = null) {
   const objectUrl = URL.createObjectURL(blob);
+  const preferSameTab = isMobileLikeDevice();
+
+  if (preferSameTab && (!previewWindow || previewWindow.closed)) {
+    window.location.href = objectUrl;
+    window.setTimeout(() => URL.revokeObjectURL(objectUrl), 10 * 60 * 1000);
+    return;
+  }
+
   const targetWindow = previewWindow && !previewWindow.closed ? previewWindow : window.open("", "_blank");
 
   if (targetWindow) {
@@ -1488,6 +1507,7 @@ async function saveResultImage(previewWindow = null) {
   renderUserResult(userResult, matches);
 
   try {
+    await nextPaint();
     await ensureEmbeddedAssetMapLoaded();
     const canvas = await buildResultImageCanvas(userResult, matches);
     const blob = await canvasToBlob(canvas);
@@ -1595,6 +1615,11 @@ function showGallery() {
 elements.startBtn.addEventListener("click", showQuiz);
 elements.galleryBtn.addEventListener("click", showGallery);
 elements.saveResultBtn.addEventListener("click", () => {
+  if (isMobileLikeDevice()) {
+    saveResultImage();
+    return;
+  }
+
   const previewWindow = window.open("", "_blank");
   if (previewWindow) {
     previewWindow.document.write(`
