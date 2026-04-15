@@ -980,7 +980,6 @@ button {
 
 .result-preview-stage.is-portrait {
   width: 100%;
-  min-height: calc(100vh - 92px);
   display: grid;
   place-items: center;
 }
@@ -988,8 +987,8 @@ button {
 .result-preview-stage.is-portrait img {
   width: auto;
   max-width: none;
-  height: calc(100vw - 24px);
-  max-height: calc(100vh - 108px);
+  height: auto;
+  max-height: none;
   transform: rotate(90deg);
   transform-origin: center center;
   margin: 0;
@@ -1239,8 +1238,4 @@ button {
     place-items: center;
   }
 
-  .result-preview-stage.is-portrait img {
-    height: calc(100vw - 20px);
-    max-height: calc(100vh - 88px);
-  }
 }

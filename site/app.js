@@ -326,6 +326,8 @@ const elements = {
   readmeBackdrop: document.getElementById("readme-backdrop"),
   readmeContent: document.getElementById("readme-content"),
   readmeClose: document.getElementById("readme-close"),
+  resultPreviewCard: document.querySelector(".result-preview-card"),
+  resultPreviewHeader: document.querySelector(".result-preview-header"),
   resultPreviewModal: document.getElementById("result-preview-modal"),
   resultPreviewBackdrop: document.getElementById("result-preview-backdrop"),
   resultPreviewHint: document.getElementById("result-preview-hint"),
@@ -700,14 +702,61 @@ function cleanupResultPreviewUrl() {
   state.resultPreviewUrl = "";
 }
 
+function getViewportMetrics() {
+  const viewport = window.visualViewport;
+  const width = Math.round(viewport?.width || window.innerWidth || document.documentElement.clientWidth || 0);
+  const height = Math.round(viewport?.height || window.innerHeight || document.documentElement.clientHeight || 0);
+  return { width, height };
+}
+
+function resetResultPreviewLayout() {
+  elements.resultPreviewStage.style.removeProperty("height");
+  elements.resultPreviewImage.style.removeProperty("width");
+  elements.resultPreviewImage.style.removeProperty("height");
+}
+
+function updateResultPreviewLayout() {
+  elements.resultPreviewCard?.classList.toggle("is-portrait", state.resultPreviewPortrait);
+  elements.resultPreviewStage.classList.toggle("is-portrait", state.resultPreviewPortrait);
+
+  if (!state.resultPreviewOpen || !state.resultPreviewPortrait || !isMobileLikeDevice()) {
+    resetResultPreviewLayout();
+    return;
+  }
+
+  const { width: viewportWidth, height: viewportHeight } = getViewportMetrics();
+  const headerHeight = Math.ceil(elements.resultPreviewHeader?.getBoundingClientRect().height || 52);
+  const horizontalInset = viewportWidth <= 768 ? 20 : 24;
+  const verticalInset = viewportWidth <= 768 ? 20 : 24;
+  const stageWidth = Math.max(0, viewportWidth - horizontalInset);
+  const stageHeight = Math.max(0, viewportHeight - headerHeight - verticalInset);
+  const scale = Math.min(stageWidth / EXPORT_IMAGE_CONFIG.height, stageHeight / EXPORT_IMAGE_CONFIG.width);
+  const imageWidth = Math.floor(EXPORT_IMAGE_CONFIG.width * scale);
+  const imageHeight = Math.floor(EXPORT_IMAGE_CONFIG.height * scale);
+
+  elements.resultPreviewStage.style.height = `${stageHeight}px`;
+  elements.resultPreviewImage.style.width = `${imageWidth}px`;
+  elements.resultPreviewImage.style.height = `${imageHeight}px`;
+
+  console.info("Result preview viewport", {
+    viewportWidth,
+    viewportHeight,
+    stageWidth,
+    stageHeight,
+    imageWidth,
+    imageHeight,
+  });
+}
+
 function closeResultPreview() {
   state.resultPreviewOpen = false;
   state.resultPreviewPortrait = false;
   elements.resultPreviewModal.hidden = true;
-  elements.resultPreviewModal.querySelector(".result-preview-card")?.classList.remove("is-portrait");
+  elements.resultPreviewCard?.classList.remove("is-portrait");
   elements.resultPreviewStage.classList.remove("is-portrait");
   elements.resultPreviewImage.removeAttribute("src");
   elements.resultPreviewHint.textContent = "";
+  resetResultPreviewLayout();
   cleanupResultPreviewUrl();
 }
 
@@ -720,12 +769,11 @@ function getResultPreviewHintText() {
         : "Switch between landscape and portrait viewing";
   }
 
-  return UI[state.lang].saveHint
-    || (state.lang === "zh"
-      ? "长按图片即可保存到相册"
-      : state.lang === "ja"
-        ? "画像を長押しすると保存できます"
-        : "Long press the image to save it");
+  return state.lang === "zh"
+    ? "结果图会在页面内直接显示"
+    : state.lang === "ja"
+      ? "結果画像はページ内にそのまま表示されます"
+      : "The result image will open inside this page";
 }
 
 function getResultPreviewRotateText() {
@@ -739,7 +787,7 @@ function showResultPreview(blob) {
   state.resultPreviewUrl = URL.createObjectURL(blob);
   state.resultPreviewOpen = true;
   state.resultPreviewPortrait = false;
-  elements.resultPreviewModal.querySelector(".result-preview-card")?.classList.remove("is-portrait");
+  elements.resultPreviewCard?.classList.remove("is-portrait");
   elements.resultPreviewStage.classList.remove("is-portrait");
   elements.resultPreviewHint.textContent = getResultPreviewHintText();
   elements.resultPreviewRotate.textContent = getResultPreviewRotateText();
@@ -747,35 +795,11 @@ function showResultPreview(blob) {
   elements.resultPreviewClose.textContent = UI[state.lang].readmeClose;
   elements.resultPreviewImage.src = state.resultPreviewUrl;
   elements.resultPreviewModal.hidden = false;
+  resetResultPreviewLayout();
 }
 
 function openBlobPreview(blob, fileName, previewWindow = null) {
-  if (isRestrictedInAppBrowser() || isMobileLikeDevice()) {
-    showResultPreview(blob);
-    return;
-  }
-
-  const objectUrl = URL.createObjectURL(blob);
-  const preferSameTab = isMobileLikeDevice();
-
-  if (preferSameTab && (!previewWindow || previewWindow.closed)) {
-    window.location.href = objectUrl;
-    window.setTimeout(() => URL.revokeObjectURL(objectUrl), 10 * 60 * 1000);
-    return;
-  }
-
-  const targetWindow = previewWindow && !previewWindow.closed ? previewWindow : window.open("", "_blank");
-
-  if (targetWindow) {
-    targetWindow.location.replace(objectUrl);
-    try {
-      targetWindow.document.title = fileName;
-    } catch {}
-  } else {
-    window.location.href = objectUrl;
-  }
-
-  window.setTimeout(() => URL.revokeObjectURL(objectUrl), 10 * 60 * 1000);
+  showResultPreview(blob);
 }
 
 function addRoundedRectPath(ctx, x, y, width, height, radius) {
@@ -1682,8 +1706,7 @@ function renderReadme() {
   elements.resultPreviewRotate.hidden = !isMobileLikeDevice();
   elements.resultPreviewClose.textContent = t.readmeClose;
   elements.resultPreviewModal.hidden = !state.resultPreviewOpen;
-  elements.resultPreviewModal.querySelector(".result-preview-card")?.classList.toggle("is-portrait", state.resultPreviewPortrait);
-  elements.resultPreviewStage.classList.toggle("is-portrait", state.resultPreviewPortrait);
+  updateResultPreviewLayout();
 }
 
 function renderView(userResult) {
@@ -1742,38 +1765,7 @@ function showGallery() {
 elements.startBtn.addEventListener("click", showQuiz);
 elements.galleryBtn.addEventListener("click", showGallery);
 elements.saveResultBtn.addEventListener("click", () => {
-  if (isMobileLikeDevice()) {
-    saveResultImage();
-    return;
-  }
-
-  const previewWindow = window.open("", "_blank");
-  if (previewWindow) {
-    previewWindow.document.write(`
-      <!DOCTYPE html>
-      <html lang="${UI[state.lang].htmlLang}">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>${UI[state.lang].savingImage}</title>
-        <style>
-          body {
-            margin: 0;
-            min-height: 100vh;
-            display: grid;
-            place-items: center;
-            background: #fff8ef;
-            color: #6e5948;
-            font: 600 16px "Outfit", "Noto Sans SC", "Noto Sans JP", sans-serif;
-          }
-        </style>
-      </head>
-      <body>${UI[state.lang].savingImage}</body>
-      </html>
-    `);
-    previewWindow.document.close();
-  }
-  saveResultImage(previewWindow);
+  saveResultImage();
 });
 elements.retakeBtnBottom.addEventListener("click", resetQuiz);
 elements.prevBtn.addEventListener("click", () => {
@@ -1801,9 +1793,8 @@ elements.readmeBackdrop.addEventListener("click", () => {
 });
 elements.resultPreviewRotate.addEventListener("click", () => {
   state.resultPreviewPortrait = !state.resultPreviewPortrait;
-  elements.resultPreviewModal.querySelector(".result-preview-card")?.classList.toggle("is-portrait", state.resultPreviewPortrait);
-  elements.resultPreviewStage.classList.toggle("is-portrait", state.resultPreviewPortrait);
   elements.resultPreviewRotate.textContent = getResultPreviewRotateText();
+  updateResultPreviewLayout();
 });
 elements.resultPreviewCloseIcon.addEventListener("click", closeResultPreview);
 elements.resultPreviewClose.addEventListener("click", closeResultPreview);
@@ -1828,7 +1819,10 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
-window.addEventListener("resize", debounce(rerenderCharts, 100));
+window.addEventListener("resize", debounce(() => {
+  rerenderCharts();
+  updateResultPreviewLayout();
+}, 100));
 window.addEventListener("scroll", hideHoverTooltip, { passive: true });
 
 function debounce(fn, delay) {
