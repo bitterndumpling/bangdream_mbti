@@ -23,12 +23,12 @@ const MATCH_TUNING = {
 };
 
 const EXPORT_IMAGE_CONFIG = {
-  width: 1800,
-  height: 1020,
-  padding: 56,
-  cardGap: 24,
-  headerHeight: 210,
-  cardHeight: 708,
+  width: 1760,
+  height: 1000,
+  padding: 88,
+  cardGap: 40,
+  headerHeight: 168,
+  cardHeight: 656,
 };
 
 const LOCAL_ASSET_MAP = window.BANGDREAM_LOCAL_ASSET_MAP || {};
@@ -1181,12 +1181,8 @@ function drawExportHeader(ctx, userResult, matches, width) {
   const panelY = padding;
   const panelHeight = headerHeight;
   const panelWidth = width - padding * 2;
-  const summaryWidth = 324;
-  const summaryInset = 20;
-  const summaryX = padding + panelWidth - summaryWidth - summaryInset;
-  const leftInset = 28;
-  const leftStartX = padding + leftInset;
-  const leftWidth = summaryX - leftStartX - 20;
+  const summaryWidth = 356;
+  const summaryX = padding + panelWidth - summaryWidth - 20;
 
   fillRoundedRect(ctx, padding, panelY, panelWidth, panelHeight, 28, "rgba(255, 252, 247, 0.92)");
   strokeRoundedRect(ctx, padding, panelY, panelWidth, panelHeight, 28, "rgba(136, 102, 70, 0.12)");
@@ -1195,51 +1191,25 @@ function drawExportHeader(ctx, userResult, matches, width) {
   ctx.fillStyle = "#2d2219";
   ctx.textAlign = "left";
   ctx.textBaseline = "top";
-  ctx.font = "800 46px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.font = "800 42px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
   ctx.fillText(t.exportTitle, padding + 28, panelY + 26);
   ctx.fillStyle = "#6e5948";
-  ctx.font = "500 24px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
-  ctx.fillText(t.exportSubtitle, padding + 28, panelY + 82);
-
-  const pillWidth = (leftWidth - 14) / 2;
-  const pillBaseY = panelY + 118;
-  AXES.forEach(([axis, leftPole, rightPole]) => {
-    const pillText = `${leftPole}/${rightPole} ${userResult.percentages[leftPole].toFixed(1)} / ${userResult.percentages[rightPole].toFixed(1)}`;
-    const index = AXES.findIndex(([currentAxis]) => currentAxis === axis);
-    const row = Math.floor(index / 2);
-    const column = index % 2;
-    drawExportPill(ctx, {
-      x: leftStartX + column * (pillWidth + 14),
-      y: pillBaseY + row * 44,
-      text: pillText,
-      font: "600 16px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
-      height: 34,
-      paddingX: 12,
-      fill: "rgba(255, 255, 255, 0.88)",
-      color: "#6e5948",
-      width: pillWidth,
-      fit: true,
-    });
-  });
+  ctx.font = "500 22px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(t.exportSubtitle, padding + 28, panelY + 76);
+  ctx.fillStyle = "#9b513d";
+  ctx.font = "700 18px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(t.yourType, padding + 28, panelY + 118);
+  ctx.fillStyle = "#2d2219";
+  ctx.font = "800 68px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(userResult.type, padding + 28, panelY + 124);
   ctx.restore();
 
   fillRoundedRect(ctx, summaryX, panelY + 18, summaryWidth, panelHeight - 36, 24, "rgba(255, 255, 255, 0.95)");
   strokeRoundedRect(ctx, summaryX, panelY + 18, summaryWidth, panelHeight - 36, 24, "rgba(136, 102, 70, 0.1)");
 
-  ctx.save();
-  ctx.fillStyle = "#6e5948";
-  ctx.textAlign = "left";
-  ctx.textBaseline = "top";
-  ctx.font = "700 18px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
-  ctx.fillText(t.yourType, summaryX + 22, panelY + 42);
-  ctx.fillStyle = "#2d2219";
-  ctx.font = "800 62px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
-  ctx.fillText(userResult.type, summaryX + 22, panelY + 62);
-  ctx.restore();
-
   drawExportPill(ctx, {
     x: summaryX + 22,
-    y: panelY + 128,
+    y: panelY + 34,
     text: `${t.confidence}: ${confidenceLabel(userResult.confidence)} ${userResult.confidence.toFixed(1)}`,
     fill: "rgba(255, 245, 237, 1)",
     color: "#9b513d",
@@ -1250,10 +1220,21 @@ function drawExportHeader(ctx, userResult, matches, width) {
 
   drawExportPill(ctx, {
     x: summaryX + 22,
-    y: panelY + 174,
+    y: panelY + 78,
     text: `${t.topPick}: ${getLocalizedCharacterName(matches[0])}`,
     fill: "rgba(242, 251, 249, 1)",
     color: "#2f8078",
+    font: "700 17px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    width: summaryWidth - 44,
+    fit: true,
+  });
+
+  drawExportPill(ctx, {
+    x: summaryX + 22,
+    y: panelY + 122,
+    text: `${t.matchScore}: ${matches[0].similarity.toFixed(2)}%`,
+    fill: "rgba(255, 255, 255, 1)",
+    color: "#6e5948",
     font: "700 17px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
     width: summaryWidth - 44,
     fit: true,
@@ -1266,7 +1247,7 @@ function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) 
   const localizedName = getLocalizedCharacterName(character);
   const secondaryNames = getSecondaryCharacterNames(character).join(" / ");
   const localizedBandName = getLocalizedBandName(character);
-  const cardPadding = 22;
+  const cardPadding = 20;
 
   fillRoundedRect(ctx, x, y, width, height, 28, "rgba(255, 252, 247, 0.95)");
   strokeRoundedRect(ctx, x, y, width, height, 28, "rgba(136, 102, 70, 0.12)");
@@ -1299,17 +1280,17 @@ function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) 
   ctx.fillStyle = "#2d2219";
   ctx.textAlign = "left";
   ctx.textBaseline = "top";
-  ctx.font = "800 34px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.font = "800 32px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
   ctx.fillText(fitText(ctx, localizedName, width - cardPadding * 2 - 24), x + cardPadding, y + 78);
 
   ctx.fillStyle = "#6e5948";
-  ctx.font = "500 17px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.font = "500 16px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
   if (secondaryNames) {
-    ctx.fillText(fitText(ctx, secondaryNames, width - cardPadding * 2 - 24), x + cardPadding, y + 120);
+    ctx.fillText(fitText(ctx, secondaryNames, width - cardPadding * 2 - 24), x + cardPadding, y + 116);
   }
   ctx.restore();
 
-  const typePillY = y + 154;
+  const typePillY = y + 146;
   let typePillX = x + cardPadding;
   typePillX += drawExportPill(ctx, {
     x: typePillX,
@@ -1333,9 +1314,9 @@ function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) 
   });
 
   const visualX = x + cardPadding;
-  const visualY = y + 198;
+  const visualY = y + 188;
   const visualWidth = width - cardPadding * 2;
-  const visualHeight = 180;
+  const visualHeight = 192;
   fillRoundedRect(ctx, visualX, visualY, visualWidth, visualHeight, 22, hexToRgba(character.color, 0.08));
   strokeRoundedRect(ctx, visualX, visualY, visualWidth, visualHeight, 22, "rgba(136, 102, 70, 0.08)");
 
@@ -1343,7 +1324,7 @@ function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) 
   addRoundedRectPath(ctx, visualX, visualY, visualWidth, visualHeight, 22);
   ctx.clip();
   if (portrait) {
-    drawContainImage(ctx, portrait, visualX + 12, visualY + 8, visualWidth - 24, visualHeight - 8, { alignY: "bottom" });
+    drawContainImage(ctx, portrait, visualX - 18, visualY + 4, visualWidth + 36, visualHeight, { alignY: "bottom" });
   }
   ctx.restore();
 
@@ -1355,7 +1336,7 @@ function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) 
   }
 
   const chartWrapX = x + cardPadding;
-  const chartWrapY = y + 396;
+  const chartWrapY = y + 392;
   const chartWrapWidth = width - cardPadding * 2;
   const chartWrapHeight = height - (chartWrapY - y) - cardPadding;
   fillRoundedRect(ctx, chartWrapX, chartWrapY, chartWrapWidth, chartWrapHeight, 22, "rgba(255, 255, 255, 0.82)");
@@ -1394,10 +1375,10 @@ function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) 
   });
 
   const radarCanvas = document.createElement("canvas");
-  radarCanvas.dataset.minSize = "206";
-  radarCanvas.dataset.maxSize = "206";
+  radarCanvas.dataset.minSize = "196";
+  radarCanvas.dataset.maxSize = "196";
   drawRadar(radarCanvas, userResult.percentages, character);
-  const radarSize = 206;
+  const radarSize = 196;
   const radarX = chartWrapX + (chartWrapWidth - radarSize) / 2;
   const radarY = chartWrapY + 86;
   ctx.drawImage(radarCanvas, radarX, radarY, radarSize, radarSize);
