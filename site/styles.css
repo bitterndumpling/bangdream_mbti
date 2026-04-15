@@ -340,7 +340,7 @@ button {
 }
 
 .results-card {
-  max-width: 920px;
+  max-width: 820px;
   margin: 0 auto;
 }
 
@@ -357,6 +357,23 @@ button {
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 18px;
+}
+
+.results-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+}
+
+.results-header {
+  align-items: center;
+}
+
+.results-header > :first-child {
+  min-width: 0;
 }
 
 .section-title {
@@ -498,11 +515,14 @@ button {
 }
 
 .user-result-head {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 280px);
+  align-items: start;
   gap: 16px;
-  flex-wrap: wrap;
+}
+
+.user-result-head > :first-child {
+  min-width: 0;
 }
 
 .result-type {
@@ -510,9 +530,23 @@ button {
 }
 
 .result-summary {
+  display: grid;
+  gap: 8px;
+  justify-items: stretch;
+  align-content: start;
+  min-width: 0;
+}
+
+.result-summary .stat-chip {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 42px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+  border-radius: 16px;
 }
 
 .top-matches {
@@ -674,10 +708,10 @@ button {
 .match-card {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+  grid-template-columns: minmax(188px, 220px) minmax(0, 1fr);
   align-items: start;
-  gap: 18px;
-  padding: 18px;
+  gap: 14px;
+  padding: 14px;
   border-radius: calc(var(--radius-lg) + 4px);
   border: 1px solid rgba(125, 95, 70, 0.12);
   background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,249,242,0.95));
@@ -697,19 +731,20 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 300px;
+  min-height: 248px;
   border-radius: calc(var(--radius-lg) - 2px);
   overflow: hidden;
   background:
     radial-gradient(circle at 20% 12%, rgba(255,255,255,0.9), transparent 32%),
     linear-gradient(180deg, color-mix(in srgb, var(--card-color, #ff7b59) 18%, white), rgba(255, 255, 255, 0.82));
   border: 1px solid rgba(122, 93, 68, 0.12);
-  padding: 44px 8px 0;
+  padding: 34px 0 0;
 }
 
 .match-visual img.portrait {
   position: relative;
-  width: 100%;
+  width: 124%;
+  max-width: none;
   height: auto;
   max-height: 420px;
   object-fit: contain;
@@ -732,7 +767,7 @@ button {
 
 .match-body {
   display: grid;
-  gap: 14px;
+  gap: 12px;
 }
 
 .match-topline {
@@ -979,6 +1014,23 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .result-summary {
+    justify-items: stretch;
+  }
+
+  .result-summary .stat-chip {
+    width: 100%;
+    min-height: 0;
+  }
+
+  .results-actions {
+    justify-content: stretch;
+  }
+
+  .results-actions .ghost-btn {
+    width: 100%;
+  }
+
   .gallery-item {
     grid-template-rows: 260px auto;
   }
@@ -1028,7 +1080,7 @@ button {
   }
 
   .match-visual {
-    min-height: 280px;
+    min-height: 236px;
   }
 
   .band-chip img {

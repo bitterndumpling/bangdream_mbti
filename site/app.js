@@ -22,6 +22,18 @@ const MATCH_TUNING = {
   extremenessWeight: 2.0,
 };
 
+const EXPORT_IMAGE_CONFIG = {
+  width: 1800,
+  height: 1020,
+  padding: 56,
+  cardGap: 24,
+  headerHeight: 210,
+  cardHeight: 708,
+};
+
+const LOCAL_ASSET_MAP = window.BANGDREAM_LOCAL_ASSET_MAP || {};
+const EMBEDDED_ASSET_MAP = window.BANGDREAM_EMBEDDED_ASSET_MAP || {};
+
 const UI = {
   zh: {
     shortLang: "CN",
@@ -57,6 +69,12 @@ const UI = {
     youLegend: "你的结果",
     characterLegend: "角色结果",
     rankLabel: (rank) => `Top ${rank}`,
+    saveImage: "保存结果图",
+    savingImage: "正在生成...",
+    saveFailed: "结果图生成失败，请稍后再试。",
+    exportTitle: "BanG Dream! 角色性格拟合度测试",
+    exportSubtitle: "最接近你的 Top 3 角色",
+    exportFilePrefix: "bangdream-mbti-result",
     readmeButton: "Readme",
     readmeClose: "关闭",
     readmeLabel: "Readme",
@@ -133,6 +151,12 @@ const UI = {
     youLegend: "Your result",
     characterLegend: "Character result",
     rankLabel: (rank) => `Top ${rank}`,
+    saveImage: "Save Result Image",
+    savingImage: "Rendering...",
+    saveFailed: "Failed to generate the result image. Please try again.",
+    exportTitle: "BanG Dream! Character Match Test",
+    exportSubtitle: "Your Top 3 character matches",
+    exportFilePrefix: "bangdream-mbti-result",
     readmeButton: "Readme",
     readmeClose: "Close",
     readmeLabel: "Readme",
@@ -209,6 +233,12 @@ const UI = {
     youLegend: "あなたの結果",
     characterLegend: "キャラクター結果",
     rankLabel: (rank) => `Top ${rank}`,
+    saveImage: "結果画像を保存",
+    savingImage: "生成中...",
+    saveFailed: "結果画像の生成に失敗しました。もう一度試してください。",
+    exportTitle: "BanG Dream! キャラクター適合度テスト",
+    exportSubtitle: "あなたに近い Top 3 キャラクター",
+    exportFilePrefix: "bangdream-mbti-result",
     readmeButton: "Readme",
     readmeClose: "閉じる",
     readmeLabel: "Readme",
@@ -279,6 +309,7 @@ const elements = {
   nextBtn: document.getElementById("next-btn"),
   resultsLabel: document.getElementById("results-label"),
   resultsTitle: document.getElementById("results-title"),
+  saveResultBtn: document.getElementById("save-result-btn"),
   retakeBtnBottom: document.getElementById("retake-btn-bottom"),
   userResult: document.getElementById("user-result"),
   topMatches: document.getElementById("top-matches"),
@@ -303,6 +334,7 @@ const state = {
   charts: [],
   view: "home",
   readmeOpen: false,
+  exporting: false,
 };
 
 function getQuestions(lang = state.lang) {
@@ -525,6 +557,72 @@ function createElement(tag, className, text) {
   return node;
 }
 
+function resolveExportAssetUrl(url) {
+  const localUrl = LOCAL_ASSET_MAP[url] || url;
+  return EMBEDDED_ASSET_MAP[url] || EMBEDDED_ASSET_MAP[localUrl] || localUrl;
+}
+
+function loadExportImage(url) {
+  const resolvedUrl = resolveExportAssetUrl(url);
+
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    if (/^https?:/i.test(resolvedUrl)) image.crossOrigin = "anonymous";
+    image.decoding = "async";
+    image.onload = () => resolve(image);
+    image.onerror = () => reject(new Error(`Failed to load image: ${resolvedUrl}`));
+    image.src = resolvedUrl;
+  });
+}
+
+function canvasToBlob(canvas) {
+  return new Promise((resolve, reject) => {
+    canvas.toBlob((blob) => {
+      if (blob) resolve(blob);
+      else reject(new Error("Canvas export failed"));
+    }, "image/png");
+  });
+}
+
+function downloadBlob(blob, fileName) {
+  const objectUrl = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = objectUrl;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  window.setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+}
+
+function addRoundedRectPath(ctx, x, y, width, height, radius) {
+  const safeRadius = Math.min(radius, width / 2, height / 2);
+  ctx.beginPath();
+  ctx.moveTo(x + safeRadius, y);
+  ctx.lineTo(x + width - safeRadius, y);
+  ctx.arcTo(x + width, y, x + width, y + safeRadius, safeRadius);
+  ctx.lineTo(x + width, y + height - safeRadius);
+  ctx.arcTo(x + width, y + height, x + width - safeRadius, y + height, safeRadius);
+  ctx.lineTo(x + safeRadius, y + height);
+  ctx.arcTo(x, y + height, x, y + height - safeRadius, safeRadius);
+  ctx.lineTo(x, y + safeRadius);
+  ctx.arcTo(x, y, x + safeRadius, y, safeRadius);
+  ctx.closePath();
+}
+
+function fillRoundedRect(ctx, x, y, width, height, radius, fillStyle) {
+  addRoundedRectPath(ctx, x, y, width, height, radius);
+  ctx.fillStyle = fillStyle;
+  ctx.fill();
+}
+
+function strokeRoundedRect(ctx, x, y, width, height, radius, strokeStyle, lineWidth = 1) {
+  addRoundedRectPath(ctx, x, y, width, height, radius);
+  ctx.strokeStyle = strokeStyle;
+  ctx.lineWidth = lineWidth;
+  ctx.stroke();
+}
+
 function moveHoverTooltip(clientX, clientY) {
   const tooltip = elements.hoverTooltip;
   if (tooltip.hidden) return;
@@ -681,6 +779,8 @@ function renderUserResult(userResult, matches) {
   const t = UI[state.lang];
   elements.resultsLabel.textContent = t.resultsLabel;
   elements.resultsTitle.textContent = t.resultsTitle;
+  elements.saveResultBtn.textContent = state.exporting ? t.savingImage : t.saveImage;
+  elements.saveResultBtn.disabled = !userResult || state.exporting;
   elements.retakeBtnBottom.textContent = t.retake;
 
   if (!userResult) {
@@ -962,6 +1062,410 @@ function hexToRgba(hex, alpha) {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
+function formatPercent(value) {
+  return `${value.toFixed(2)}%`;
+}
+
+function fitText(ctx, text, maxWidth) {
+  if (!text) return "";
+  if (ctx.measureText(text).width <= maxWidth) return text;
+  let fitted = text;
+  while (fitted.length > 1 && ctx.measureText(`${fitted}...`).width > maxWidth) {
+    fitted = fitted.slice(0, -1);
+  }
+  return `${fitted}...`;
+}
+
+function drawContainImage(ctx, image, x, y, width, height, options = {}) {
+  if (!image) return;
+
+  const { alignY = "center" } = options;
+  const scale = Math.min(width / image.width, height / image.height);
+  const drawWidth = image.width * scale;
+  const drawHeight = image.height * scale;
+  const drawX = x + (width - drawWidth) / 2;
+  const drawY =
+    alignY === "bottom"
+      ? y + height - drawHeight
+      : alignY === "top"
+        ? y
+        : y + (height - drawHeight) / 2;
+
+  ctx.drawImage(image, drawX, drawY, drawWidth, drawHeight);
+}
+
+function drawExportPill(ctx, options) {
+  const {
+    x,
+    y,
+    text,
+    fill = "rgba(255, 255, 255, 0.9)",
+    color = "#2d2219",
+    font = "600 18px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    paddingX = 14,
+    height = 36,
+    radius = 18,
+    width = null,
+    fit = false,
+  } = options;
+
+  ctx.save();
+  ctx.font = font;
+  const pillWidth = width ?? Math.ceil(ctx.measureText(text).width + paddingX * 2);
+  const renderText = fit ? fitText(ctx, text, pillWidth - paddingX * 2) : text;
+  fillRoundedRect(ctx, x, y, pillWidth, height, radius, fill);
+  ctx.fillStyle = color;
+  ctx.textAlign = "left";
+  ctx.textBaseline = "middle";
+  ctx.fillText(renderText, x + paddingX, y + height / 2 + 1);
+  ctx.restore();
+  return pillWidth;
+}
+
+async function loadOptionalExportImage(url) {
+  try {
+    return await loadExportImage(url);
+  } catch (error) {
+    console.warn(error);
+    return null;
+  }
+}
+
+async function buildExportAssets(matches) {
+  return Promise.all(
+    matches.map(async (character) => ({
+      character,
+      portrait: await loadOptionalExportImage(character.portraitUrl),
+      bandLogo: await loadOptionalExportImage(character.bandLogoUrl),
+    }))
+  );
+}
+
+function drawExportBackground(ctx, width, height) {
+  ctx.fillStyle = "#fff8ef";
+  ctx.fillRect(0, 0, width, height);
+
+  const warmGlow = ctx.createRadialGradient(240, 120, 40, 240, 120, 420);
+  warmGlow.addColorStop(0, "rgba(255, 149, 102, 0.28)");
+  warmGlow.addColorStop(1, "rgba(255, 149, 102, 0)");
+  ctx.fillStyle = warmGlow;
+  ctx.fillRect(0, 0, width, height);
+
+  const coolGlow = ctx.createRadialGradient(width - 220, 200, 50, width - 220, 200, 420);
+  coolGlow.addColorStop(0, "rgba(46, 177, 171, 0.18)");
+  coolGlow.addColorStop(1, "rgba(46, 177, 171, 0)");
+  ctx.fillStyle = coolGlow;
+  ctx.fillRect(0, 0, width, height);
+
+  ctx.save();
+  ctx.strokeStyle = "rgba(181, 135, 92, 0.08)";
+  ctx.lineWidth = 1;
+  for (let x = 40; x < width; x += 120) {
+    ctx.beginPath();
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x, height);
+    ctx.stroke();
+  }
+  for (let y = 36; y < height; y += 120) {
+    ctx.beginPath();
+    ctx.moveTo(0, y);
+    ctx.lineTo(width, y);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function drawExportHeader(ctx, userResult, matches, width) {
+  const t = UI[state.lang];
+  const { padding, headerHeight } = EXPORT_IMAGE_CONFIG;
+  const panelY = padding;
+  const panelHeight = headerHeight;
+  const panelWidth = width - padding * 2;
+  const summaryWidth = 324;
+  const summaryInset = 20;
+  const summaryX = padding + panelWidth - summaryWidth - summaryInset;
+  const leftInset = 28;
+  const leftStartX = padding + leftInset;
+  const leftWidth = summaryX - leftStartX - 20;
+
+  fillRoundedRect(ctx, padding, panelY, panelWidth, panelHeight, 28, "rgba(255, 252, 247, 0.92)");
+  strokeRoundedRect(ctx, padding, panelY, panelWidth, panelHeight, 28, "rgba(136, 102, 70, 0.12)");
+
+  ctx.save();
+  ctx.fillStyle = "#2d2219";
+  ctx.textAlign = "left";
+  ctx.textBaseline = "top";
+  ctx.font = "800 46px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(t.exportTitle, padding + 28, panelY + 26);
+  ctx.fillStyle = "#6e5948";
+  ctx.font = "500 24px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(t.exportSubtitle, padding + 28, panelY + 82);
+
+  const pillWidth = (leftWidth - 14) / 2;
+  const pillBaseY = panelY + 118;
+  AXES.forEach(([axis, leftPole, rightPole]) => {
+    const pillText = `${leftPole}/${rightPole} ${userResult.percentages[leftPole].toFixed(1)} / ${userResult.percentages[rightPole].toFixed(1)}`;
+    const index = AXES.findIndex(([currentAxis]) => currentAxis === axis);
+    const row = Math.floor(index / 2);
+    const column = index % 2;
+    drawExportPill(ctx, {
+      x: leftStartX + column * (pillWidth + 14),
+      y: pillBaseY + row * 44,
+      text: pillText,
+      font: "600 16px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+      height: 34,
+      paddingX: 12,
+      fill: "rgba(255, 255, 255, 0.88)",
+      color: "#6e5948",
+      width: pillWidth,
+      fit: true,
+    });
+  });
+  ctx.restore();
+
+  fillRoundedRect(ctx, summaryX, panelY + 18, summaryWidth, panelHeight - 36, 24, "rgba(255, 255, 255, 0.95)");
+  strokeRoundedRect(ctx, summaryX, panelY + 18, summaryWidth, panelHeight - 36, 24, "rgba(136, 102, 70, 0.1)");
+
+  ctx.save();
+  ctx.fillStyle = "#6e5948";
+  ctx.textAlign = "left";
+  ctx.textBaseline = "top";
+  ctx.font = "700 18px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(t.yourType, summaryX + 22, panelY + 42);
+  ctx.fillStyle = "#2d2219";
+  ctx.font = "800 62px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(userResult.type, summaryX + 22, panelY + 62);
+  ctx.restore();
+
+  drawExportPill(ctx, {
+    x: summaryX + 22,
+    y: panelY + 128,
+    text: `${t.confidence}: ${confidenceLabel(userResult.confidence)} ${userResult.confidence.toFixed(1)}`,
+    fill: "rgba(255, 245, 237, 1)",
+    color: "#9b513d",
+    font: "700 17px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    width: summaryWidth - 44,
+    fit: true,
+  });
+
+  drawExportPill(ctx, {
+    x: summaryX + 22,
+    y: panelY + 174,
+    text: `${t.topPick}: ${getLocalizedCharacterName(matches[0])}`,
+    fill: "rgba(242, 251, 249, 1)",
+    color: "#2f8078",
+    font: "700 17px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    width: summaryWidth - 44,
+    fit: true,
+  });
+}
+
+function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) {
+  const t = UI[state.lang];
+  const { character, portrait, bandLogo } = asset;
+  const localizedName = getLocalizedCharacterName(character);
+  const secondaryNames = getSecondaryCharacterNames(character).join(" / ");
+  const localizedBandName = getLocalizedBandName(character);
+  const cardPadding = 22;
+
+  fillRoundedRect(ctx, x, y, width, height, 28, "rgba(255, 252, 247, 0.95)");
+  strokeRoundedRect(ctx, x, y, width, height, 28, "rgba(136, 102, 70, 0.12)");
+  fillRoundedRect(ctx, x, y, 8, height, 8, character.color);
+
+  drawExportPill(ctx, {
+    x: x + cardPadding,
+    y: y + cardPadding,
+    text: t.rankLabel(rank),
+    fill: "rgba(39, 28, 19, 0.82)",
+    color: "#ffffff",
+    font: "700 18px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+  });
+
+  const scoreText = `${t.matchScore}: ${formatPercent(character.similarity)}`;
+  ctx.save();
+  ctx.font = "700 18px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  const scoreWidth = Math.ceil(ctx.measureText(scoreText).width + 28);
+  ctx.restore();
+  drawExportPill(ctx, {
+    x: x + width - cardPadding - scoreWidth,
+    y: y + cardPadding,
+    text: scoreText,
+    fill: hexToRgba(character.color, 0.16),
+    color: character.color,
+    font: "700 18px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+  });
+
+  ctx.save();
+  ctx.fillStyle = "#2d2219";
+  ctx.textAlign = "left";
+  ctx.textBaseline = "top";
+  ctx.font = "800 34px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(fitText(ctx, localizedName, width - cardPadding * 2 - 24), x + cardPadding, y + 78);
+
+  ctx.fillStyle = "#6e5948";
+  ctx.font = "500 17px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  if (secondaryNames) {
+    ctx.fillText(fitText(ctx, secondaryNames, width - cardPadding * 2 - 24), x + cardPadding, y + 120);
+  }
+  ctx.restore();
+
+  const typePillY = y + 154;
+  let typePillX = x + cardPadding;
+  typePillX += drawExportPill(ctx, {
+    x: typePillX,
+    y: typePillY,
+    text: `${t.characterType}: ${character.type}`,
+    fill: "rgba(255, 255, 255, 0.92)",
+    color: "#6e5948",
+    font: "600 16px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    height: 34,
+    paddingX: 12,
+  }) + 10;
+  drawExportPill(ctx, {
+    x: typePillX,
+    y: typePillY,
+    text: `${t.band}: ${localizedBandName}`,
+    fill: "rgba(255, 255, 255, 0.92)",
+    color: "#6e5948",
+    font: "600 16px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    height: 34,
+    paddingX: 12,
+  });
+
+  const visualX = x + cardPadding;
+  const visualY = y + 198;
+  const visualWidth = width - cardPadding * 2;
+  const visualHeight = 180;
+  fillRoundedRect(ctx, visualX, visualY, visualWidth, visualHeight, 22, hexToRgba(character.color, 0.08));
+  strokeRoundedRect(ctx, visualX, visualY, visualWidth, visualHeight, 22, "rgba(136, 102, 70, 0.08)");
+
+  ctx.save();
+  addRoundedRectPath(ctx, visualX, visualY, visualWidth, visualHeight, 22);
+  ctx.clip();
+  if (portrait) {
+    drawContainImage(ctx, portrait, visualX + 12, visualY + 8, visualWidth - 24, visualHeight - 8, { alignY: "bottom" });
+  }
+  ctx.restore();
+
+  if (bandLogo) {
+    const logoWidth = 120;
+    const logoHeight = 42;
+    fillRoundedRect(ctx, visualX + visualWidth - logoWidth - 14, visualY + 14, logoWidth, logoHeight, 16, "rgba(255, 255, 255, 0.94)");
+    drawContainImage(ctx, bandLogo, visualX + visualWidth - logoWidth - 8, visualY + 18, logoWidth - 12, logoHeight - 8);
+  }
+
+  const chartWrapX = x + cardPadding;
+  const chartWrapY = y + 396;
+  const chartWrapWidth = width - cardPadding * 2;
+  const chartWrapHeight = height - (chartWrapY - y) - cardPadding;
+  fillRoundedRect(ctx, chartWrapX, chartWrapY, chartWrapWidth, chartWrapHeight, 22, "rgba(255, 255, 255, 0.82)");
+  strokeRoundedRect(ctx, chartWrapX, chartWrapY, chartWrapWidth, chartWrapHeight, 22, "rgba(136, 102, 70, 0.08)");
+
+  ctx.save();
+  ctx.fillStyle = "#6e5948";
+  ctx.textAlign = "left";
+  ctx.textBaseline = "top";
+  ctx.font = "700 16px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(t.chartTitle, chartWrapX + 16, chartWrapY + 14);
+  ctx.restore();
+
+  const userLegendWidth = drawExportPill(ctx, {
+    x: chartWrapX + 16,
+    y: chartWrapY + 42,
+    text: t.youLegend,
+    fill: "rgba(115, 115, 115, 0.12)",
+    color: "#666666",
+    font: "600 14px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    height: 30,
+    paddingX: 12,
+    radius: 15,
+  });
+
+  drawExportPill(ctx, {
+    x: chartWrapX + 28 + userLegendWidth,
+    y: chartWrapY + 42,
+    text: t.characterLegend,
+    fill: hexToRgba(character.color, 0.14),
+    color: character.color,
+    font: "600 14px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    height: 30,
+    paddingX: 12,
+    radius: 15,
+  });
+
+  const radarCanvas = document.createElement("canvas");
+  radarCanvas.dataset.minSize = "206";
+  radarCanvas.dataset.maxSize = "206";
+  drawRadar(radarCanvas, userResult.percentages, character);
+  const radarSize = 206;
+  const radarX = chartWrapX + (chartWrapWidth - radarSize) / 2;
+  const radarY = chartWrapY + 86;
+  ctx.drawImage(radarCanvas, radarX, radarY, radarSize, radarSize);
+}
+
+async function buildResultImageCanvas(userResult, matches) {
+  if (document.fonts?.ready) {
+    await document.fonts.ready.catch(() => undefined);
+  }
+
+  const assets = await buildExportAssets(matches.slice(0, 3));
+  const canvas = document.createElement("canvas");
+  canvas.width = EXPORT_IMAGE_CONFIG.width;
+  canvas.height = EXPORT_IMAGE_CONFIG.height;
+  const ctx = canvas.getContext("2d");
+
+  drawExportBackground(ctx, canvas.width, canvas.height);
+  drawExportHeader(ctx, userResult, matches, canvas.width);
+
+  const { padding, cardGap, headerHeight, cardHeight } = EXPORT_IMAGE_CONFIG;
+  const cardsY = padding + headerHeight;
+  const cardWidth = (canvas.width - padding * 2 - cardGap * 2) / 3;
+
+  assets.forEach((asset, index) => {
+    const cardX = padding + index * (cardWidth + cardGap);
+    drawExportMatchCard(ctx, asset, userResult, index + 1, cardX, cardsY, cardWidth, cardHeight);
+  });
+
+  ctx.save();
+  ctx.fillStyle = "rgba(110, 89, 72, 0.9)";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.font = "500 17px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(fitText(ctx, APP_DATA.meta.copyrightNotice, canvas.width - 120), canvas.width / 2, canvas.height - 28);
+  ctx.restore();
+
+  return canvas;
+}
+
+function getExportFileName(userResult) {
+  const t = UI[state.lang];
+  const date = new Date();
+  const stamp = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+  return `${t.exportFilePrefix}-${userResult.type.toLowerCase()}-${stamp}.png`;
+}
+
+async function saveResultImage() {
+  const userResult = computeUserResult();
+  if (!userResult || state.exporting) return;
+
+  const matches = computeMatches(userResult.percentages);
+  const t = UI[state.lang];
+  state.exporting = true;
+  renderUserResult(userResult, matches);
+
+  try {
+    const canvas = await buildResultImageCanvas(userResult, matches);
+    const blob = await canvasToBlob(canvas);
+    downloadBlob(blob, getExportFileName(userResult));
+  } catch (error) {
+    console.error("Failed to export result image", error);
+    window.alert(t.saveFailed);
+  } finally {
+    state.exporting = false;
+    renderUserResult(userResult, matches);
+  }
+}
+
 function rerenderCharts() {
   state.charts.forEach(({ canvas, userPercentages = null, character }) => {
     drawRadar(canvas, userPercentages, character);
@@ -1052,6 +1556,9 @@ function showGallery() {
 
 elements.startBtn.addEventListener("click", showQuiz);
 elements.galleryBtn.addEventListener("click", showGallery);
+elements.saveResultBtn.addEventListener("click", () => {
+  saveResultImage();
+});
 elements.retakeBtnBottom.addEventListener("click", resetQuiz);
 elements.prevBtn.addEventListener("click", () => {
   state.currentIndex = clamp(state.currentIndex - 1, 0, state.answers.length - 1);
