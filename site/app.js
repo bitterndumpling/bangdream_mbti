@@ -23,12 +23,14 @@ const MATCH_TUNING = {
 };
 
 const EXPORT_IMAGE_CONFIG = {
-  width: 1760,
-  height: 1000,
-  padding: 88,
-  cardGap: 40,
-  headerHeight: 168,
-  cardHeight: 656,
+  width: 1680,
+  height: 1080,
+  padding: 76,
+  cardGap: 48,
+  cardsInset: 24,
+  headerHeight: 200,
+  sectionGap: 12,
+  cardHeight: 752,
 };
 
 const LOCAL_ASSET_MAP = window.BANGDREAM_LOCAL_ASSET_MAP || {};
@@ -1181,8 +1183,10 @@ function drawExportHeader(ctx, userResult, matches, width) {
   const panelY = padding;
   const panelHeight = headerHeight;
   const panelWidth = width - padding * 2;
-  const summaryWidth = 356;
-  const summaryX = padding + panelWidth - summaryWidth - 20;
+  const summaryWidth = 372;
+  const summaryX = padding + panelWidth - summaryWidth - 18;
+  const summaryY = panelY + 16;
+  const summaryHeight = panelHeight - 32;
 
   fillRoundedRect(ctx, padding, panelY, panelWidth, panelHeight, 28, "rgba(255, 252, 247, 0.92)");
   strokeRoundedRect(ctx, padding, panelY, panelWidth, panelHeight, 28, "rgba(136, 102, 70, 0.12)");
@@ -1191,52 +1195,55 @@ function drawExportHeader(ctx, userResult, matches, width) {
   ctx.fillStyle = "#2d2219";
   ctx.textAlign = "left";
   ctx.textBaseline = "top";
-  ctx.font = "800 42px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
-  ctx.fillText(t.exportTitle, padding + 28, panelY + 26);
+  ctx.font = "800 38px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(t.exportTitle, padding + 28, panelY + 24);
   ctx.fillStyle = "#6e5948";
-  ctx.font = "500 22px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
-  ctx.fillText(t.exportSubtitle, padding + 28, panelY + 76);
+  ctx.font = "500 21px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(t.exportSubtitle, padding + 28, panelY + 72);
   ctx.fillStyle = "#9b513d";
-  ctx.font = "700 18px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.font = "700 15px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
   ctx.fillText(t.yourType, padding + 28, panelY + 118);
   ctx.fillStyle = "#2d2219";
-  ctx.font = "800 68px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
-  ctx.fillText(userResult.type, padding + 28, panelY + 124);
+  ctx.font = "800 58px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(userResult.type, padding + 28, panelY + 132);
   ctx.restore();
 
-  fillRoundedRect(ctx, summaryX, panelY + 18, summaryWidth, panelHeight - 36, 24, "rgba(255, 255, 255, 0.95)");
-  strokeRoundedRect(ctx, summaryX, panelY + 18, summaryWidth, panelHeight - 36, 24, "rgba(136, 102, 70, 0.1)");
+  fillRoundedRect(ctx, summaryX, summaryY, summaryWidth, summaryHeight, 24, "rgba(255, 255, 255, 0.95)");
+  strokeRoundedRect(ctx, summaryX, summaryY, summaryWidth, summaryHeight, 24, "rgba(136, 102, 70, 0.1)");
 
   drawExportPill(ctx, {
     x: summaryX + 22,
-    y: panelY + 34,
+    y: summaryY + 18,
     text: `${t.confidence}: ${confidenceLabel(userResult.confidence)} ${userResult.confidence.toFixed(1)}`,
     fill: "rgba(255, 245, 237, 1)",
     color: "#9b513d",
     font: "700 17px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
     width: summaryWidth - 44,
+    height: 40,
     fit: true,
   });
 
   drawExportPill(ctx, {
     x: summaryX + 22,
-    y: panelY + 78,
+    y: summaryY + 66,
     text: `${t.topPick}: ${getLocalizedCharacterName(matches[0])}`,
     fill: "rgba(242, 251, 249, 1)",
     color: "#2f8078",
     font: "700 17px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
     width: summaryWidth - 44,
+    height: 40,
     fit: true,
   });
 
   drawExportPill(ctx, {
     x: summaryX + 22,
-    y: panelY + 122,
+    y: summaryY + 114,
     text: `${t.matchScore}: ${matches[0].similarity.toFixed(2)}%`,
     fill: "rgba(255, 255, 255, 1)",
     color: "#6e5948",
     font: "700 17px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
     width: summaryWidth - 44,
+    height: 40,
     fit: true,
   });
 }
@@ -1251,7 +1258,7 @@ function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) 
 
   fillRoundedRect(ctx, x, y, width, height, 28, "rgba(255, 252, 247, 0.95)");
   strokeRoundedRect(ctx, x, y, width, height, 28, "rgba(136, 102, 70, 0.12)");
-  fillRoundedRect(ctx, x, y, 8, height, 8, character.color);
+  fillRoundedRect(ctx, x, y + 12, 8, height - 24, 8, character.color);
 
   drawExportPill(ctx, {
     x: x + cardPadding,
@@ -1280,43 +1287,46 @@ function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) 
   ctx.fillStyle = "#2d2219";
   ctx.textAlign = "left";
   ctx.textBaseline = "top";
-  ctx.font = "800 32px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
-  ctx.fillText(fitText(ctx, localizedName, width - cardPadding * 2 - 24), x + cardPadding, y + 78);
+  ctx.font = "800 30px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.fillText(fitText(ctx, localizedName, width - cardPadding * 2), x + cardPadding, y + 74);
 
   ctx.fillStyle = "#6e5948";
-  ctx.font = "500 16px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
+  ctx.font = "500 15px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif";
   if (secondaryNames) {
-    ctx.fillText(fitText(ctx, secondaryNames, width - cardPadding * 2 - 24), x + cardPadding, y + 116);
+    ctx.fillText(fitText(ctx, secondaryNames, width - cardPadding * 2), x + cardPadding, y + 112);
   }
   ctx.restore();
 
-  const typePillY = y + 146;
-  let typePillX = x + cardPadding;
-  typePillX += drawExportPill(ctx, {
-    x: typePillX,
-    y: typePillY,
+  drawExportPill(ctx, {
+    x: x + cardPadding,
+    y: y + 150,
     text: `${t.characterType}: ${character.type}`,
     fill: "rgba(255, 255, 255, 0.92)",
     color: "#6e5948",
-    font: "600 16px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    font: "600 15px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    width: width - cardPadding * 2,
     height: 34,
     paddingX: 12,
-  }) + 10;
+    fit: true,
+  });
+
   drawExportPill(ctx, {
-    x: typePillX,
-    y: typePillY,
+    x: x + cardPadding,
+    y: y + 192,
     text: `${t.band}: ${localizedBandName}`,
     fill: "rgba(255, 255, 255, 0.92)",
     color: "#6e5948",
-    font: "600 16px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    font: "600 15px Outfit, 'Noto Sans SC', 'Noto Sans JP', sans-serif",
+    width: width - cardPadding * 2,
     height: 34,
     paddingX: 12,
+    fit: true,
   });
 
   const visualX = x + cardPadding;
-  const visualY = y + 188;
+  const visualY = y + 238;
   const visualWidth = width - cardPadding * 2;
-  const visualHeight = 192;
+  const visualHeight = 238;
   fillRoundedRect(ctx, visualX, visualY, visualWidth, visualHeight, 22, hexToRgba(character.color, 0.08));
   strokeRoundedRect(ctx, visualX, visualY, visualWidth, visualHeight, 22, "rgba(136, 102, 70, 0.08)");
 
@@ -1324,7 +1334,7 @@ function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) 
   addRoundedRectPath(ctx, visualX, visualY, visualWidth, visualHeight, 22);
   ctx.clip();
   if (portrait) {
-    drawContainImage(ctx, portrait, visualX - 18, visualY + 4, visualWidth + 36, visualHeight, { alignY: "bottom" });
+    drawContainImage(ctx, portrait, visualX - 24, visualY + 6, visualWidth + 48, visualHeight - 6, { alignY: "bottom" });
   }
   ctx.restore();
 
@@ -1336,7 +1346,7 @@ function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) 
   }
 
   const chartWrapX = x + cardPadding;
-  const chartWrapY = y + 392;
+  const chartWrapY = y + 494;
   const chartWrapWidth = width - cardPadding * 2;
   const chartWrapHeight = height - (chartWrapY - y) - cardPadding;
   fillRoundedRect(ctx, chartWrapX, chartWrapY, chartWrapWidth, chartWrapHeight, 22, "rgba(255, 255, 255, 0.82)");
@@ -1375,12 +1385,12 @@ function drawExportMatchCard(ctx, asset, userResult, rank, x, y, width, height) 
   });
 
   const radarCanvas = document.createElement("canvas");
-  radarCanvas.dataset.minSize = "196";
-  radarCanvas.dataset.maxSize = "196";
+  radarCanvas.dataset.minSize = "184";
+  radarCanvas.dataset.maxSize = "184";
   drawRadar(radarCanvas, userResult.percentages, character);
-  const radarSize = 196;
+  const radarSize = 184;
   const radarX = chartWrapX + (chartWrapWidth - radarSize) / 2;
-  const radarY = chartWrapY + 86;
+  const radarY = chartWrapY + 72;
   ctx.drawImage(radarCanvas, radarX, radarY, radarSize, radarSize);
 }
 
@@ -1398,12 +1408,14 @@ async function buildResultImageCanvas(userResult, matches) {
   drawExportBackground(ctx, canvas.width, canvas.height);
   drawExportHeader(ctx, userResult, matches, canvas.width);
 
-  const { padding, cardGap, headerHeight, cardHeight } = EXPORT_IMAGE_CONFIG;
-  const cardsY = padding + headerHeight;
-  const cardWidth = (canvas.width - padding * 2 - cardGap * 2) / 3;
+  const { padding, cardGap, cardsInset, headerHeight, sectionGap, cardHeight } = EXPORT_IMAGE_CONFIG;
+  const cardsY = padding + headerHeight + sectionGap;
+  const cardsStartX = padding + cardsInset;
+  const cardsTotalWidth = canvas.width - padding * 2 - cardsInset * 2;
+  const cardWidth = (cardsTotalWidth - cardGap * 2) / 3;
 
   assets.forEach((asset, index) => {
-    const cardX = padding + index * (cardWidth + cardGap);
+    const cardX = cardsStartX + index * (cardWidth + cardGap);
     drawExportMatchCard(ctx, asset, userResult, index + 1, cardX, cardsY, cardWidth, cardHeight);
   });
 
