@@ -711,6 +711,7 @@ function getViewportMetrics() {
 
 function resetResultPreviewLayout() {
   elements.resultPreviewStage.style.removeProperty("height");
+  elements.resultPreviewStage.style.removeProperty("minHeight");
   elements.resultPreviewImage.style.removeProperty("width");
   elements.resultPreviewImage.style.removeProperty("height");
 }
@@ -719,32 +720,39 @@ function updateResultPreviewLayout() {
   elements.resultPreviewCard?.classList.toggle("is-portrait", state.resultPreviewPortrait);
   elements.resultPreviewStage.classList.toggle("is-portrait", state.resultPreviewPortrait);
 
-  if (!state.resultPreviewOpen || !state.resultPreviewPortrait || !isMobileLikeDevice()) {
+  if (!state.resultPreviewOpen) {
     resetResultPreviewLayout();
     return;
   }
 
   const { width: viewportWidth, height: viewportHeight } = getViewportMetrics();
   const headerHeight = Math.ceil(elements.resultPreviewHeader?.getBoundingClientRect().height || 52);
-  const horizontalInset = viewportWidth <= 768 ? 20 : 24;
-  const verticalInset = viewportWidth <= 768 ? 20 : 24;
+  const isMobile = isMobileLikeDevice();
+  const horizontalInset = isMobile ? 20 : 48;
+  const verticalInset = state.resultPreviewPortrait && isMobile ? 20 : 32;
   const stageWidth = Math.max(0, viewportWidth - horizontalInset);
   const stageHeight = Math.max(0, viewportHeight - headerHeight - verticalInset);
-  const scale = Math.min(stageWidth / EXPORT_IMAGE_CONFIG.height, stageHeight / EXPORT_IMAGE_CONFIG.width);
-  const imageWidth = Math.floor(EXPORT_IMAGE_CONFIG.width * scale);
-  const imageHeight = Math.floor(EXPORT_IMAGE_CONFIG.height * scale);
+  const sourceWidth = state.resultPreviewPortrait ? EXPORT_IMAGE_CONFIG.height : EXPORT_IMAGE_CONFIG.width;
+  const sourceHeight = state.resultPreviewPortrait ? EXPORT_IMAGE_CONFIG.width : EXPORT_IMAGE_CONFIG.height;
+  const scale = Math.min(stageWidth / sourceWidth, stageHeight / sourceHeight);
+  const imageWidth = Math.max(1, Math.floor(EXPORT_IMAGE_CONFIG.width * scale));
+  const imageHeight = Math.max(1, Math.floor(EXPORT_IMAGE_CONFIG.height * scale));
 
   elements.resultPreviewStage.style.height = `${stageHeight}px`;
+  elements.resultPreviewStage.style.minHeight = `${stageHeight}px`;
   elements.resultPreviewImage.style.width = `${imageWidth}px`;
   elements.resultPreviewImage.style.height = `${imageHeight}px`;
 
   console.info("Result preview viewport", {
     viewportWidth,
     viewportHeight,
+    sourceWidth,
+    sourceHeight,
     stageWidth,
     stageHeight,
     imageWidth,
     imageHeight,
+    portrait: state.resultPreviewPortrait,
   });
 }
 
@@ -795,7 +803,7 @@ function showResultPreview(blob) {
   elements.resultPreviewClose.textContent = UI[state.lang].readmeClose;
   elements.resultPreviewImage.src = state.resultPreviewUrl;
   elements.resultPreviewModal.hidden = false;
-  resetResultPreviewLayout();
+  updateResultPreviewLayout();
 }
 
 function openBlobPreview(blob, fileName, previewWindow = null) {

@@ -997,9 +997,10 @@ button {
 
 .result-preview-content img {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
+  max-height: 100%;
   border-radius: 20px;
   border: 1px solid rgba(126, 95, 68, 0.1);
   box-shadow: 0 20px 60px rgba(45, 34, 25, 0.12);
