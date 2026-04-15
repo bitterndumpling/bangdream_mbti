@@ -969,6 +969,8 @@ button {
 
 .result-preview-card.is-portrait .result-preview-content {
   overflow: hidden;
+  display: grid;
+  place-items: center;
 }
 
 .result-preview-stage {
@@ -980,6 +982,7 @@ button {
 
 .result-preview-stage.is-portrait {
   width: 100%;
+  height: 100%;
   display: grid;
   place-items: center;
 }

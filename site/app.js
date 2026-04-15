@@ -712,8 +712,16 @@ function getViewportMetrics() {
 function resetResultPreviewLayout() {
   elements.resultPreviewStage.style.removeProperty("height");
   elements.resultPreviewStage.style.removeProperty("minHeight");
+  elements.resultPreviewStage.style.removeProperty("width");
   elements.resultPreviewImage.style.removeProperty("width");
   elements.resultPreviewImage.style.removeProperty("height");
+}
+
+function getPreviewStageBounds() {
+  const stageRect = elements.resultPreviewStage.getBoundingClientRect();
+  const width = Math.max(0, Math.floor(stageRect.width));
+  const height = Math.max(0, Math.floor(stageRect.height));
+  return { width, height };
 }
 
 function updateResultPreviewLayout() {
@@ -726,20 +734,25 @@ function updateResultPreviewLayout() {
   }
 
   const { width: viewportWidth, height: viewportHeight } = getViewportMetrics();
-  const headerHeight = Math.ceil(elements.resultPreviewHeader?.getBoundingClientRect().height || 52);
   const isMobile = isMobileLikeDevice();
-  const horizontalInset = isMobile ? 20 : 48;
-  const verticalInset = state.resultPreviewPortrait && isMobile ? 20 : 32;
-  const stageWidth = Math.max(0, viewportWidth - horizontalInset);
-  const stageHeight = Math.max(0, viewportHeight - headerHeight - verticalInset);
+  if (state.resultPreviewPortrait && isMobile) {
+    elements.resultPreviewStage.style.width = `${viewportWidth}px`;
+    elements.resultPreviewStage.style.height = `${viewportHeight}px`;
+    elements.resultPreviewStage.style.minHeight = `${viewportHeight}px`;
+  } else {
+    const stageHeight = Math.max(0, viewportHeight - Math.ceil(elements.resultPreviewHeader?.getBoundingClientRect().height || 52) - 32);
+    elements.resultPreviewStage.style.width = "100%";
+    elements.resultPreviewStage.style.height = `${stageHeight}px`;
+    elements.resultPreviewStage.style.minHeight = `${stageHeight}px`;
+  }
+
+  const { width: stageWidth, height: stageHeight } = getPreviewStageBounds();
   const sourceWidth = state.resultPreviewPortrait ? EXPORT_IMAGE_CONFIG.height : EXPORT_IMAGE_CONFIG.width;
   const sourceHeight = state.resultPreviewPortrait ? EXPORT_IMAGE_CONFIG.width : EXPORT_IMAGE_CONFIG.height;
   const scale = Math.min(stageWidth / sourceWidth, stageHeight / sourceHeight);
   const imageWidth = Math.max(1, Math.floor(EXPORT_IMAGE_CONFIG.width * scale));
   const imageHeight = Math.max(1, Math.floor(EXPORT_IMAGE_CONFIG.height * scale));
 
-  elements.resultPreviewStage.style.height = `${stageHeight}px`;
-  elements.resultPreviewStage.style.minHeight = `${stageHeight}px`;
   elements.resultPreviewImage.style.width = `${imageWidth}px`;
   elements.resultPreviewImage.style.height = `${imageHeight}px`;
 
@@ -1295,9 +1308,12 @@ function drawContainImage(ctx, image, x, y, width, height, options = {}) {
   if (!image) return;
 
   const { alignY = "center" } = options;
-  const scale = Math.min(width / image.width, height / image.height);
-  const drawWidth = image.width * scale;
-  const drawHeight = image.height * scale;
+  const naturalWidth = image.naturalWidth || image.videoWidth || image.width;
+  const naturalHeight = image.naturalHeight || image.videoHeight || image.height;
+  if (!naturalWidth || !naturalHeight) return;
+  const scale = Math.min(width / naturalWidth, height / naturalHeight);
+  const drawWidth = naturalWidth * scale;
+  const drawHeight = naturalHeight * scale;
   const drawX = x + (width - drawWidth) / 2;
   const drawY =
     alignY === "bottom"
