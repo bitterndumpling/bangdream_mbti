@@ -71,9 +71,9 @@ const UI = {
     youLegend: "你的结果",
     characterLegend: "角色结果",
     rankLabel: (rank) => `Top ${rank}`,
-    saveImage: "保存结果图",
+    saveImage: "打开结果图",
     savingImage: "正在生成...",
-    saveFailed: "结果图生成失败，请稍后再试。",
+    saveFailed: "结果图打开失败，请稍后再试。",
     exportTitle: "BanG Dream! 角色性格拟合度测试",
     exportSubtitle: "最接近你的 Top 3 角色",
     exportFilePrefix: "bangdream-mbti-result",
@@ -153,9 +153,9 @@ const UI = {
     youLegend: "Your result",
     characterLegend: "Character result",
     rankLabel: (rank) => `Top ${rank}`,
-    saveImage: "Save Result Image",
+    saveImage: "Open Result Image",
     savingImage: "Rendering...",
-    saveFailed: "Failed to generate the result image. Please try again.",
+    saveFailed: "Failed to open the result image. Please try again.",
     exportTitle: "BanG Dream! Character Match Test",
     exportSubtitle: "Your Top 3 character matches",
     exportFilePrefix: "bangdream-mbti-result",
@@ -235,9 +235,9 @@ const UI = {
     youLegend: "あなたの結果",
     characterLegend: "キャラクター結果",
     rankLabel: (rank) => `Top ${rank}`,
-    saveImage: "結果画像を保存",
+    saveImage: "結果画像を開く",
     savingImage: "生成中...",
-    saveFailed: "結果画像の生成に失敗しました。もう一度試してください。",
+    saveFailed: "結果画像を開けませんでした。もう一度試してください。",
     exportTitle: "BanG Dream! キャラクター適合度テスト",
     exportSubtitle: "あなたに近い Top 3 キャラクター",
     exportFilePrefix: "bangdream-mbti-result",
@@ -586,15 +586,20 @@ function canvasToBlob(canvas) {
   });
 }
 
-function downloadBlob(blob, fileName) {
+function openBlobPreview(blob, fileName, previewWindow = null) {
   const objectUrl = URL.createObjectURL(blob);
-  const link = document.createElement("a");
-  link.href = objectUrl;
-  link.download = fileName;
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
-  window.setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+  const targetWindow = previewWindow && !previewWindow.closed ? previewWindow : window.open("", "_blank");
+
+  if (targetWindow) {
+    targetWindow.location.replace(objectUrl);
+    try {
+      targetWindow.document.title = fileName;
+    } catch {}
+  } else {
+    window.location.href = objectUrl;
+  }
+
+  window.setTimeout(() => URL.revokeObjectURL(objectUrl), 10 * 60 * 1000);
 }
 
 function addRoundedRectPath(ctx, x, y, width, height, radius) {
@@ -1437,7 +1442,7 @@ function getExportFileName(userResult) {
   return `${t.exportFilePrefix}-${userResult.type.toLowerCase()}-${stamp}.png`;
 }
 
-async function saveResultImage() {
+async function saveResultImage(previewWindow = null) {
   const userResult = computeUserResult();
   if (!userResult || state.exporting) return;
 
@@ -1449,9 +1454,12 @@ async function saveResultImage() {
   try {
     const canvas = await buildResultImageCanvas(userResult, matches);
     const blob = await canvasToBlob(canvas);
-    downloadBlob(blob, getExportFileName(userResult));
+    openBlobPreview(blob, getExportFileName(userResult), previewWindow);
   } catch (error) {
     console.error("Failed to export result image", error);
+    if (previewWindow && !previewWindow.closed) {
+      previewWindow.close();
+    }
     window.alert(t.saveFailed);
   } finally {
     state.exporting = false;
@@ -1550,7 +1558,33 @@ function showGallery() {
 elements.startBtn.addEventListener("click", showQuiz);
 elements.galleryBtn.addEventListener("click", showGallery);
 elements.saveResultBtn.addEventListener("click", () => {
-  saveResultImage();
+  const previewWindow = window.open("", "_blank");
+  if (previewWindow) {
+    previewWindow.document.write(`
+      <!DOCTYPE html>
+      <html lang="${UI[state.lang].htmlLang}">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>${UI[state.lang].savingImage}</title>
+        <style>
+          body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: #fff8ef;
+            color: #6e5948;
+            font: 600 16px "Outfit", "Noto Sans SC", "Noto Sans JP", sans-serif;
+          }
+        </style>
+      </head>
+      <body>${UI[state.lang].savingImage}</body>
+      </html>
+    `);
+    previewWindow.document.close();
+  }
+  saveResultImage(previewWindow);
 });
 elements.retakeBtnBottom.addEventListener("click", resetQuiz);
 elements.prevBtn.addEventListener("click", () => {
