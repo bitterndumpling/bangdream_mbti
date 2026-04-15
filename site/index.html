@@ -118,6 +118,19 @@
     </section>
   </div>
 
+  <div class="modal-shell" id="result-preview-modal" hidden>
+    <div class="modal-backdrop" id="result-preview-backdrop"></div>
+    <section class="modal-card result-preview-card" role="dialog" aria-modal="true" aria-label="Result Image Preview">
+      <div class="modal-header result-preview-header">
+        <p class="result-preview-hint" id="result-preview-hint"></p>
+        <button class="ghost-btn topbar-btn" id="result-preview-close" type="button">Close</button>
+      </div>
+      <div class="modal-content result-preview-content">
+        <img id="result-preview-image" alt="Result preview">
+      </div>
+    </section>
+  </div>
+
   <div class="hover-tooltip" id="hover-tooltip" hidden></div>
 
   <script src="./site-data.js"></script>

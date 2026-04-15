@@ -156,6 +156,7 @@ const UI = {
     saveImage: "Open Result Image",
     savingImage: "Rendering...",
     saveFailed: "Failed to open the result image. Please try again.",
+    saveHint: "Long press the image to save it",
     exportTitle: "BanG Dream! Character Match Test",
     exportSubtitle: "Your Top 3 character matches",
     exportFilePrefix: "bangdream-mbti-result",
@@ -325,6 +326,11 @@ const elements = {
   readmeBackdrop: document.getElementById("readme-backdrop"),
   readmeContent: document.getElementById("readme-content"),
   readmeClose: document.getElementById("readme-close"),
+  resultPreviewModal: document.getElementById("result-preview-modal"),
+  resultPreviewBackdrop: document.getElementById("result-preview-backdrop"),
+  resultPreviewHint: document.getElementById("result-preview-hint"),
+  resultPreviewImage: document.getElementById("result-preview-image"),
+  resultPreviewClose: document.getElementById("result-preview-close"),
   hoverTooltip: document.getElementById("hover-tooltip"),
   brand: document.querySelector(".brand"),
 };
@@ -336,6 +342,8 @@ const state = {
   charts: [],
   view: "home",
   readmeOpen: false,
+  resultPreviewOpen: false,
+  resultPreviewUrl: "",
   exporting: false,
 };
 
@@ -671,13 +679,56 @@ function isMobileLikeDevice() {
   return coarsePointer || /Android|webOS|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || "");
 }
 
+function isRestrictedInAppBrowser() {
+  const ua = navigator.userAgent || "";
+  return /MicroMessenger|QQ\//i.test(ua);
+}
+
 function nextPaint() {
   return new Promise((resolve) => {
     requestAnimationFrame(() => resolve());
   });
 }
 
+function cleanupResultPreviewUrl() {
+  if (!state.resultPreviewUrl) return;
+  URL.revokeObjectURL(state.resultPreviewUrl);
+  state.resultPreviewUrl = "";
+}
+
+function closeResultPreview() {
+  state.resultPreviewOpen = false;
+  elements.resultPreviewModal.hidden = true;
+  elements.resultPreviewImage.removeAttribute("src");
+  elements.resultPreviewHint.textContent = "";
+  cleanupResultPreviewUrl();
+}
+
+function getSaveHintText() {
+  return UI[state.lang].saveHint
+    || (state.lang === "zh"
+      ? "长按图片即可保存到相册"
+      : state.lang === "ja"
+        ? "画像を長押しすると保存できます"
+        : "Long press the image to save it");
+}
+
+function showResultPreview(blob) {
+  cleanupResultPreviewUrl();
+  state.resultPreviewUrl = URL.createObjectURL(blob);
+  state.resultPreviewOpen = true;
+  elements.resultPreviewHint.textContent = getSaveHintText();
+  elements.resultPreviewClose.textContent = UI[state.lang].readmeClose;
+  elements.resultPreviewImage.src = state.resultPreviewUrl;
+  elements.resultPreviewModal.hidden = false;
+}
+
 function openBlobPreview(blob, fileName, previewWindow = null) {
+  if (isRestrictedInAppBrowser()) {
+    showResultPreview(blob);
+    return;
+  }
+
   const objectUrl = URL.createObjectURL(blob);
   const preferSameTab = isMobileLikeDevice();
 
@@ -1600,6 +1651,9 @@ function renderReadme() {
     </section>
   `;
   elements.readmeModal.hidden = !state.readmeOpen;
+  elements.resultPreviewHint.textContent = getSaveHintText();
+  elements.resultPreviewClose.textContent = t.readmeClose;
+  elements.resultPreviewModal.hidden = !state.resultPreviewOpen;
 }
 
 function renderView(userResult) {
@@ -1715,6 +1769,8 @@ elements.readmeBackdrop.addEventListener("click", () => {
   state.readmeOpen = false;
   renderReadme();
 });
+elements.resultPreviewClose.addEventListener("click", closeResultPreview);
+elements.resultPreviewBackdrop.addEventListener("click", closeResultPreview);
 elements.brand.addEventListener("click", (event) => {
   event.preventDefault();
   state.view = "home";
@@ -1726,6 +1782,9 @@ window.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && state.readmeOpen) {
     state.readmeOpen = false;
     renderReadme();
+  }
+  if (event.key === "Escape" && state.resultPreviewOpen) {
+    closeResultPreview();
   }
   if (event.key === "Escape" && !elements.hoverTooltip.hidden) {
     hideHoverTooltip();
