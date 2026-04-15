@@ -332,6 +332,7 @@ const elements = {
   resultPreviewStage: document.getElementById("result-preview-stage"),
   resultPreviewImage: document.getElementById("result-preview-image"),
   resultPreviewRotate: document.getElementById("result-preview-rotate"),
+  resultPreviewCloseIcon: document.getElementById("result-preview-close-icon"),
   resultPreviewClose: document.getElementById("result-preview-close"),
   hoverTooltip: document.getElementById("hover-tooltip"),
   brand: document.querySelector(".brand"),
@@ -703,6 +704,7 @@ function closeResultPreview() {
   state.resultPreviewOpen = false;
   state.resultPreviewPortrait = false;
   elements.resultPreviewModal.hidden = true;
+  elements.resultPreviewModal.querySelector(".result-preview-card")?.classList.remove("is-portrait");
   elements.resultPreviewStage.classList.remove("is-portrait");
   elements.resultPreviewImage.removeAttribute("src");
   elements.resultPreviewHint.textContent = "";
@@ -737,6 +739,7 @@ function showResultPreview(blob) {
   state.resultPreviewUrl = URL.createObjectURL(blob);
   state.resultPreviewOpen = true;
   state.resultPreviewPortrait = false;
+  elements.resultPreviewModal.querySelector(".result-preview-card")?.classList.remove("is-portrait");
   elements.resultPreviewStage.classList.remove("is-portrait");
   elements.resultPreviewHint.textContent = getResultPreviewHintText();
   elements.resultPreviewRotate.textContent = getResultPreviewRotateText();
@@ -1679,6 +1682,8 @@ function renderReadme() {
   elements.resultPreviewRotate.hidden = !isMobileLikeDevice();
   elements.resultPreviewClose.textContent = t.readmeClose;
   elements.resultPreviewModal.hidden = !state.resultPreviewOpen;
+  elements.resultPreviewModal.querySelector(".result-preview-card")?.classList.toggle("is-portrait", state.resultPreviewPortrait);
+  elements.resultPreviewStage.classList.toggle("is-portrait", state.resultPreviewPortrait);
 }
 
 function renderView(userResult) {
@@ -1796,9 +1801,11 @@ elements.readmeBackdrop.addEventListener("click", () => {
 });
 elements.resultPreviewRotate.addEventListener("click", () => {
   state.resultPreviewPortrait = !state.resultPreviewPortrait;
+  elements.resultPreviewModal.querySelector(".result-preview-card")?.classList.toggle("is-portrait", state.resultPreviewPortrait);
   elements.resultPreviewStage.classList.toggle("is-portrait", state.resultPreviewPortrait);
   elements.resultPreviewRotate.textContent = getResultPreviewRotateText();
 });
+elements.resultPreviewCloseIcon.addEventListener("click", closeResultPreview);
 elements.resultPreviewClose.addEventListener("click", closeResultPreview);
 elements.resultPreviewBackdrop.addEventListener("click", closeResultPreview);
 elements.brand.addEventListener("click", (event) => {

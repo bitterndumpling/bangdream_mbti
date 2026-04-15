@@ -916,6 +916,16 @@ button {
   max-height: calc(100vh - 28px);
 }
 
+.result-preview-card.is-portrait {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  border-radius: 0;
+  padding: 12px;
+  background: rgba(255, 248, 240, 0.985);
+}
+
 .result-preview-header {
   display: flex;
   align-items: center;
@@ -931,6 +941,19 @@ button {
   justify-content: flex-end;
 }
 
+.result-preview-icon-btn {
+  display: none;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(45, 34, 25, 0.82);
+  color: #fff;
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .result-preview-hint {
   margin: 0;
   color: var(--ink-soft);
@@ -944,6 +967,10 @@ button {
   padding-right: 0;
 }
 
+.result-preview-card.is-portrait .result-preview-content {
+  overflow: hidden;
+}
+
 .result-preview-stage {
   width: 100%;
   display: grid;
@@ -951,11 +978,22 @@ button {
   align-items: start;
 }
 
+.result-preview-stage.is-portrait {
+  width: 100%;
+  min-height: calc(100vh - 92px);
+  display: grid;
+  place-items: center;
+}
+
 .result-preview-stage.is-portrait img {
-  width: min(100%, 520px);
+  width: auto;
+  max-width: none;
+  height: calc(100vw - 24px);
+  max-height: calc(100vh - 108px);
   transform: rotate(90deg);
   transform-origin: center center;
-  margin-block: 290px;
+  margin: 0;
+  border-radius: 18px;
 }
 
 .result-preview-content img {
@@ -1158,6 +1196,12 @@ button {
     max-height: calc(100vh - 20px);
   }
 
+  .result-preview-card.is-portrait {
+    width: 100vw;
+    max-height: 100vh;
+    padding: 10px;
+  }
+
   .modal-header {
     grid-template-columns: 1fr;
     display: grid;
@@ -1176,8 +1220,27 @@ button {
     width: 100%;
   }
 
+  .result-preview-card.is-portrait .result-preview-actions {
+    width: auto;
+    justify-content: flex-end;
+  }
+
+  .result-preview-card.is-portrait .result-preview-actions .ghost-btn {
+    width: auto;
+  }
+
+  .result-preview-card.is-portrait .result-preview-hint,
+  .result-preview-card.is-portrait #result-preview-close {
+    display: none;
+  }
+
+  .result-preview-card.is-portrait .result-preview-icon-btn {
+    display: inline-grid;
+    place-items: center;
+  }
+
   .result-preview-stage.is-portrait img {
-    width: min(100%, 420px);
-    margin-block: 220px;
+    height: calc(100vw - 20px);
+    max-height: calc(100vh - 88px);
   }
 }
