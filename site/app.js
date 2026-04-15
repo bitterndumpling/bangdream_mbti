@@ -751,10 +751,10 @@ function updateResultPreviewLayout() {
   elements.resultPreviewStage.style.height = `${stageHeight}px`;
   elements.resultPreviewStage.style.minHeight = `${stageHeight}px`;
 
-  const { width: stageWidth, height: stageHeight } = getPreviewStageBounds();
+  const { width: stageWidth, height: stageBoundsHeight } = getPreviewStageBounds();
   const sourceWidth = elements.resultPreviewImage.naturalWidth || (state.resultPreviewPortrait ? EXPORT_IMAGE_CONFIG.height : EXPORT_IMAGE_CONFIG.width);
   const sourceHeight = elements.resultPreviewImage.naturalHeight || (state.resultPreviewPortrait ? EXPORT_IMAGE_CONFIG.width : EXPORT_IMAGE_CONFIG.height);
-  const scale = Math.min(stageWidth / sourceWidth, stageHeight / sourceHeight);
+  const scale = Math.min(stageWidth / sourceWidth, stageBoundsHeight / sourceHeight);
   const imageWidth = Math.max(1, Math.floor(sourceWidth * scale));
   const imageHeight = Math.max(1, Math.floor(sourceHeight * scale));
 
@@ -767,7 +767,7 @@ function updateResultPreviewLayout() {
     sourceWidth,
     sourceHeight,
     stageWidth,
-    stageHeight,
+    stageHeight: stageBoundsHeight,
     imageWidth,
     imageHeight,
     portrait: state.resultPreviewPortrait,
