@@ -331,6 +331,7 @@ const elements = {
   resultPreviewModal: document.getElementById("result-preview-modal"),
   resultPreviewBackdrop: document.getElementById("result-preview-backdrop"),
   resultPreviewHint: document.getElementById("result-preview-hint"),
+  resultPreviewContent: document.querySelector(".result-preview-content"),
   resultPreviewStage: document.getElementById("result-preview-stage"),
   resultPreviewImage: document.getElementById("result-preview-image"),
   resultPreviewRotate: document.getElementById("result-preview-rotate"),
@@ -350,6 +351,7 @@ const state = {
   resultPreviewOpen: false,
   resultPreviewPortrait: false,
   resultPreviewUrl: "",
+  resultPreviewPortraitUrl: "",
   exporting: false,
 };
 
@@ -702,6 +704,12 @@ function cleanupResultPreviewUrl() {
   state.resultPreviewUrl = "";
 }
 
+function cleanupResultPreviewPortraitUrl() {
+  if (!state.resultPreviewPortraitUrl) return;
+  URL.revokeObjectURL(state.resultPreviewPortraitUrl);
+  state.resultPreviewPortraitUrl = "";
+}
+
 function getViewportMetrics() {
   const viewport = window.visualViewport;
   const width = Math.round(viewport?.width || window.innerWidth || document.documentElement.clientWidth || 0);
@@ -718,9 +726,9 @@ function resetResultPreviewLayout() {
 }
 
 function getPreviewStageBounds() {
-  const stageRect = elements.resultPreviewStage.getBoundingClientRect();
-  const width = Math.max(0, Math.floor(stageRect.width));
-  const height = Math.max(0, Math.floor(stageRect.height));
+  const contentRect = elements.resultPreviewContent.getBoundingClientRect();
+  const width = Math.max(0, Math.floor(contentRect.width));
+  const height = Math.max(0, Math.floor(contentRect.height));
   return { width, height };
 }
 
@@ -735,23 +743,20 @@ function updateResultPreviewLayout() {
 
   const { width: viewportWidth, height: viewportHeight } = getViewportMetrics();
   const isMobile = isMobileLikeDevice();
-  if (state.resultPreviewPortrait && isMobile) {
-    elements.resultPreviewStage.style.width = `${viewportWidth}px`;
-    elements.resultPreviewStage.style.height = `${viewportHeight}px`;
-    elements.resultPreviewStage.style.minHeight = `${viewportHeight}px`;
-  } else {
-    const stageHeight = Math.max(0, viewportHeight - Math.ceil(elements.resultPreviewHeader?.getBoundingClientRect().height || 52) - 32);
-    elements.resultPreviewStage.style.width = "100%";
-    elements.resultPreviewStage.style.height = `${stageHeight}px`;
-    elements.resultPreviewStage.style.minHeight = `${stageHeight}px`;
-  }
+  const headerHeight = Math.ceil(elements.resultPreviewHeader?.getBoundingClientRect().height || 52);
+  const stageHeight = state.resultPreviewPortrait && isMobile
+    ? Math.max(0, viewportHeight - headerHeight)
+    : Math.max(0, viewportHeight - headerHeight - 32);
+  elements.resultPreviewStage.style.width = "100%";
+  elements.resultPreviewStage.style.height = `${stageHeight}px`;
+  elements.resultPreviewStage.style.minHeight = `${stageHeight}px`;
 
   const { width: stageWidth, height: stageHeight } = getPreviewStageBounds();
-  const sourceWidth = state.resultPreviewPortrait ? EXPORT_IMAGE_CONFIG.height : EXPORT_IMAGE_CONFIG.width;
-  const sourceHeight = state.resultPreviewPortrait ? EXPORT_IMAGE_CONFIG.width : EXPORT_IMAGE_CONFIG.height;
+  const sourceWidth = elements.resultPreviewImage.naturalWidth || (state.resultPreviewPortrait ? EXPORT_IMAGE_CONFIG.height : EXPORT_IMAGE_CONFIG.width);
+  const sourceHeight = elements.resultPreviewImage.naturalHeight || (state.resultPreviewPortrait ? EXPORT_IMAGE_CONFIG.width : EXPORT_IMAGE_CONFIG.height);
   const scale = Math.min(stageWidth / sourceWidth, stageHeight / sourceHeight);
-  const imageWidth = Math.max(1, Math.floor(EXPORT_IMAGE_CONFIG.width * scale));
-  const imageHeight = Math.max(1, Math.floor(EXPORT_IMAGE_CONFIG.height * scale));
+  const imageWidth = Math.max(1, Math.floor(sourceWidth * scale));
+  const imageHeight = Math.max(1, Math.floor(sourceHeight * scale));
 
   elements.resultPreviewImage.style.width = `${imageWidth}px`;
   elements.resultPreviewImage.style.height = `${imageHeight}px`;
@@ -769,6 +774,43 @@ function updateResultPreviewLayout() {
   });
 }
 
+function loadImageElement(url) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.decoding = "async";
+    image.onload = () => resolve(image);
+    image.onerror = () => reject(new Error(`Failed to load preview image: ${url}`));
+    image.src = url;
+  });
+}
+
+async function ensurePortraitPreviewUrl() {
+  if (state.resultPreviewPortraitUrl) return state.resultPreviewPortraitUrl;
+  if (!state.resultPreviewUrl) return "";
+
+  const image = await loadImageElement(state.resultPreviewUrl);
+  const canvas = document.createElement("canvas");
+  canvas.width = image.naturalHeight;
+  canvas.height = image.naturalWidth;
+  const ctx = canvas.getContext("2d");
+  ctx.translate(canvas.width / 2, canvas.height / 2);
+  ctx.rotate(Math.PI / 2);
+  ctx.drawImage(image, -image.naturalWidth / 2, -image.naturalHeight / 2);
+  const rotatedBlob = await canvasToBlob(canvas);
+  state.resultPreviewPortraitUrl = URL.createObjectURL(rotatedBlob);
+  return state.resultPreviewPortraitUrl;
+}
+
+async function syncResultPreviewImage() {
+  const nextUrl = state.resultPreviewPortrait
+    ? await ensurePortraitPreviewUrl()
+    : state.resultPreviewUrl;
+  if (!nextUrl) return;
+  if (elements.resultPreviewImage.src !== nextUrl) {
+    elements.resultPreviewImage.src = nextUrl;
+  }
+}
+
 function closeResultPreview() {
   state.resultPreviewOpen = false;
   state.resultPreviewPortrait = false;
@@ -779,6 +821,7 @@ function closeResultPreview() {
   elements.resultPreviewHint.textContent = "";
   resetResultPreviewLayout();
   cleanupResultPreviewUrl();
+  cleanupResultPreviewPortraitUrl();
 }
 
 function getResultPreviewHintText() {
@@ -790,11 +833,7 @@ function getResultPreviewHintText() {
         : "Switch between landscape and portrait viewing";
   }
 
-  return state.lang === "zh"
-    ? "结果图会在页面内直接显示"
-    : state.lang === "ja"
-      ? "結果画像はページ内にそのまま表示されます"
-      : "The result image will open inside this page";
+  return "";
 }
 
 function getResultPreviewRotateText() {
@@ -804,6 +843,7 @@ function getResultPreviewRotateText() {
 }
 
 function showResultPreview(blob) {
+  cleanupResultPreviewPortraitUrl();
   cleanupResultPreviewUrl();
   state.resultPreviewUrl = URL.createObjectURL(blob);
   state.resultPreviewOpen = true;
@@ -816,11 +856,14 @@ function showResultPreview(blob) {
   elements.resultPreviewClose.textContent = UI[state.lang].readmeClose;
   elements.resultPreviewImage.src = state.resultPreviewUrl;
   elements.resultPreviewModal.hidden = false;
-  updateResultPreviewLayout();
 }
 
 function openBlobPreview(blob, fileName, previewWindow = null) {
   showResultPreview(blob);
+}
+
+function refreshResultPreviewLayoutSoon() {
+  requestAnimationFrame(() => updateResultPreviewLayout());
 }
 
 function addRoundedRectPath(ctx, x, y, width, height, radius) {
@@ -1730,7 +1773,7 @@ function renderReadme() {
   elements.resultPreviewRotate.hidden = !isMobileLikeDevice();
   elements.resultPreviewClose.textContent = t.readmeClose;
   elements.resultPreviewModal.hidden = !state.resultPreviewOpen;
-  updateResultPreviewLayout();
+  refreshResultPreviewLayoutSoon();
 }
 
 function renderView(userResult) {
@@ -1815,10 +1858,11 @@ elements.readmeBackdrop.addEventListener("click", () => {
   state.readmeOpen = false;
   renderReadme();
 });
-elements.resultPreviewRotate.addEventListener("click", () => {
+elements.resultPreviewRotate.addEventListener("click", async () => {
   state.resultPreviewPortrait = !state.resultPreviewPortrait;
   elements.resultPreviewRotate.textContent = getResultPreviewRotateText();
-  updateResultPreviewLayout();
+  await syncResultPreviewImage();
+  refreshResultPreviewLayoutSoon();
 });
 elements.resultPreviewCloseIcon.addEventListener("click", closeResultPreview);
 elements.resultPreviewClose.addEventListener("click", closeResultPreview);
@@ -1843,9 +1887,11 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
+elements.resultPreviewImage.addEventListener("load", refreshResultPreviewLayoutSoon);
+
 window.addEventListener("resize", debounce(() => {
   rerenderCharts();
-  updateResultPreviewLayout();
+  refreshResultPreviewLayoutSoon();
 }, 100));
 window.addEventListener("scroll", hideHoverTooltip, { passive: true });
 

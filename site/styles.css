@@ -961,6 +961,10 @@ button {
   line-height: 1.45;
 }
 
+.result-preview-hint:empty {
+  display: none;
+}
+
 .result-preview-content {
   justify-items: center;
   align-content: start;
@@ -989,11 +993,9 @@ button {
 
 .result-preview-stage.is-portrait img {
   width: auto;
-  max-width: none;
+  max-width: 100%;
   height: auto;
-  max-height: none;
-  transform: rotate(90deg);
-  transform-origin: center center;
+  max-height: 100%;
   margin: 0;
   border-radius: 18px;
 }
