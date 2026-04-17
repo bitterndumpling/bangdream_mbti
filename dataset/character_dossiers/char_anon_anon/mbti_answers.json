@@ -1,7 +1,7 @@
 {
   "folder": "char_anon_anon",
-  "display_name": "爱音",
-  "character_name": "千早爱音",
+  "display_name": "鐖遍煶",
+  "character_name": "鍗冩棭鐖遍煶",
   "run_count": 10,
   "raw_type": "ESFP",
   "raw_backup_type": "ESFJ",
@@ -115,24 +115,24 @@
       }
     },
     "blended_percentages": {
-      "E": 90.1,
-      "I": 9.9,
-      "S": 78.3,
-      "N": 21.7,
-      "F": 69.35,
-      "T": 30.65,
-      "J": 35.2,
-      "P": 64.8
+      "E": 82.1,
+      "I": 17.9,
+      "S": 72.3,
+      "N": 27.7,
+      "F": 64.35,
+      "T": 35.65,
+      "J": 40.2,
+      "P": 59.8
     },
     "anchored_percentages": {
-      "E": 90.1,
-      "I": 9.9,
-      "S": 78.3,
-      "N": 21.7,
-      "F": 69.35,
-      "T": 30.65,
-      "J": 35.2,
-      "P": 64.8
+      "E": 82.1,
+      "I": 17.9,
+      "S": 72.3,
+      "N": 27.7,
+      "F": 64.35,
+      "T": 35.65,
+      "J": 40.2,
+      "P": 59.8
     }
   },
   "confidence": 51.27,
@@ -154,14 +154,14 @@
     "P": 16.5
   },
   "percentages": {
-    "E": 90.1,
-    "I": 9.9,
-    "S": 78.3,
-    "N": 21.7,
-    "F": 69.35,
-    "T": 30.65,
-    "J": 35.2,
-    "P": 64.8
+    "E": 82.1,
+    "I": 17.9,
+    "S": 72.3,
+    "N": 27.7,
+    "F": 64.35,
+    "T": 35.65,
+    "J": 40.2,
+    "P": 59.8
   },
   "percentage_variances": {
     "E": 9.4808,
@@ -178,30 +178,30 @@
     "EI": {
       "winner": "E",
       "loser": "I",
-      "margin": 80.2,
-      "left": 90.1,
-      "right": 9.9
+      "margin": 64.2,
+      "left": 82.1,
+      "right": 17.9
     },
     "SN": {
       "winner": "S",
       "loser": "N",
-      "margin": 56.6,
-      "left": 78.3,
-      "right": 21.7
+      "margin": 44.6,
+      "left": 72.3,
+      "right": 27.7
     },
     "FT": {
       "winner": "F",
       "loser": "T",
-      "margin": 38.7,
-      "left": 69.35,
-      "right": 30.65
+      "margin": 28.7,
+      "left": 64.35,
+      "right": 35.65
     },
     "JP": {
       "winner": "P",
       "loser": "J",
-      "margin": 29.6,
-      "left": 35.2,
-      "right": 64.8
+      "margin": 19.6,
+      "left": 40.2,
+      "right": 59.8
     }
   },
   "axis_stats": {

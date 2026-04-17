@@ -1,7 +1,7 @@
 {
   "folder": "char_soyo_soyo",
-  "display_name": "爽世",
-  "character_name": "长崎爽世",
+  "display_name": "鐖戒笘",
+  "character_name": "闀垮磶鐖戒笘",
   "run_count": 10,
   "raw_type": "ESFJ",
   "raw_backup_type": "ENFJ",
@@ -115,24 +115,24 @@
       }
     },
     "blended_percentages": {
-      "E": 83.45,
-      "I": 16.55,
-      "S": 74.35,
-      "N": 25.65,
-      "F": 94.1,
-      "T": 5.9,
-      "J": 84.95,
-      "P": 15.05
+      "E": 76.45,
+      "I": 23.55,
+      "S": 69.35,
+      "N": 30.65,
+      "F": 86.1,
+      "T": 13.9,
+      "J": 77.95,
+      "P": 22.05
     },
     "anchored_percentages": {
-      "E": 83.45,
-      "I": 16.55,
-      "S": 74.35,
-      "N": 25.65,
-      "F": 94.1,
-      "T": 5.9,
-      "J": 84.95,
-      "P": 15.05
+      "E": 76.45,
+      "I": 23.55,
+      "S": 69.35,
+      "N": 30.65,
+      "F": 86.1,
+      "T": 13.9,
+      "J": 77.95,
+      "P": 22.05
     }
   },
   "confidence": 68.43,
@@ -154,14 +154,14 @@
     "P": 3.2
   },
   "percentages": {
-    "E": 83.45,
-    "I": 16.55,
-    "S": 74.35,
-    "N": 25.65,
-    "F": 94.1,
-    "T": 5.9,
-    "J": 84.95,
-    "P": 15.05
+    "E": 76.45,
+    "I": 23.55,
+    "S": 69.35,
+    "N": 30.65,
+    "F": 86.1,
+    "T": 13.9,
+    "J": 77.95,
+    "P": 22.05
   },
   "percentage_variances": {
     "E": 9.0644,
@@ -178,30 +178,30 @@
     "EI": {
       "winner": "E",
       "loser": "I",
-      "margin": 66.9,
-      "left": 83.45,
-      "right": 16.55
+      "margin": 52.9,
+      "left": 76.45,
+      "right": 23.55
     },
     "SN": {
       "winner": "S",
       "loser": "N",
-      "margin": 48.7,
-      "left": 74.35,
-      "right": 25.65
+      "margin": 38.7,
+      "left": 69.35,
+      "right": 30.65
     },
     "FT": {
       "winner": "F",
       "loser": "T",
-      "margin": 88.2,
-      "left": 94.1,
-      "right": 5.9
+      "margin": 72.2,
+      "left": 86.1,
+      "right": 13.9
     },
     "JP": {
       "winner": "J",
       "loser": "P",
-      "margin": 69.9,
-      "left": 84.95,
-      "right": 15.05
+      "margin": 55.9,
+      "left": 77.95,
+      "right": 22.05
     }
   },
   "axis_stats": {

@@ -10,3 +10,5 @@ tmp_pdb_driver/
 chrome_dom.txt
 chrome_dom_v2.txt
 
+*.rar
+deploy/
